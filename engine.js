@@ -10,7 +10,7 @@
   var BWB = { Sv: "BWBR0001903", Sr: "BWBR0001854", Pw: "BWBR0031788", AI: "BWBR0006589", WVW: "BWBR0006622", RVV: "BWBR0004825", Opw: "BWBR0001941", WWM: "BWBR0008804", Gemw: "BWBR0005416", Awb: "BWBR0005537", Wom: "BWBR0004318", Alw: "BWBR0002458", Wth: "BWBR0024649", Wvggz: "BWBR0040635" };
   var NAAM = { Sv: "Wetboek van Strafvordering", Sr: "Wetboek van Strafrecht", Pw: "Politiewet 2012", AI: "Ambtsinstructie", WVW: "Wegenverkeerswet 1994", RVV: "Reglement verkeersregels en verkeerstekens 1990", Opw: "Opiumwet", WWM: "Wet wapens en munitie", Gemw: "Gemeentewet", Awb: "Algemene wet bestuursrecht", Wom: "Wet openbare manifestaties", Alw: "Alcoholwet", Wth: "Wet tijdelijk huisverbod", Wvggz: "Wet verplichte ggz", APV: "APV Amersfoort" };
   var LRE = /(<[^>]*>)|\b(Sv|Sr|Pw|AI|WVW|RVV|Opw|WWM|Gemw|Awb|Wom|Alw|Wth|Wvggz|APV)\s(\d+[a-z]{0,5}(?::\d+[a-z]{0,2})?)\b/g;
-  var NOTE = "Wetsartikelen zijn getoetst aan de tekst op wetten.overheid.nl (stand 14 november 2026). De APV is die van Amersfoort (geldend vanaf 24-07-2026, lokaleregelgeving.overheid.nl); in andere gemeenten zijn regels en nummers anders. Het OM-beleid is gelezen in de Aanwijzing Opiumwet 2015A003, de Aanwijzing huiselijk geweld 2022A001 en de Aanwijzing Jeugdstrafrecht 2026A002. De strafeis-tabellen van het OM, de Halt-strafmaten, de bijlagen bij de richtlijn rijden onder invloed, jurisprudentie, protocollen (zoals de wachttijd bij de ademanalyse) en de Wet politiegegevens zijn niet getoetst. Wetten wijzigen; controleer altijd de actuele tekst. Korpsvoorschriften, het Handelingskader en de leerstof van je opleiding gaan voor.";
+  var NOTE = "Bronnen: wetten.overheid.nl, de APV van Amersfoort (lokaleregelgeving.overheid.nl) en de aanwijzingen en richtlijnen op om.nl.";
 
   function lk(s) {
     return String(s == null ? "" : s).replace(LRE, function (m, tag, w, n) {
@@ -51,7 +51,7 @@
     window.addEventListener("scroll", function () { b.style.display = window.scrollY > 300 ? "block" : "none"; }, { passive: true });
     b.onclick = function () { window.scrollTo({ top: 0, behavior: "smooth" }); };
   }
-  function foot(w) { w.appendChild(el("div", "disc", "<b>Let op.</b> " + NOTE)); }
+  function foot(w) { w.appendChild(el("div", "src", NOTE)); }
 
   /* ---------- leerdocument ---------- */
   function block(b, M, idx) {

@@ -10,5 +10,5 @@ Open `index.html` in een browser, of bekijk de site via GitHub Pages.
 - `engine.js` en `engine.css`: de gedeelde motor en opmaak.
 - `build.mjs`: genereert de pagina's uit de data (`node build.mjs`).
 
-## Let op
-Wetsartikelen zijn getoetst aan wetten.overheid.nl, de APV is die van Amersfoort. Strafeis-tabellen van het OM, Halt-strafmaten, jurisprudentie en de Wet politiegegevens zijn niet getoetst. Controleer altijd de actuele tekst. Korpsvoorschriften en de leerstof van je opleiding gaan voor.
+## Bronnen
+Wetteksten: wetten.overheid.nl. Lokale regels: APV Amersfoort (lokaleregelgeving.overheid.nl). Beleid: aanwijzingen en richtlijnen van het Openbaar Ministerie (om.nl).

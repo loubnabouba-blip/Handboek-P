@@ -18,12 +18,11 @@
       ]]
     ] },
     { h: "Taak en gezag", b: [
-      ["p", "De politietaak staat in Pw 3: de <b>daadwerkelijke handhaving van de rechtsorde</b> en het <b>verlenen van hulp aan hen die dat behoeven</b>. Handhaving omvat preventie, het optreden bij verstoring en de opsporing."],
+      ["p", "De politietaak staat in Pw 3: de <b>daadwerkelijke handhaving van de rechtsorde</b> en het <b>verlenen van hulp aan hen die dat behoeven</b>."],
       ["p", "Wie bepaalt wat je doet? Dat hangt af van de taak waarin je werkt:"],
       ["tab", ["Taak", "Gezag", "Voorbeeld"], [
         ["Handhaving openbare orde en hulpverlening", "Burgemeester (Pw 11)", "Demonstratie begeleiden, evenement, noodbevel"],
-        ["Strafrechtelijke handhaving, opsporing", "Officier van justitie (Pw 12)", "Aanhouden, verhoren, beslag"],
-        ["Beheer (mensen, middelen)", "Korpschef", "Dienstrooster, uitrusting"]
+        ["Strafrechtelijke handhaving, opsporing", "Officier van justitie (Pw 12)", "Aanhouden, verhoren, beslag"]
       ]],
       ["tip", "Bij twijfel: vraag je af of er een strafbaar feit speelt. Zo ja, dan werk je onder gezag van de officier van justitie en geldt het Wetboek van Strafvordering. Zo nee, dan zit je in de bestuurlijke of hulpverlenende lijn."],
       ["p", "<b>Opsporingsambtenaren</b> zijn de ambtenaren die met opsporing zijn belast (Sv 141). Buitengewoon opsporingsambtenaren (boa) hebben beperkte bevoegdheden (Sv 142). De <b>hulpofficier van justitie</b> is een daartoe aangewezen politieambtenaar met extra bevoegdheden, bijvoorbeeld bij het ophouden voor onderzoek en het in verzekering stellen (Sv 56a, Sv 57)."]
@@ -32,8 +31,8 @@
       ["p", "Elke bevoegdheid die je gebruikt, moet door vier toetsen. Ze komen steeds terug, ook bij geweld."],
       ["dl", [
         ["Legaliteit", "Er is een wettelijke grondslag. Zonder wet geen bevoegdheid."],
-        ["Proportionaliteit", "De inbreuk staat in verhouding tot het doel. Je schiet niet met een kanon op een mug."],
-        ["Subsidiariteit", "Kan het doel ook met een lichter middel? Dan kies je dat. Pas als dat niet kan, ga je zwaarder."],
+        ["Proportionaliteit", "De inbreuk staat in verhouding tot het doel. Je schiet niet met een kanon op een mug (Pw 7 lid 7: redelijk en gematigd)."],
+        ["Subsidiariteit", "Kan het doel ook met een lichter middel? Dan kies je dat. Pas als dat niet kan, ga je zwaarder (Pw 7 lid 1)."],
         ["Doelmatigheid", "Het middel werkt ook echt voor het doel dat je wilt bereiken."]
       ]],
       ["truc", "Geheugensteun <b>BEVOEGD</b> (eigen hulpmiddel, niet uit de wet): <b>B</b>asis in de wet · <b>E</b>isen en voorwaarden gehaald · <b>V</b>erhouding (proportioneel) · <b>O</b>f lichter kan het ook (subsidiair) · <b>E</b>erst uitleggen of waarschuwen · <b>G</b>edocumenteerd, vastgelegd · <b>D</b>uur zo kort mogelijk."],
@@ -58,8 +57,8 @@
       ["tip", "Je grondslag moet je kunnen opschrijven in één zin: ‘Ik deed X, omdat Y, op grond van artikel Z.’ Lukt dat niet, dan weet je het nog niet zeker genoeg."]
     ] },
     { h: "Als het misgaat", b: [
-      ["p", "Een bevoegdheid die je onrechtmatig gebruikt, kan gevolgen hebben voor de zaak en voor jou. Het bewijs kan uitgesloten worden of de straf lager uitvallen (Sv 359a, vormverzuim). Bij vermeend onrechtmatig optreden kan de burger een klacht indienen of aangifte doen."],
-      ["p", "Een bevel van een meerdere biedt bescherming als je te goeder trouw handelt en het bevel binnen zijn gezag lag (Sr 43), maar blijf zelf nadenken. Voor geweld gelden eigen regels (Sr 42 en de Ambtsinstructie), zie het spiekbriefje Geweldsbeheersing."],
+      ["p", "Een bevoegdheid die je onrechtmatig gebruikt, kan gevolgen hebben voor de zaak en voor jou. Het bewijs kan uitgesloten worden of de straf lager uitvallen (Sv 359a, vormverzuim)."],
+      ["p", "Wie een feit begaat ter uitvoering van een ambtelijk bevel van het bevoegde gezag, is niet strafbaar. Een onbevoegd gegeven bevel heft de strafbaarheid niet op, tenzij de ondergeschikte het te goeder trouw als bevoegd gegeven beschouwde en de nakoming binnen de kring van zijn ondergeschiktheid lag (Sr 43). Voor geweld gelden eigen regels (Sr 42 en de Ambtsinstructie), zie onderdeel 12."],
       ["casus", "Casus: de jongere bij de tramhalte", "Het is 23.30 uur. Je ziet bij een tramhalte een jongere die zenuwachtig om zich heen kijkt en zijn jas dichthoudt. Er is geen melding. Je wilt hem controleren.", "Mag je hem staande houden en fouilleren?", "Nee, nog niet. Een nerveuze indruk en een dichte jas zijn geen concrete feiten voor een redelijk vermoeden van schuld (Sv 27). Je mag hem wel aanspreken en om uitleg of identiteit vragen als dat redelijkerwijs nodig is voor je taak. Ontstaat er verdenking, bijvoorbeeld doordat hij wegrent of iets laat vallen, dan verandert dat. Leg dan vast welke feiten dat waren."],
       ["quiz", "Wat is geen geldige grond voor verdenking?", ["Een getuige wijst iemand aan", "Een voorwerp van een inbraak ligt in zijn tas", "Hij ‘ziet er verdacht uit’", "Hij vlucht na een kreet om hulp"], 2, "‘Ziet er verdacht uit’ is een oordeel, geen feit. Verdenking vraagt om feiten of omstandigheden die je kunt aanwijzen en opschrijven."]
     ] }

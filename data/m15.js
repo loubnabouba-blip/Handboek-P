@@ -3,7 +3,7 @@
   titel: "Alcoholwet en horeca",
   kort: "Leeftijdsgrenzen, dronken gasten, vergunning en handhaving: wat controleer je in en rond horeca?",
   wetten: [["Alcoholwet", "BWBR0002458"], ["Gemeentewet", "BWBR0005416"], ["Wetboek van Strafrecht", "BWBR0001854"], ["APV Amersfoort", "https://lokaleregelgeving.overheid.nl/CVDR726883"]],
-  intro: "Horeca is een vaste plek voor overlast, geweld en jeugd. De Alcoholwet (voorheen Drank- en Horecawet) regelt vergunning, leeftijdsgrenzen en gedrag. De burgemeester is verantwoordelijk voor het toezicht in de gemeente. Dit onderdeel is getoetst aan de tekst van de Alcoholwet en Gemw 174a op wetten.overheid.nl. De lokale regels zijn uitgewerkt voor de APV van Amersfoort (geldend vanaf 24-07-2026). In een andere gemeente zijn die anders.",
+  intro: "Horeca is een vaste plek voor overlast, geweld en jeugd. De Alcoholwet (voorheen Drank- en Horecawet) regelt vergunning, leeftijdsgrenzen en gedrag. De burgemeester verleent de vergunning en wijst in zijn gemeente toezichthouders aan (Alw 3, Alw 41). De lokale regels zijn uitgewerkt voor de APV van Amersfoort (geldend vanaf 24-07-2026).",
   doelen: ["de leeftijdsgrens en de manier van vaststellen uitleggen", "de verboden bij dronken gasten en bij verstoring van de orde noemen", "weten wanneer een vergunning nodig is en wat de burgemeester kan doen", "het verschil benoemen tussen toezicht (bestuurlijk) en strafrecht"],
   leren: [
     { h: "Vergunning en toezicht", b: [
@@ -34,14 +34,14 @@
     ] },
     { h: "Controleren in horeca", b: [
       ["stap", [
-        ["Legitimeren en uitleg", "Zeg wie je bent en wat je controleert. Je hebt toegang tot publieke ruimten van horeca."],
+        ["Legitimeren en uitleg", "Toezicht op de Alcoholwet is opgedragen aan door de minister of de burgemeester aangewezen ambtenaren (Alw 41)."],
         ["Vergunning en leidinggevende", "Is er een leidinggevende die op het aanhangsel staat (Alw 24)? Hangt de vergunning er?"],
         ["Leeftijdsgrens", "Is de grens zichtbaar bij de ingang (Alw 20 lid 3)? Wordt de leeftijd gecontroleerd?"],
         ["Gasten en gedrag", "Dronken gasten, jongeren met alcohol, wapens, drugs, overlast bij de deur."],
-        ["Vastleggen en melden", "Leg vast wat je zag. Zet een bestuurlijke melding in bij de gemeente voor toezicht en handhaving. Strafbare feiten (mishandeling, drugs) pak je strafrechtelijk aan."]
+        ["Vastleggen en melden", "Leg vast wat je zag. Strafbare feiten (mishandeling, drugs) pak je strafrechtelijk aan. De burgemeester heeft eigen bevoegdheden (Alw 31, 32, 44a)."]
       ]],
       ["truc", "Controle in horeca in vier woorden: <b>vergunning, leeftijd, dronken, deur</b>."],
-      ["casus", "Casus: de portier en de dronken man", "Voor een café staat een man die zichtbaar dronken is en schreeuwt. De portier wil hem niet weren omdat hij ‘vaste klant’ is. Binnen staat nog een groepje jongeren dat duidelijk onder de 18 is en bier drinkt.", "Welke overtredingen zie je en wat doe je?", "De exploitant laat een dronken persoon toe en schenkt aan minderjarigen: Alw 20 lid 4 en Alw 20 lid 1. Leg de feiten vast, spreek de exploitant en de leidinggevende aan en meld bestuurlijk aan de gemeente: de burgemeester kan een bestuurlijke boete opleggen (Alw 44a). De dronken man op straat is een overtreding (Sr 430b); bij gevaar of overlast handel je zorgzaam. De minderjarigen zelf overtreden Alw 45 als ze alcohol aanwezig hebben op een publieke plaats; binnen het horecabedrijf is dat een zaak voor de exploitant."]
+      ["casus", "Casus: de portier en de dronken man", "Voor een café staat een man die zichtbaar dronken is en schreeuwt. De portier wil hem niet weren omdat hij ‘vaste klant’ is. Binnen staat nog een groepje jongeren dat duidelijk onder de 18 is en bier drinkt.", "Welke overtredingen zie je en wat doe je?", "De exploitant laat een dronken persoon toe en schenkt aan minderjarigen: Alw 20 lid 4 en Alw 20 lid 1. Leg de feiten vast. De burgemeester kan voor Alw 20 lid 1 een bestuurlijke boete opleggen (Alw 44a) en bij het niet nakomen van de regels de vergunning intrekken of schorsen (Alw 31 lid 2, Alw 32). De dronken man op straat is een overtreding (Sr 430b); bij gevaar of overlast handel je zorgzaam. De minderjarigen zelf overtreden Alw 45 als ze alcohol aanwezig hebben op een publieke plaats; binnen het horecabedrijf is dat een zaak voor de exploitant."]
     ] },
     { h: "APV Amersfoort: horeca en alcohol", b: [
       ["tab", ["Artikel", "Wat de APV zegt"], [
@@ -86,7 +86,7 @@
       b: { q: "Is er een kennelijk dronken gast binnen of op het terras?", o: [["Ja", "d"], ["Nee", "c"]] },
       c: { q: "Ontbreekt een leidinggevende of een vergunning?", o: [["Ja", "v"], ["Nee", "o"]] },
       m: { r: "Alw 20 lid 1 voor de exploitant als hij verstrekte. Alw 45 voor de minderjarige met alcohol op publieke plaats, Alw 45a voor de volwassene die verstrekte. Leg vast en meld de gemeente.", k: "ok" },
-      d: { r: "Alw 20 lid 4: kennelijk dronken persoon toegelaten. Spreek de exploitant aan, leg vast en meld aan de gemeente (Alw 44a).", k: "ok" },
+      d: { r: "Alw 20 lid 4: kennelijk dronken persoon toegelaten. Leg vast. De burgemeester kan de vergunning intrekken of schorsen als de regels niet worden nageleefd (Alw 31 lid 2, Alw 32).", k: "ok" },
       v: { r: "Alw 3 (geen vergunning) of Alw 24 (geen leidinggevende). Leg vast en meld aan de gemeente.", k: "ok" },
       o: { r: "Geen Alcoholwet-overtreding. Let op overlast en strafbare feiten. Leg overlast vast voor bestuurlijke rapportage.", k: "warn" }
     } },
@@ -105,7 +105,7 @@
       ["Dronken gast als dader zien", "Het verbod in Alw 20 lid 4 richt zich op de exploitant die toelaat."],
       ["Leeftijd niet vaststellen", "Zonder vaststelling mag je geen 18+ aannemen, tenzij onmiskenbaar."],
       ["Minderjarige en exploitant verwarren", "De minderjarige overtreedt Alw 45, de exploitant Alw 20."],
-      ["Geen melding", "Zonder bestuurlijke melding kan de gemeente niet optreden."]
+      ["Toezicht vergeten", "Toezicht op de Alcoholwet ligt bij aangewezen ambtenaren (Alw 41)."]
     ],
     flits: [
       ["Vergunning", "Wie geeft de vergunning (Alw 3)?", "De burgemeester."],

@@ -13,17 +13,17 @@
         ["2. Staande houden", "Tijdelijk tegenhouden, identiteit vragen (Sv 52)", "Verdenking (Sv 27)", "Zo kort als nodig"],
         ["3. Aanhouden", "Van de vrijheid beroven en meenemen (Sv 53, Sv 54)", "Heterdaad, of op bevel van de officier van justitie bij misdrijf met voorlopige hechtenis", "Naar het bureau, onverwijld"],
         ["4. Ophouden voor onderzoek", "Op het bureau vasthouden voor onderzoek en verhoor (Sv 56a)", "Verdenking, onderzoek nodig", "Max. 9 uur bij misdrijf met voorlopige hechtenis, anders 6 uur (nacht telt niet mee)"],
-        ["5. Inverzekeringstelling", "Verdere vasthouding voor het onderzoek (Sv 57, Sv 58)", "Misdrijf met voorlopige hechtenis en dringend onderzoeksbelang", "Max. 3 dagen, verlengbaar met 3 dagen"],
+        ["5. Inverzekeringstelling", "Verdere vasthouding voor het onderzoek (Sv 57, Sv 58)", "Feit waarvoor voorlopige hechtenis is toegelaten, in het belang van het onderzoek", "Max. 3 dagen, verlengbaar met 3 dagen"],
         ["6. Bewaring", "Rechter-commissaris beslist (Sv 63, Sv 64)", "Ernstige bezwaren en een grond", "Max. 14 dagen"]
       ]],
       ["truc", "Zeg het in drie woorden: <b>houd, neem, bewaar</b>. Eerst staande houden, dan aanhouden en meenemen, dan op het bureau ophouden en daarna in bewaring (eerst door de hulpofficier of officier, later door de rechter-commissaris)."],
-      ["let", "Dit zijn de standaardregels. Voor minderjarigen, vreemdelingen of bijzondere feiten gelden aanvullende regels en soms andere termijnen. Controleer die in de wet en je korpsvoorschriften."]
+      ["let", "Voor minderjarigen gelden aanvullende regels en andere termijnen (zie onderdeel 14)."]
     ] },
     { h: "Staande houden en identiteit", b: [
       ["p", "Staande houden (Sv 52): iedere opsporingsambtenaar mag de identiteit van de verdachte vaststellen en hem daartoe staande houden. Je hebt <b>verdenking</b> nodig (Sv 27). Zonder verdenking kun je iemand aanspreken, maar niet tegenhouden."],
       ["p", "Voor de identiteit vraag je (Sv 27a) naar naam, voornamen, geboorteplaats, geboortedatum, het adres in de basisregistratie personen en het feitelijke verblijfsadres. Het vaststellen omvat ook het onderzoeken van een identiteitsbewijs. Toon je legitimatie en leg uit waarom je hem staande houdt."],
       ["p", "<b>Identificatieplicht</b>: iedereen vanaf 14 jaar moet zich op vordering kunnen identificeren als dat redelijkerwijs nodig is voor de uitoefening van je taak (Pw 8, Wet op de identificatieplicht art. 2). Dat geldt dus ook zonder verdenking, maar de plicht is beperkt tot het tonen van een geldig document."],
-      ["vs", "Staande houden mag bij", ["Verdenking van een strafbaar feit (Sv 27)", "Een melding met signalement dat past", "Heterdaad: iemand wordt betrapt of achtervolgd"], "Staande houden mag niet bij", ["Alleen een nerveuze indruk", "Alleen de afkomst of het uiterlijk", "Een routinecontrole zonder aanleiding (dan: aanspreken en ID vragen)"]],
+      ["vs", "Staande houden mag bij", ["Verdenking van een strafbaar feit (Sv 27)", "Een melding met signalement dat past", "Heterdaad: tijdens of terstond na het feit"], "Staande houden mag niet bij", ["Alleen een nerveuze indruk", "Alleen de afkomst of het uiterlijk", "Een routinecontrole zonder aanleiding (dan: aanspreken en ID vragen)"]],
       ["tip", "Begin met uitleg: ‘Goedenavond, ik ben agent X. Ik houd u staande, omdat u past bij het signalement van een inbreker die zojuist hier weggerend is. Mag ik uw identiteitsbewijs?’ Zo weet de burger wat er speelt en blijft het rustig."]
     ] },
     { h: "Aanhouden: heterdaad en buiten heterdaad", b: [
@@ -33,7 +33,7 @@
         ["Buiten heterdaad", "Op bevel van de officier van justitie mag de opsporingsambtenaar de verdachte van een misdrijf waarvoor voorlopige hechtenis is toegelaten aanhouden (Sv 54). Kan het bevel niet worden afgewacht, dan heeft de hulpofficier die bevoegdheid. Voorlopige hechtenis kan bij misdrijven met 4 jaar of meer en bij een lijst aangewezen feiten (Sv 67)."]
       ]],
       ["p", "<b>Hoe houd je aan?</b> Zeg dat de verdachte is aangehouden, voor welk feit, en wijs hem op het zwijgrecht (cautie, Sv 29 lid 2). Tast af op veiligheid (Pw 7 lid 3 of 4). Voor het onderzoek aan kleding of lichaam van de aangehouden verdachte geldt Sv 56 (de hulpofficier of officier van justitie bepaalt dat) en voor het in beslag nemen van wat hij bij zich heeft Sv 95. Gebruik geweld of boeien alleen als de Ambtsinstructie dat toelaat."],
-      ["let", "Een burger die op heterdaad aanhoudt, moet de verdachte <b>onverwijld</b> bij een opsporingsambtenaar afleveren. Hij mag hem niet zelf vasthouden of verhoren."],
+      ["let", "Een burger die op heterdaad aanhoudt, moet de verdachte <b>onverwijld</b> bij een opsporingsambtenaar afleveren."],
       ["casus", "Casus: de winkelbeveiliger", "Een beveiliger van een supermarkt houdt een man vast die een fles whisky in zijn jas deed en zonder te betalen naar buiten liep. De beveiliger belt 112. Jij komt ter plaatse.", "Wat doe je met de aangehouden man?", "De aanhouding door de beveiliger was toegestaan, want het was heterdaad (Sv 53). Jij neemt de verdachte over als opsporingsambtenaar, controleert de identiteit, wijst hem op zijn zwijgrecht en brengt hem, als aanhouding nodig is, naar het bureau. Voor een kleine diefstal kun je ook een andere afdoening kiezen. Leg de verklaring van de beveiliger vast als getuige."]
     ] },
     { h: "Op het bureau: ophouden, in verzekering stellen, bewaring", b: [
@@ -49,9 +49,9 @@
       ["truc", "Tel de nacht niet mee: <b>00-09 telt niet</b>. Reken eerst uit hoeveel uur je vóór middernacht hebt, trek dat af van 9, en tel de rest vanaf 09.00 uur."]
     ] },
     { h: "Rechten van de verdachte", b: [
-      ["ul", ["<b>Cautie</b> (Sv 29 lid 2): voor het verhoor erop wijzen dat de verdachte niet tot antwoorden verplicht is.", "<b>Raadsman</b> (Sv 28): recht op een advocaat en op een consult vóór het eerste verhoor. Bij zwaardere feiten ook op aanwezigheid bij het verhoor. Wijs hierop in een taal die de verdachte begrijpt.", "<b>Tolk en vertaling</b> als de verdachte de taal niet voldoende spreekt.", "<b>Arts</b> als de verdachte medische zorg nodig heeft. Gebruik de arrestantenzorg.", "<b>Naaste informeren</b> en bij een vreemdeling het consulaat (consulaire notificatie).", "<b>Minderjarigen</b>: informeer ouders of voogd en regel bijstand. Gebruik de regels voor jeugdigen in je korpsvoorschrift."]],
-      ["let", "Een verdachte verhoren zonder cautie of zonder de kans op consult kan het hele verhoor onbruikbaar maken als bewijs. Dat is een van de meest gemaakte fouten."],
-      ["quiz", "Wat moet je vóór het verhoor doen?", ["De verdachte wijzen op zijn zwijgrecht (cautie)", "De verdachte naar de rechter-commissaris brengen", "Eerst de inverzekeringstelling bevelen", "Zijn advocaat om toestemming vragen"], 0, "Cautie (Sv 29 lid 2) vóór het verhoor. Daarnaast het recht op consult met een advocaat (Sv 28). De inverzekeringstelling is een aparte beslissing."]
+      ["ul", ["<b>Mededeling van het feit</b>: bij staandehouding of aanhouding wordt medegedeeld ter zake van welk strafbaar feit iemand verdachte is (Sv 27c lid 1). Onverwijld na de aanhouding, en in elk geval voor het eerste verhoor, krijgt de aangehouden verdachte schriftelijk mededeling van zijn rechten (Sv 27c lid 3).", "<b>Cautie</b> (Sv 29 lid 2): voor het verhoor wordt de verdachte medegedeeld dat hij niet tot antwoorden verplicht is. Die mededeling komt in het proces-verbaal.", "<b>Raadsman</b>: de verdachte heeft recht op bijstand van een raadsman (Sv 28 lid 1). Bij een aangehouden verdachte van een feit waarvoor voorlopige hechtenis is toegelaten, wordt desgevraagd de raad voor rechtsbijstand ingeschakeld voor een raadsman (Sv 28b lid 2). Voor een kwetsbare verdachte of bij een misdrijf met 12 jaar of meer gebeurt dat altijd (Sv 28b lid 1).", "<b>Consult voor het eerste verhoor</b>: de aangehouden verdachte voor wie een raadsman beschikbaar is, krijgt de gelegenheid met hem een onderhoud te hebben van ten hoogste een half uur, door de hulpofficier met ten hoogste een half uur te verlengen (Sv 28c lid 1).", "<b>Raadsman bij het verhoor</b>: op verzoek van de verdachte kan de raadsman het verhoor bijwonen en daaraan deelnemen (Sv 28d lid 1).", "<b>Tolk</b>: wie de Nederlandse taal niet of onvoldoende beheerst, mag zich laten bijstaan door een tolk (Sv 27 lid 4).", "<b>Naaste of consulaat</b>: op verzoek van de aangehouden verdachte informeert de hulpofficier onverwijld een door hem aangeduide persoon, en bij een buitenlandse nationaliteit de consulaire post (Sv 27e).", "<b>Minderjarigen</b>: zie onderdeel 14 (Sv 488aa e.v.)."]],
+      ["let", "Een fout in de voorschriften tijdens het voorbereidend onderzoek kan leiden tot bewijsuitsluiting, strafvermindering of niet-ontvankelijkheid (Sv 359a)."],
+      ["quiz", "Wat moet je vóór het verhoor doen?", ["De verdachte wijzen op zijn zwijgrecht (cautie)", "De verdachte naar de rechter-commissaris brengen", "Eerst de inverzekeringstelling bevelen", "Zijn advocaat om toestemming vragen"], 0, "Cautie (Sv 29 lid 2) vóór het verhoor. Daarnaast het recht op consult met een raadsman (Sv 28c). De inverzekeringstelling is een aparte beslissing."]
     ] }
   ],
   spiek: {
@@ -74,11 +74,10 @@
         ["Vastleggen", "Tijd, plaats, grond en wat de verdachte zei, zonder je eigen duiding."]
       ]],
       ["Rechten", [
-        ["Advocaat", "Consult voor eerste verhoor (Sv 28)."],
-        ["Tolk", "Bij onvoldoende taalbeheersing."],
-        ["Arts", "Bij medische klachten of medicijngebruik."],
-        ["Naaste en consulaat", "Informeren, bij vreemdelingen ook het consulaat."],
-        ["Minderjarig", "Ouders of voogd informeren, bijstand regelen."]
+        ["Raadsman", "Recht op bijstand (Sv 28). Consult voor het eerste verhoor, ten hoogste een half uur (Sv 28c). Bijwonen van het verhoor op verzoek (Sv 28d)."],
+        ["Tolk", "Bij onvoldoende taalbeheersing (Sv 27 lid 4)."],
+        ["Naaste en consulaat", "Op verzoek informeren, bij een buitenlandse nationaliteit ook de consulaire post (Sv 27e)."],
+        ["Minderjarig", "Zie onderdeel 14 (Sv 488aa e.v.)."]
       ]]
     ],
     boom: { titel: "Mag ik hem aanhouden?", start: "a", n: {
@@ -104,7 +103,7 @@
       ["Fouilleren en veiligheid", "Op de juiste grondslag, ook voor de veiligheid van de verdachte?"],
       ["Onverwijld naar het bureau", "Zonder omwegen, geen onnodige vertraging."],
       ["Tijd bijhouden", "Aanhoudingstijd, eindtijd van de 9 uur, nachtregel."],
-      ["Rechten gegeven", "Advocaat, tolk, arts, naaste, ouders bij minderjarigen."]
+      ["Rechten gegeven", "Mededeling van het feit, cautie, raadsman en consult, tolk, naaste of consulaat, ouders bij minderjarigen."]
     ],
     checkTitel: "Aanhoudingsrun: loop dit af bij elke aanhouding.",
     valk: [
@@ -126,7 +125,7 @@
       ["Termijnen", "Hoe lang duurt de inverzekeringstelling?", "Maximaal 3 dagen, bij dringende noodzakelijkheid één keer door de officier van justitie verlengbaar met maximaal 3 dagen (Sv 57, Sv 58)."],
       ["Termijnen", "Wanneer moet de verdachte voor de rechter-commissaris?", "Uiterlijk binnen 3 dagen en 18 uur na de aanhouding (Sv 59a)."],
       ["Termijnen", "Hoe lang is bewaring?", "Maximaal 14 dagen, door de rechter-commissaris (Sv 63, Sv 64)."],
-      ["Rechten", "Welke twee rechten horen bij het begin van het verhoor?", "De cautie (Sv 29 lid 2) en het recht op consult met een advocaat (Sv 28)."],
+      ["Rechten", "Welke twee rechten horen bij het begin van het verhoor?", "De cautie (Sv 29 lid 2) en het recht op een onderhoud met de raadsman van ten hoogste een half uur (Sv 28c)."],
       ["Rechten", "Wat doe je bij een minderjarige verdachte?", "Ouders of voogd informeren en bijstand regelen, volgens je korpsvoorschrift."],
       ["Identiteit", "Vanaf welke leeftijd geldt de identificatieplicht?", "Vanaf 14 jaar: op vordering identiteitsbewijs tonen als dat redelijkerwijs nodig is voor je taak (Wet op de identificatieplicht)."]
     ]

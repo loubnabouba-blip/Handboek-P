@@ -3,7 +3,7 @@
   titel: "Geweldsbeheersing",
   kort: "Wanneer mag je geweld gebruiken, met welk middel, hoe waarschuw je en wat meld je?",
   wetten: [["Ambtsinstructie", "BWBR0006589"], ["Politiewet 2012", "BWBR0031788"], ["Wetboek van Strafrecht", "BWBR0001854"]],
-  intro: "Geweld is de zwaarste bevoegdheid die je hebt. Voor elk middel geldt een eigen lijst van gronden, en voor allemaal dezelfde zes toetsen. Dit onderdeel is getoetst aan de tekst van de Ambtsinstructie (AI) en Pw 7 op wetten.overheid.nl. Het vervangt het losse spiekbriefje Geweldsbeheersing niet in de opleiding: leerstof en korpsvoorschriften gaan voor.",
+  intro: "Geweld is de zwaarste bevoegdheid die je hebt. Voor elk middel geldt een eigen lijst van gronden, en voor allemaal dezelfde zes toetsen. De bron is de Ambtsinstructie voor de politie, de Politiewet 2012 (Pw 7) en Sr 42.",
   doelen: ["de zes toetsen noemen die voor elk geweldgebruik gelden", "per geweldmiddel de gronden en de waarschuwing noemen", "vrijheidsbeperkende middelen en hulpmiddelen toepassen en melden", "weten wat je meldt, hoe en aan wie"],
   leren: [
     { h: "Het kader", b: [
@@ -25,7 +25,7 @@
         ["5. Waarschuwen", "Zo mogelijk vooraf, met het middel genoemd. Zie de tabel per middel."],
         ["6. Melden", "Aanwenden van geweld meld je schriftelijk en mondeling aan de hulpofficier van justitie die de registratie doet (AI 17)."]
       ]],
-      ["truc", "Eén zin voor de toetsen: <b>Bevoegd, Toegekend, Redelijk, Gematigd, Gewaarschuwd, Gemeld</b> (BTRGWG). Mist er één, dan is het antwoord vaak fout."],
+      ["truc", "Eén zin voor de toetsen: <b>Bevoegd, Toegekend, Redelijk, Gematigd, Gewaarschuwd, Gemeld</b> (BTRGWG)."],
       ["casus", "Casus: onder leiding van een meerdere", "Je werkt in een ploeg onder leiding van een ter plaatse aanwezige meerdere en wilt de wapenstok gebruiken.", "Mag je dat zomaar?", "Nee. Bij optreden onder leiding van een ter plaatse aanwezige meerdere gebruik je alleen geweld na zijn uitdrukkelijke last, en hij geeft het geweldmiddel aan (AI 5). Uitzonderingen: de meerdere heeft vooraf anders bepaald, of je neemt voor je veiligheid het vuurwapen ter hand en de last is niet af te wachten. De meerdere meldt dan ook, jij geeft desgevraagd inlichtingen (AI 17 lid 2)."]
     ] },
     { h: "Per middel: gronden en waarschuwing", b: [
@@ -47,7 +47,7 @@
         ["Bij hulpverlening (AI 22b)", "Persoon op het bureau voor hulpverlening", "Alleen op de veiligheidsgrond, mondafscherming ook"],
         ["Hulpmiddelen jegens ingeslotenen (AI 35a)", "In de cel of bij vervoer of verplaatsing van een ingeslotene", "Na toestemming van de hulpofficier van justitie voor ten hoogste 24 uur. Bij spoed beslis je zelf voor ten hoogste 3 uur, informeer je de hulpofficier onverwijld en de arts"]
       ]],
-      ["let", "Handboeien zijn voor vervoer of verplaatsing. In de cel doe je ze af en vervang je ze door de hulpmiddelen van AI 35a, als daar grond voor is."],
+      ["let", "Handboeien (AI 22) gelden ten behoeve van vervoer of verplaatsing. Voor beperking van de bewegingsvrijheid van een ingeslotene in de cel of bij vervoer is AI 35a de grondslag."],
       ["truc", "Boeien: <b>vervoer, vlucht of veiligheid, vastleggen</b>. Zonder die woorden geen boeien."]
     ] },
     { h: "Melden", b: [
@@ -55,7 +55,6 @@
         ["Aanwenden van geweld, geweldmiddel, vuurwapen ter hand nemen", "Schriftelijk (aard, middel, gevolgen) en mondeling (feiten, omstandigheden, redenen) aan de hulpofficier van justitie die de registratie doet, zo spoedig mogelijk (AI 17)"],
         ["Handboeien, mondafscherming", "Onverwijld schriftelijk aan de hulpofficier van justitie, met redenen (AI 23)"],
         ["Veiligheidsfouillering", "Onverwijld schriftelijk aan de hulpofficier van justitie, met redenen (AI 21)"],
-        ["Dreigen of waarschuwen", "Geen geweldsmelding. Dat is geen aanwenden van geweld"],
         ["Meerdere gaf last", "De meerdere meldt. Jij geeft de hulpofficier desgevraagd inlichtingen (AI 17 lid 2)"]
       ]],
       ["quiz", "Je gebruikt handboeien zonder kracht te zetten. Moet je dat melden?", ["Nee, het is geen geweld", "Ja, onverwijld schriftelijk aan de hulpofficier met redenen", "Alleen als de verdachte klaagt", "Alleen na 24 uur"], 1, "Ook zonder kracht meld je handboeien en mondafscherming onverwijld schriftelijk, met de redenen (AI 23)."]
@@ -95,20 +94,19 @@
       b: { q: "Is er een andere wettelijke grond (aanhouden, onttrekken, dier, enzovoort) en is het middel jou toegekend en ben je erin geoefend?", o: [["Ja", "c"], ["Nee", "x"]] },
       c: { q: "Kan het doel ook met een lichter middel worden bereikt?", o: [["Ja", "l"], ["Nee", "d"]] },
       af: { r: "Afweer is bij elk middel een eigen grond (bijvoorbeeld AI 7 lid 1 onder f). Gebruik het middel dat past en blijf redelijk en gematigd. Waarschuw zo mogelijk, en meld.", k: "ok" },
-      x: { r: "Geen geweld. Je hebt geen grond of het middel mag je niet gebruiken. Blijf bij aanspreken of lichtere dwangmiddelen, en vraag hulp.", k: "no" },
-      l: { r: "Kies het lichtere middel (Pw 7 lid 1: niet anders te bereiken). Meld dat je niet hoefde door te schalen.", k: "warn" },
+      x: { r: "Geen geweld. Zonder grond of zonder toegekend en geoefend middel is gebruik niet toegestaan (Pw 7 lid 1, AI 4).", k: "no" },
+      l: { r: "Kies het lichtere middel (Pw 7 lid 1: niet anders te bereiken).", k: "warn" },
       d: { r: "Geweld mag, redelijk en gematigd (Pw 7 lid 7). Waarschuw met het middel genoemd, voer uit en meld aan de hulpofficier (AI 17).", k: "ok" }
     } },
     tabel: [["Wie meldt wat", ["Situatie", "Hoe", "Aan wie"], [
       ["Geweld aangewend", "Schriftelijk en mondeling", "Hulpofficier van justitie (AI 17)"],
       ["Handboeien of mondafscherming", "Onverwijld schriftelijk", "Hulpofficier (AI 23)"],
       ["Veiligheidsfouillering", "Onverwijld schriftelijk", "Hulpofficier (AI 21)"],
-      ["Alleen gedreigd of gewaarschuwd", "Geen geweldsmelding", "-"]
     ]]],
     check: [
       ["Bevoegd?", "Rechtmatige bediening en een grond voor dit middel."],
       ["Toegekend en geoefend?", "AI 4."],
-      ["Redelijk", "Kan het lichter?"],
+      ["Redelijk", "Pw 7 lid 1: het doel kan niet op een andere wijze worden bereikt."],
       ["Gematigd", "Hoeveelheid en duur passend."],
       ["Waarschuwen", "Middel genoemd, zo mogelijk vooraf."],
       ["Melden", "AI 17, 21 of 23, afhankelijk van wat je deed."]
@@ -116,7 +114,7 @@
     checkTitel: "Loop dit af bij elke geweldssituatie.",
     valk: [
       ["Afweer als losse bevoegdheid", "Afweer staat als grond bij elk middel."],
-      ["Pepperspray bij passief verzet", "Blijven zitten is geen onttrekken. Probeer eerst lichtere technieken."],
+      ["Pepperspray zonder grond", "AI 12a noemt vier gronden: aanhouden gevaarlijke persoon, onttrekken, agressieve dieren, afweer."],
       ["Vuurwapen op een vluchtende dief", "Gronden voor het vuurwapen zijn beperkt tot levensbedreigend geweld of een zwaar misdrijf met extra eis."],
       ["Schokmodus ter aanhouding", "De schokmodus van het SSW is alleen voor dieren en afweer."],
       ["Waarschuwen zonder het middel te noemen", "Noem het middel dat je gaat gebruiken."],
@@ -124,7 +122,7 @@
     ],
     flits: [
       ["Kader", "Wat zegt Pw 7 lid 1?", "Geweld of vrijheidsbeperkende middelen mogen als het doel dit rechtvaardigt, mede gelet op de gevaren, en het niet anders kan. Zo mogelijk eerst waarschuwen."],
-      ["Kader", "Wat is het verschil tussen redelijk en gematigd (Pw 7 lid 7)?", "Redelijk: subsidiariteit, het gekozen middel. Gematigd: proportionaliteit, de hoeveelheid."],
+      ["Kader", "Wat is het verschil tussen redelijk en gematigd (Pw 7 lid 7)?", "Pw 7 lid 7: de uitoefening moet in verhouding tot het doel redelijk en gematigd zijn. Doorgaans uitgelegd als subsidiariteit (redelijk) en proportionaliteit (gematigd)."],
       ["Kader", "Wat is geweld volgens AI 1?", "Elke dwangmatige kracht van meer dan geringe betekenis op personen of zaken."],
       ["Kader", "Wat eist AI 4?", "Het middel is jou toegekend voor die taak en je bent erin geoefend."],
       ["Kader", "Wat doe je onder leiding van een meerdere (AI 5)?", "Geweld alleen na zijn uitdrukkelijke last, met het middel genoemd. Uitzonderingen: vooraf anders bepaald, of vuurwapen ter hand voor je veiligheid als de last niet af te wachten is."],
