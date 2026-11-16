@@ -26,7 +26,7 @@
     { h: "Vermogensdelicten", b: [
       ["tab", ["Feit", "Artikel", "Max. straf", "Kern"], [
         ["Diefstal", "Sr 310", "4 jaar", "Wegnemen van een goed dat (deels) aan een ander toebehoort, met oogmerk van wederrechtelijke toe-eigening"],
-        ["Gekwalificeerde diefstal", "Sr 311", "6 jaar", "Diefstal met een verzwarende omstandigheid: inbraak, valse sleutel, ’s nachts bij een woning, met meer personen"],
+        ["Gekwalificeerde diefstal", "Sr 311", "6 jaar", "Diefstal met een verzwarende omstandigheid, bijvoorbeeld door twee of meer verenigde personen, in een woning of op een besloten erf waarop een woning staat door iemand die zich daar buiten weten of tegen de wil van de rechthebbende bevindt, of door braak, verbreking, inklimming of valse sleutels"],
         ["Diefstal met geweld", "Sr 312", "9 jaar", "Diefstal voorafgegaan, vergezeld of gevolgd door geweld of bedreiging met geweld"],
         ["Afpersing", "Sr 317", "9 jaar", "Met geweld of bedreiging iemand dwingen iets af te geven of te doen, met oogmerk te bevoordelen"],
         ["Verduistering", "Sr 321", "3 jaar", "Wederrechtelijk toeëigenen van een goed dat je al in bezit hebt (leen, bewaring), anders dan door misdrijf"],
@@ -43,11 +43,11 @@
         ["Zware mishandeling", "Sr 302", "8 jaar", "Opzettelijk zwaar lichamelijk letsel toebrengen"],
         ["Doodslag", "Sr 287", "25 jaar", "Opzettelijk een ander van het leven beroven"],
         ["Moord", "Sr 289", "Levenslang of tot 30 jaar", "Doodslag met voorbedachten rade"],
-        ["Openlijke geweldpleging", "Sr 141", "4 jaar en 6 maanden (zwaar letsel 6, dood 9)", "Openlijk, in vereniging, geweld tegen personen of goederen"],
+        ["Openlijke geweldpleging", "Sr 141", "4 jaar en 6 maanden (met enig letsel of vernieling 6, zwaar letsel 9, dood 12)", "Openlijk, in vereniging, geweld tegen personen of goederen"],
         ["Bedreiging", "Sr 285", "3 jaar (bij bepaalde vormen 4 of 6)", "Bedreigen met een ernstig misdrijf (leven, zwaar letsel, brandstichting) met het oogmerk vrees aan te jagen"],
         ["Stalking", "Sr 285b", "3 jaar", "Stelselmatig inbreuk op iemands persoonlijke levenssfeer, met het oogmerk iemand te dwingen of vrees aan te jagen"]
       ]],
-      ["let", "Maximumstraffen veranderen. Gebruik ze om te weten of voorlopige hechtenis mogelijk is (4 jaar of meer, Sv 67 lid 1), maar controleer het actuele artikel."],
+      ["let", "Voorlopige hechtenis is toegelaten bij een misdrijf met een maximumstraf van 4 jaar of meer (Sv 67 lid 1 onder a)."],
       ["casus", "Casus: de vechtpartij voor de kroeg", "Drie mannen slaan voor een café een vierde man tegen de grond. Hij heeft een bloedneus en een gebroken jukbeen. Een getuige zegt dat iedereen meedeed.", "Welke feiten komen in beeld?", "Openlijke geweldpleging (Sr 141): openlijk, in vereniging, geweld tegen een persoon. Daarnaast mishandeling (Sr 300) of, bij zwaar letsel, zware mishandeling (Sr 302). Een gebroken jukbeen kan zwaar lichamelijk letsel zijn, dat toets je aan het medisch dossier. Aanhouden kan buiten heterdaad omdat voorlopige hechtenis is toegelaten (Sv 67 lid 1)."]
     ] },
     { h: "Feiten tegen ambtenaren en de openbare orde", b: [
@@ -59,18 +59,18 @@
         ["Niet gehoorzamen bevel", "Sr 184", "3 maanden", "Opzettelijk niet voldoen aan een bevel dat een ambtenaar rechtmatig gaf"],
         ["Openbare dronkenschap", "Sr 430b", "12 dagen hechtenis (overtreding)", "Zich in kennelijke staat van dronkenschap op de openbare weg bevinden"]
       ]],
-      ["let", "Voor wederspannigheid, Sr 184 en strafverzwaring moet je optreden rechtmatig zijn en je moet in de uitoefening van je taak handelen. Je legitimatie en uitleg tellen mee."],
-      ["tip", "Wordt een collega mishandeld of bedreigd, doe dan altijd aangifte of laat die opnemen. Leg vast dat het feit is gepleegd tijdens dienst."]
+      ["let", "Sr 180 vraagt dat de ambtenaar werkzaam is in de rechtmatige uitoefening van zijn bediening. Sr 267 en Sr 304 sub 3 gelden bij handelen gedurende of ter zake van de rechtmatige uitoefening van die bediening."],
+      ["tip", "Wordt een collega mishandeld of beledigd, leg dan vast dat het feit is gepleegd gedurende of ter zake van de rechtmatige uitoefening van zijn bediening (Sr 304 sub 3, Sr 267)."]
     ] },
     { h: "Poging, voorbereiding, deelneming en uitsluiting", b: [
       ["dl", [
         ["Poging (Sr 45)", "Het voornemen heeft zich door een begin van uitvoering geopenbaard, maar het feit werd niet voltooid. Het strafmaximum wordt met een derde verminderd. Alleen bij misdrijven."],
-        ["Voorbereiding (Sr 46)", "Alleen strafbaar bij bepaalde ernstige misdrijven. Denk aan wapens of voorwerpen om zwaar misdrijf te plegen."],
-        ["Medeplegen (Sr 47)", "Bewuste en nauwe samenwerking tijdens het feit."],
-        ["Medeplichtigheid (Sr 48)", "Opzettelijk behulpzaam zijn vóór of bij het feit. Lagere straf dan de dader."],
+        ["Voorbereiding (Sr 46)", "Strafbaar bij misdrijven met een strafmaximum van 8 jaar of meer, als de dader opzettelijk voorwerpen, stoffen, informatiedragers, ruimten of vervoermiddelen bestemd tot het begaan van dat misdrijf verwerft, vervaardigt, invoert, doorvoert, uitvoert of voorhanden heeft. Het maximum wordt met de helft verminderd."],
+        ["Medeplegen (Sr 47)", "Daders zijn zij die het feit plegen, doen plegen of medeplegen, en zij die het opzettelijk uitlokken."],
+        ["Medeplichtigheid (Sr 48)", "Opzettelijk behulpzaam zijn bij het plegen van het misdrijf, of opzettelijk gelegenheid, middelen of inlichtingen verschaffen. Het strafmaximum wordt met een derde verminderd (Sr 49)."],
         ["Noodweer (Sr 41)", "Verdediging tegen een ogenblikkelijke wederrechtelijke aanranding. Is het geweld te ver gegaan door hevige gemoedsbeweging, dan kan noodweerexces gelden."],
-        ["Overmacht (Sr 40)", "Je werd gedwongen door een kracht die je niet kon weerstaan."],
-        ["Ambtelijk bevel (Sr 43)", "Wie te goeder trouw een onbevoegd bevel uitvoert binnen zijn ondergeschiktheid is niet strafbaar."]
+        ["Overmacht (Sr 40)", "Niet strafbaar is wie een feit begaat waartoe hij door overmacht is gedrongen."],
+        ["Ambtelijk bevel (Sr 43)", "Niet strafbaar is wie een feit begaat ter uitvoering van een ambtelijk bevel van het bevoegde gezag. Een onbevoegd bevel heft de strafbaarheid niet op, tenzij de ondergeschikte het te goeder trouw als bevoegd gegeven beschouwde en de nakoming binnen de kring van zijn ondergeschiktheid lag."]
       ]],
       ["quiz", "Iemand zet een boutenschaar op het kettingslot van een fiets, maar het slot geeft niet mee en hij loopt weg. Wat is dit?", ["Geen strafbaar feit", "Poging tot diefstal", "Voltooide diefstal", "Voorbereiding"], 1, "Er is een begin van uitvoering (het knippen) en het feit is niet voltooid: poging tot diefstal (Sr 45 en Sr 310)."]
     ] }
@@ -95,9 +95,9 @@
         ["Bevel negeren", "Sr 184."]
       ]],
       ["Uitbreidingen", [
-        ["Poging", "Sr 45: 2/3 van het maximum. Alleen misdrijven."],
+        ["Poging", "Sr 45: maximum met een derde verminderd. Alleen misdrijven."],
         ["Medeplegen", "Sr 47: nauwe en bewuste samenwerking."],
-        ["Medeplichtig", "Sr 48: behulpzaam, lagere straf."],
+        ["Medeplichtig", "Sr 48: opzettelijk behulpzaam. Maximum met een derde verminderd (Sr 49)."],
         ["Noodweer", "Sr 41: strafuitsluitingsgrond."]
       ]]
     ],
@@ -120,7 +120,7 @@
       ["Diefstal", "Sr 310", "4 jaar"], ["Gekwalificeerde diefstal", "Sr 311", "6 jaar"], ["Diefstal met geweld", "Sr 312", "9 jaar"],
       ["Afpersing", "Sr 317", "9 jaar"], ["Verduistering", "Sr 321", "3 jaar"], ["Oplichting", "Sr 326", "4 jaar"], ["Heling", "Sr 416", "4 jaar"],
       ["Vernieling", "Sr 350", "2 jaar"], ["Mishandeling", "Sr 300", "3 jaar"], ["Zware mishandeling", "Sr 302", "8 jaar"],
-      ["Doodslag", "Sr 287", "25 jaar"], ["Moord", "Sr 289", "Levenslang of 30 jaar"], ["Openlijke geweldpleging", "Sr 141", "4 jaar en 6 maanden (zwaar letsel 6, dood 9)"],
+      ["Doodslag", "Sr 287", "25 jaar"], ["Moord", "Sr 289", "Levenslang of 30 jaar"], ["Openlijke geweldpleging", "Sr 141", "4 jaar en 6 maanden (enig letsel of vernieling 6, zwaar letsel 9, dood 12)"],
       ["Stalking", "Sr 285b", "3 jaar"], ["Wederspannigheid", "Sr 180", "1 jaar"]
     ]]],
     check: [
@@ -142,7 +142,7 @@
     ],
     flits: [
       ["Diefstal", "Wat is diefstal (Sr 310)?", "Wegnemen van een goed dat geheel of deels aan een ander toebehoort, met oogmerk van wederrechtelijke toe-eigening. Max. 4 jaar."],
-      ["Diefstal", "Wat maakt een diefstal gekwalificeerd (Sr 311)?", "Bijvoorbeeld inbraak, valse sleutel, ’s nachts bij een woning, of met meer personen. Max. 6 jaar."],
+      ["Diefstal", "Wat maakt een diefstal gekwalificeerd (Sr 311)?", "Bijvoorbeeld diefstal door twee of meer verenigde personen, in een woning door iemand die zich daar buiten weten of tegen de wil van de rechthebbende bevindt, of met braak, verbreking, inklimming of valse sleutels. Max. 6 jaar."],
       ["Diefstal", "Wat is diefstal met geweld (Sr 312)?", "Diefstal voorafgegaan, vergezeld of gevolgd door geweld of bedreiging met geweld. Max. 9 jaar."],
       ["Vermogen", "Wat is het verschil tussen diefstal en verduistering?", "Diefstal: wegnemen wat je niet had. Verduistering: toeëigenen wat je al rechtmatig onder je had (Sr 321)."],
       ["Vermogen", "Wat is oplichting?", "Iemand door valse naam, listige kunstgrepen of verdichtsels bewegen tot afgifte (Sr 326). Max. 4 jaar."],

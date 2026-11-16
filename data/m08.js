@@ -3,7 +3,7 @@
   titel: "Wet wapens en munitie",
   kort: "Vier categorieën, verbod en verlof, bevoegdheden bij een wapen en veilig handelen.",
   wetten: [["Wet wapens en munitie", "BWBR0008804"], ["Wetboek van Strafvordering", "BWBR0001903"]],
-  intro: "Messen in de zak, een nepwapen in een rugzak, een vuurwapen onder een stoel: wapens vragen om snel én zorgvuldig handelen. De wet werkt met vier categorieën en een vaste reeks vragen. Dit onderdeel is getoetst aan de tekst van de WWM op wetten.overheid.nl (versie 2026). Voor de volledige opsomming per categorie lees je altijd WWM 2 zelf.",
+  intro: "Messen in de zak, een nepwapen in een rugzak, een vuurwapen onder een stoel: wapens vragen om snel én zorgvuldig handelen. De wet werkt met vier categorieën en een vaste reeks vragen.",
   doelen: ["bepalen in welke categorie van WWM 2 een voorwerp valt", "uitleggen wat verboden is bij voorhanden hebben en dragen (WWM 13, 26, 27)", "de bevoegdheden van WWM 50 t/m 52 gebruiken", "veilig handelen bij een aangetroffen wapen"],
   leren: [
     { h: "De vragenreeks bij elk wapen", b: [
@@ -11,34 +11,37 @@
       ["stap", [
         ["1. Is het een wapen in de zin van de wet?", "Een voorwerp dat in WWM 2 genoemd of krachtens dat artikel aangewezen is. Ook een voorwerp dat door zijn aard of door de omstandigheden redelijkerwijs bestemd lijkt om letsel toe te brengen, kan onder categorie IV vallen."],
         ["2. In welke categorie valt het?", "Categorie I t/m IV bepaalt welke verboden gelden. Zie de tabel hieronder."],
-        ["3. Is er verlof of vrijstelling?", "Voor categorie II en III is voorhanden hebben verboden zonder verlof of ander toegestaan geval (WWM 26). Vraag het document en controleer het."],
-        ["4. Wordt het gedragen of vervoerd?", "Dragen van categorie II, III en IV is verboden, behalve met verlof of vrijstelling (WWM 27). Categorie I is helemaal verboden (WWM 13)."],
+        ["3. Is er verlof of vrijstelling?", "Voor categorie II en III is voorhanden hebben verboden, tenzij je houder bent van een verlof (voor zover het reikt) of een omgevingsvergunning voor een jachtgeweeractiviteit hebt (WWM 26 lid 2). Voor personen onder 18 is voorhanden hebben van een wapen van categorie IV verboden (WWM 26 lid 5)."],
+        ["4. Wordt het gedragen of vervoerd?", "Dragen van categorie II, III en IV is verboden (WWM 27 lid 1), behalve met een verlof (voor zover het reikt) of op grond van WWM 26 lid 2 voor jacht, beheer en schadebestrijding (WWM 27 lid 2). Categorie I is helemaal verboden (WWM 13)."],
         ["5. Welke bevoegdheid gebruik ik?", "WWM 50 t/m 52, plus de gewone regels uit het Wetboek van Strafvordering."]
       ]],
       ["truc", "Onthoud de vijf met één zin: <b>Wapen? Categorie? Verlof? Dragen? Bevoegdheid?</b>"]
     ] },
     { h: "De vier categorieën (WWM 2)", b: [
       ["tab", ["Categorie", "Wat valt eronder (selectie)", "Hoofdregel"], [
-        ["I", "Stiletto’s, valmessen en vlindermessen; opvouwbare messen met meer dan één snijkant of langer dan 28 cm opengevouwen; boksbeugels, ploertendoders, wurgstokken, werpsterren, geluiddempers voor vuurwapens; katapulten; blanke wapens die op een ander voorwerp lijken", "Vervaardigen, voorhanden hebben, dragen en vervoeren is verboden (WWM 13)"],
-        ["II", "Vuurwapens die niet onder een andere categorie vallen; automatische vuurwapens; moeilijk zichtbare of aangepaste vuurwapens; stroomstootwapens; voorwerpen voor traanverwekkende of weerloosmakende stoffen (zoals pepperspray); brand- en explosiemiddelen", "Voorhanden hebben is verboden zonder verlof (WWM 26). Dragen is verboden (WWM 27)"],
-        ["III", "Vuurwapens in de vorm van geweren, revolvers en pistolen; werpmessen; alarm- en startpistolen (met uitzonderingen)", "Zoals categorie II"],
-        ["IV", "Blanke wapens met meer dan één snijkant (die niet onder I vallen); degens, zwaarden, sabels; wapenstokken; lucht-, gas- en veerdrukwapens; kruisbogen en harpoenen; voorwerpen die door aard of omstandigheden bestemd lijken om letsel toe te brengen", "Dragen is verboden (WWM 27), behalve met verlof of vrijstelling"]
+        ["I", "Stiletto’s, valmessen en vlindermessen; opvouwbare messen met meer dan één snijkant of langer dan 28 cm opengevouwen; boksbeugels, ploertendoders, wurgstokken, werpsterren, vilmessen, ballistische messen, geluiddempers voor vuurwapens; blanke wapens die op een ander voorwerp lijken; pijlen en pijlpunten met snijdende delen bedoeld voor ernstig letsel; katapulten; door de minister aangewezen voorwerpen", "Vervaardigen, voorhanden hebben, dragen en vervoeren is verboden (WWM 13)"],
+        ["II", "Vuurwapens die niet onder een andere categorie vallen; automatische vuurwapens; moeilijk zichtbare of aangepaste vuurwapens; stroomstootwapens; voorwerpen bestemd voor het treffen van personen met giftige, verstikkende, weerloosmakende of traanverwekkende stoffen; voorwerpen bestemd voor het treffen met vuur of ontploffing", "Voorhanden hebben is verboden zonder verlof (WWM 26). Dragen is verboden (WWM 27)"],
+        ["III", "Vuurwapens in de vorm van geweren, revolvers en pistolen (voor zover niet categorie II); toestellen voor beroepsdoeleinden die projectielen kunnen afschieten; werpmessen; alarm- en startpistolen en -revolvers (met uitzonderingen)", "Zoals categorie II"],
+        ["IV", "Blanke wapens met meer dan één snijkant (die niet onder I vallen); degens, zwaarden, sabels en bajonetten; wapenstokken; lucht-, gas- en veerdrukwapens; kruisbogen en harpoenen; voorwerpen waarvan door hun aard of de omstandigheden waaronder ze worden aangetroffen redelijkerwijs kan worden aangenomen dat ze bestemd zijn om letsel toe te brengen of te dreigen", "Dragen is verboden (WWM 27), behalve met verlof of vrijstelling"]
       ]],
       ["tip", "Veiligheid gaat voor juridische indeling. Behandel elk wapen dat je aantreft alsof het geladen en echt is, ook als het nep lijkt. Pas daarna kijk je naar de categorie."],
-      ["let", "Imitatiewapens die zo op een vuurwapen lijken dat ze voor bedreiging geschikt zijn, kunnen krachtens WWM 2 zijn aangewezen als verboden wapen. Een luchtdrukwapen dat daar niet onder valt, is categorie IV."],
+      ["let", "Lucht-, gas- en veerdrukwapens zijn categorie IV (WWM 2, categorie IV 4°). Uitgezonderd zijn de wapens die de minister op grond van categorie I 7° heeft aangewezen omdat ze zo op een vuurwapen lijken dat ze voor bedreiging of afdreiging geschikt zijn: die zijn categorie I."],
       ["quiz", "Je ziet een pistool in een rugzak. Het lijkt een nepwapen. Wat doe je eerst?", ["Het oppakken om te kijken", "Behandelen als een echt wapen en veilig stellen", "Het teruggeven aan de eigenaar", "Alleen een foto maken"], 1, "Veiligheid eerst: behandel elk wapen als echt en geladen. Daarna pas onderzoeken of het nep is."],
       ["quiz", "Iemand draagt op straat een vlindermes. Welke categorie en welke regel?", ["Categorie IV, dragen is verboden (WWM 27)", "Categorie I, verboden (WWM 13)", "Categorie III, verlof nodig", "Geen wapen"], 1, "Vlindermessen zijn categorie I. Voor die categorie is vervaardigen, voorhanden hebben, dragen en vervoeren verboden (WWM 13)."]
     ] },
     { h: "Strafbaarheid en strafmaat", b: [
       ["tab", ["Feit", "Artikel", "Maximumstraf"], [
-        ["Categorie I voorhanden hebben of dragen", "WWM 13, WWM 55 lid 1", "9 maanden of geldboete vierde categorie"],
-        ["Categorie II of III voorhanden zonder verlof", "WWM 26, WWM 55 lid 1", "9 maanden of geldboete vierde categorie"],
-        ["Categorie II (behalve 2° en 7°) of een vuurwapen categorie III voorhanden zonder verlof", "WWM 26, WWM 55 lid 3", "8 jaar of geldboete vijfde categorie"],
-        ["Handelen met wapens in strijd met de wet (overdragen, vervaardigen, enzovoort)", "WWM 55 lid 4", "8 jaar of geldboete vijfde categorie"]
+        ["Categorie I voorhanden hebben of dragen", "WWM 13, WWM 55 lid 1", "Gevangenisstraf tot 9 maanden of geldboete vierde categorie (misdrijf, WWM 56)"],
+        ["Categorie II of III voorhanden zonder verlof", "WWM 26, WWM 55 lid 1", "Gevangenisstraf tot 9 maanden of geldboete vierde categorie"],
+        ["Categorie II (behalve 2° en 7°) of een vuurwapen categorie III voorhanden zonder verlof", "WWM 26, WWM 55 lid 3 onder a", "Gevangenisstraf tot 8 jaar of geldboete vijfde categorie"],
+        ["Categorie II onder 2° (automatische vuurwapens) of 7° (voorwerpen voor vuur of ontploffing) voorhanden zonder verlof", "WWM 26, WWM 55 lid 7", "Gevangenisstraf tot 8 jaar of geldboete vijfde categorie"],
+        ["Van het in strijd met de wet vervaardigen, overdragen, verhandelen of herstellen van wapens een beroep of gewoonte maken", "WWM 55 lid 4", "Gevangenisstraf tot 8 jaar of geldboete vijfde categorie"],
+        ["Categorie II, III of IV dragen", "WWM 27 lid 1, WWM 54", "Overtreding: geldboete derde categorie (WWM 56)"],
+        ["Categorie IV voorhanden hebben onder 18 jaar", "WWM 26 lid 5, WWM 54", "Overtreding: geldboete derde categorie (WWM 56)"]
       ]],
-      ["truc", "Een vuurwapen zonder verlof is bijna altijd een misdrijf met een strafmaximum van 4 jaar of meer. Dat betekent voorlopige hechtenis (Sv 67 lid 1) en dus aanhouden op bevel van de officier van justitie, ook buiten heterdaad (Sv 54)."],
-      ["let", "Het dragen van een wapen (WWM 27) is een eigen strafbaar feit. De strafbepaling en het maximum staan in het strafartikel van de wet. Controleer ze in de actuele tekst."],
-      ["casus", "Casus: het mes in de broekzak", "Je controleert een 17-jarige op straat na een melding over een ruzie. In zijn zak zit een vouwmes met een lemmet van 8 cm en één snijkant. Hij zegt: ‘Voor mijn werk bij de bouw.’", "Is dit een wapen?", "Een gewoon vouwmes met één snijkant en een kort lemmet valt niet vanzelf onder categorie I (meer dan één snijkant of langer dan 28 cm opengevouwen). Het kan wel categorie IV zijn als door de aard of de omstandigheden redelijkerwijs kan worden aangenomen dat het bestemd is om letsel toe te brengen (WWM 2). Kijk dus naar de omstandigheden: de melding over een ruzie, wat hij zei, hoe hij het bij zich had, of zijn verhaal klopt. Leg vast wat je zag en waarom je het wel of niet als wapen beoordeelde. Is het een vlindermes of stiletto, dan is het categorie I."]
+      ["truc", "Een vuurwapen van categorie II of III voorhanden zonder verlof heeft een maximumstraf van 8 jaar (WWM 55 lid 3 of 7). Voor een misdrijf met 4 jaar of meer is voorlopige hechtenis toegelaten (Sv 67 lid 1 onder a). Buiten heterdaad kun je dan aanhouden op bevel van de officier van justitie (Sv 54)."],
+      ["let", "Dragen van een wapen van categorie II, III of IV (WWM 27 lid 1) is op zichzelf een overtreding met geldboete van de derde categorie (WWM 54, WWM 56). Heeft de drager een wapen van categorie II of III ook voorhanden zonder verlof, dan geldt ook WWM 26 met WWM 55."],
+      ["casus", "Casus: het mes in de broekzak", "Je controleert een 17-jarige op straat na een melding over een ruzie. In zijn zak zit een vouwmes met een lemmet van 8 cm en één snijkant. Hij zegt: ‘Voor mijn werk bij de bouw.’", "Is dit een wapen?", "Een gewoon vouwmes met één snijkant en een kort lemmet valt niet vanzelf onder categorie I (meer dan één snijkant of langer dan 28 cm opengevouwen). Het kan wel categorie IV zijn als door de aard of de omstandigheden redelijkerwijs kan worden aangenomen dat het bestemd is om letsel toe te brengen (WWM 2). Kijk dus naar de omstandigheden: de melding over een ruzie, wat hij zei, hoe hij het bij zich had, of zijn verhaal klopt. Leg vast wat je zag en waarom je het wel of niet als wapen beoordeelde. Is het een vlindermes of stiletto, dan is het categorie I. Is het wel categorie IV, dan is voorhanden hebben door iemand onder 18 jaar verboden (WWM 26 lid 5)."]
     ] },
     { h: "Bevoegdheden bij een wapen (WWM 50 t/m 52)", b: [
       ["p", "Als daartoe redelijkerwijs aanleiding bestaat, hebben opsporingsambtenaren aanvullende bevoegdheden. De aanleiding is: een gepleegd strafbaar feit waarbij wapens zijn gebruikt, een overtreding van WWM 13, 26 of 27, of aanwijzingen dat zo’n feit zal worden gepleegd."],
@@ -46,31 +49,27 @@
         ["WWM 50", "Vorderen dat de verpakking van goederen, met inbegrip van reisbagage, wordt geopend."],
         ["WWM 51", "Vervoermiddelen onderzoeken."],
         ["WWM 52", "Altijd inbeslagnemen van voor beslag vatbare voorwerpen (lid 1), en personen aan de kleding onderzoeken bij aanleiding (lid 2)."],
-        ["Ten opzichte van een ieder", "De bevoegdheid geldt in beginsel tegen bepaalde personen of vervoermiddelen waarvoor aanleiding bestaat. De officier van justitie kan gelasten dat ze tegenover een ieder wordt uitgeoefend, bijvoorbeeld in een veiligheidsrisicogebied (Gemw 151b)."]
+        ["Ten opzichte van een ieder", "De bevoegdheid geldt in beginsel tegen bepaalde personen of vervoermiddelen waarvoor aanleiding bestaat. De officier van justitie kan gelasten dat ze tegenover een ieder wordt uitgeoefend (WWM 50 lid 2, 51 lid 2). In een veiligheidsrisicogebied (Gemw 151b lid 1 of 174b lid 1) kan hij gelasten dat tegenover een ieder wordt gecontroleerd op wapens of munitie. Het bevel geldt ten hoogste twaalf uur, vermeldt het gebied en de feiten en omstandigheden, en wordt schriftelijk gegeven (zo nodig achteraf op schrift gesteld) (WWM 50 lid 3 en 5, 51 lid 3 en 5, 52 lid 3 en 4)."]
       ]],
-      ["ul", ["<b>Aanhouden</b>: op heterdaad door ieder (Sv 53). Buiten heterdaad op bevel van de officier van justitie bij een misdrijf met voorlopige hechtenis (Sv 54, Sv 67).", "<b>Staande houden</b> en identiteit vaststellen bij verdenking: Sv 52.", "<b>Binnentreden</b> voor een wapendoorzoeking vraagt een grondslag en machtiging, zie onderdeel 3.", "<b>Vergunning of verlof</b>: laat het document zien en controleer het."]],
-      ["tip", "Bij een melding van een persoon met een vuurwapen werk je altijd met meer eenheden. Wacht op versterking tenzij er direct gevaar is."]
+      ["ul", ["<b>Aanhouden</b>: op heterdaad door ieder (Sv 53). Buiten heterdaad op bevel van de officier van justitie voor een misdrijf waarvoor voorlopige hechtenis is toegelaten (Sv 54, Sv 67).", "<b>Staande houden</b> en identiteit vaststellen bij verdenking: Sv 52.", "<b>Binnentreden</b> voor een wapendoorzoeking vraagt een grondslag en machtiging, zie onderdeel 3.", "<b>Verlof</b>: de verboden van WWM 26 en 27 gelden niet voor houders van een verlof, voor zover het reikt (WWM 26 lid 2, WWM 27 lid 2)."]],
+      ["tip", "Inbeslagneming is een eigen bevoegdheid in de WWM: te allen tijde, en je kunt de uitlevering vorderen (WWM 52 lid 1). Maak een kennisgeving van inbeslagneming op (Sv 94 lid 3)."]
     ] },
     { h: "Veilig handelen bij een wapen", b: [
       ["p", "De vier gouden regels geven houvast bij alle vuurwapens:"],
       ["ol", ["Behandel elk vuurwapen als geladen.", "Richt nooit op iets dat je niet wilt raken.", "Houd je vinger buiten de trekkerbeugel tot je klaar bent om te schieten.", "Wees zeker van je doelwit en wat erachter ligt."]],
       ["stap", [
-        ["Afstand en dekking", "Houd afstand en gebruik dekking. Alleen zelf ingrijpen als iemand direct in gevaar is."],
-        ["Beveel rustig en duidelijk", "‘Politie. Laat vallen. Handen omhoog.’ Eén persoon voert het woord."],
-        ["Persoon veilig", "Neem de persoon in controle. Boeien volgens de Ambtsinstructie."],
         ["Wapen veiligstellen", "Alleen als je daarvoor getraind bent: ontladen, magazijn los, patroonkamer controleren. Anders laat je het aan een specialist."],
-        ["Foto en vastleggen", "Foto van positie, serienummer, status. Handschoenen."],
-        ["Beslag en proces-verbaal", "Beslag volgens de regels. Noteer serienummer, merk, kaliber, toestand."]
+        ["Vastleggen", "Leg positie, serienummer en status van het wapen vast."],
+        ["Beslag en proces-verbaal", "Beslag: WWM 52 lid 1, Sv 94 en Sv 95. Noteer serienummer, merk, kaliber, toestand."]
       ]],
-      ["let", "Het gebruik van geweld, waaronder richten en schieten, valt onder de Ambtsinstructie. Zie het spiekbriefje Geweldsbeheersing."]
+      ["let", "Het gebruik van geweld, waaronder het richten en schieten met een vuurwapen, valt onder Pw 7 en de Ambtsinstructie. Zie het spiekbriefje Geweldsbeheersing."]
     ] },
     { h: "OM-beleid: Richtlijn wapens en munitie", b: [
       ["p", "De Richtlijn voor strafvordering wapens en munitie (2016R017, in werking sinds 1 januari 2017) geldt voor de meest voorkomende misdrijven en enkele overtredingen met wapens en munitie: WWM 13, 26, 27, 31, 54 en 55. Zij is niet van toepassing op grootschalige in- en uitvoer en handel, dat vraagt maatwerk. De richtlijn gaat uit van een basiscasus (een categorie I-wapen voorhanden hebben, dragen of overdragen, alleen gepleegd) en noemt bij wapens ook de onttrekking aan het verkeer."],
-      ["let", "Dit zijn strafvorderingsrichtlijnen voor de officier van justitie. De tabellen met strafeisen zijn niet opgenomen. Voor jou blijft gelden: wapen veiligstellen, vastleggen en in beslag nemen."]
     ] }
   ],
   spiek: {
-    weet: [["Onbekend wapen", "Veiligheid eerst, behandel als echt. Laat de categorie bepalen door een wapenexpert of je teamleider."]],
+    weet: [["Onbekend wapen", "Veiligheid eerst, behandel als echt. De indeling staat in WWM 2."]],
     cijfers: [["I-IV", "Categorieën in WWM 2"], ["WWM 13", "Cat. I: alles verboden"], ["WWM 26", "Cat. II en III: voorhanden zonder verlof verboden"], ["WWM 27", "Dragen cat. II, III en IV verboden"]],
     kern: [
       ["De vijf vragen", [
@@ -82,16 +81,16 @@
       ]],
       ["Categorieën", [
         ["I", "Verboden (WWM 13): vlindermes, stiletto, valmes, boksbeugel, wurgstok, vouwmes met meer dan één snijkant of langer dan 28 cm."],
-        ["II", "Vuurwapens, stroomstootwapens, pepperspray-achtige middelen: verlof nodig (WWM 26), dragen verboden (WWM 27)."],
-        ["III", "Geweren, revolvers, pistolen, alarm- en startpistolen, werpmessen: verlof nodig, dragen verboden."],
-        ["IV", "Blank wapen met meer dan één snijkant, wapenstok, lucht- en gasdrukwapen, kruisboog: dragen verboden (WWM 27)."]
+        ["II", "Vuurwapens (niet elders ingedeeld), automatische en aangepaste vuurwapens, stroomstootwapens, voorwerpen voor traanverwekkende en soortgelijke stoffen: verlof nodig (WWM 26), dragen verboden (WWM 27)."],
+        ["III", "Geweren, revolvers, pistolen, alarm- en startpistolen (met uitzonderingen), werpmessen: verlof nodig, dragen verboden."],
+        ["IV", "Blank wapen met meer dan één snijkant, wapenstok, lucht-, gas- en veerdrukwapen, kruisboog: dragen verboden (WWM 27). Voorhanden onder 18 jaar verboden (WWM 26 lid 5)."]
       ]],
       ["Bevoegdheden", [
         ["WWM 50", "Verpakking en bagage laten openen."],
         ["WWM 51", "Vervoermiddel onderzoeken."],
         ["WWM 52", "Beslag, en personen aan de kleding onderzoeken."],
         ["Voorwaarde", "Redelijke aanleiding: feit met wapens, overtreding van WWM 13, 26 of 27, of aanwijzingen."],
-        ["Preventief", "Veiligheidsrisicogebied (Gemw 151b): officier van justitie kan gelasten tegenover een ieder."]
+        ["Preventief", "Veiligheidsrisicogebied (Gemw 151b, 174b): officier van justitie kan gelasten tegenover een ieder, ten hoogste twaalf uur."]
       ]],
       ["Veilig", [
         ["Regel 1", "Elk vuurwapen is geladen."],
@@ -105,8 +104,8 @@
       b: { q: "Heeft de persoon een geldig verlof of is er een vrijstelling?", o: [["Ja, geldig", "v"], ["Nee of onbekend", "n"]] },
       c: { q: "Valt het onder categorie I (bijv. vlindermes, stiletto, boksbeugel, vouwmes met meer dan één snijkant)?", o: [["Ja", "k"], ["Nee", "d"]] },
       d: { q: "Valt het onder categorie IV, of blijkt uit aard of omstandigheden dat het bestemd is om letsel toe te brengen?", o: [["Ja", "s"], ["Nee", "r"]] },
-      v: { r: "Controleer of het verlof reikt voor deze plaats en dit vervoer (WWM 26, WWM 27). Documenteer. Geen strafbaar feit als alles klopt.", k: "ok" },
-      n: { r: "Veiligstellen, aanhouden bij misdrijf (Sv 53 of Sv 54), beslag (WWM 52, Sv 94), proces-verbaal. Zorg voor veiligheid.", k: "ok" },
+      v: { r: "De verboden van WWM 26 en 27 gelden niet voor een verlofhouder voor zover het verlof reikt. Leg vast wat je zag.", k: "ok" },
+      n: { r: "Aanhouden bij heterdaad (Sv 53) of op bevel van de officier van justitie (Sv 54), beslag (WWM 52, Sv 94), proces-verbaal.", k: "ok" },
       k: { r: "Categorie I: voorhanden hebben en dragen is verboden (WWM 13). Beslag en proces-verbaal.", k: "ok" },
       s: { r: "Dragen is verboden (WWM 27). Beslag en proces-verbaal. Leg vast waarom je het als wapen beoordeelde.", k: "ok" },
       r: { r: "Geen wapen in de zin van de wet. Noteer wat je zag en wat de persoon zei.", k: "warn" }
@@ -124,23 +123,23 @@
       ["Nepwapen onderschatten", "Behandel altijd als echt. Je kunt het onderscheid pas veilig maken als de persoon in controle is."],
       ["Alle messen strafbaar noemen", "Een gewoon mes met één snijkant is niet automatisch een wapen. Kijk naar WWM 2 en naar de omstandigheden."],
       ["Alleen categorie onthouden", "Voor categorie II en III telt ook het verlof, en voor het dragen WWM 27."],
-      ["Zelf ontladen zonder training", "Laat het aan een getrainde collega of specialist over."],
-      ["Geen foto of serienummer", "Dit is cruciaal voor bewijs."],
+      ["Wapen onbeheerd laten", "Behandel elk vuurwapen als geladen en stel het veilig."],
+      ["Serienummer niet noteren", "Noteer serienummer, merk, kaliber en toestand."],
       ["Alleen WWM aanpakken", "Denk ook aan bedreiging, afpersing of overval (Sr 285, Sr 317, Sr 312)."]
     ],
     flits: [
       ["Basis", "Welke vijf vragen stel je bij een wapen?", "Wapen? Categorie? Verlof? Dragen? Bevoegdheid?"],
       ["Basis", "Wat doe je eerst bij een wapen dat misschien nep is?", "Behandelen als echt en geladen. Veiligheid gaat voor."],
       ["Categorieën", "Wat is categorie I?", "Verboden wapens zoals stiletto’s, valmessen, vlindermessen, boksbeugels, wurgstokken en werpsterren. Vervaardigen, voorhanden hebben, dragen en vervoeren is verboden (WWM 13)."],
-      ["Categorieën", "Welke vuurwapens vallen onder II en III?", "II: vuurwapens die niet elders vallen, automatische, aangepaste en stroomstootwapens. III: geweren, revolvers en pistolen, alarm- en startpistolen (met uitzonderingen)."],
+      ["Categorieën", "Welke vuurwapens vallen onder II en III?", "II: vuurwapens die niet elders vallen, automatische en aangepaste vuurwapens, stroomstootwapens. III: vuurwapens in de vorm van geweren, revolvers en pistolen, alarm- en startpistolen (met uitzonderingen), werpmessen."],
       ["Categorieën", "Wat valt onder categorie IV?", "Onder meer blanke wapens met meer dan één snijkant, wapenstokken, lucht-, gas- en veerdrukwapens en voorwerpen die door aard of omstandigheden bestemd lijken om letsel toe te brengen."],
       ["Verboden", "Wanneer mag je een wapen van categorie II of III voorhanden hebben?", "Alleen met verlof of in een ander wettelijk toegestaan geval (WWM 26)."],
       ["Verboden", "Wat zegt WWM 27?", "Het is verboden een wapen van categorie II, III en IV te dragen, behalve met verlof of vrijstelling."],
-      ["Straf", "Wat is de maximumstraf voor een vuurwapen categorie III zonder verlof?", "8 jaar of geldboete vijfde categorie (WWM 55 lid 3). Dus voorlopige hechtenis, aanhouden op bevel van de officier van justitie (Sv 54, Sv 67)."],
+      ["Straf", "Wat is de maximumstraf voor een vuurwapen categorie III zonder verlof?", "8 jaar of geldboete vijfde categorie (WWM 55 lid 3). Voorlopige hechtenis is toegelaten (Sv 67 lid 1 onder a), dus buiten heterdaad aanhouden op bevel van de officier van justitie (Sv 54)."],
       ["Bevoegdheden", "Wanneer mag je verpakkingen laten openen of vervoermiddelen onderzoeken (WWM 50, 51)?", "Als redelijkerwijs aanleiding bestaat: een feit met wapens, overtreding van WWM 13, 26 of 27, of aanwijzingen dat dit gebeurt."],
-      ["Bevoegdheden", "Wat mag je doen in een veiligheidsrisicogebied?", "De officier van justitie kan gelasten dat WWM 50 t/m 52 tegenover een ieder worden uitgeoefend (Gemw 151b)."],
+      ["Bevoegdheden", "Wat mag je doen in een veiligheidsrisicogebied?", "De officier van justitie kan gelasten dat tegenover een ieder wordt gecontroleerd op wapens of munitie (WWM 50 t/m 52, Gemw 151b en 174b). Het bevel geldt ten hoogste twaalf uur."],
       ["Veilig", "Noem de vier gouden regels.", "Behandel als geladen; richt niet op wat je niet wilt raken; vinger buiten trekkerbeugel; wees zeker van je doelwit."],
-      ["Veilig", "Wat leg je vast bij een vuurwapen?", "Foto van positie, serienummer, merk, kaliber, toestand."]
+      ["Veilig", "Wat leg je vast bij een vuurwapen?", "Positie, serienummer, merk, kaliber, toestand."]
     ]
   }
 });
