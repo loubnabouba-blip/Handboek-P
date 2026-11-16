@@ -20,6 +20,14 @@ const head = (title, css) => `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${title}</title>
+<link rel="manifest" href="${css.replace("engine.css", "")}manifest.webmanifest">
+<link rel="apple-touch-icon" href="${css.replace("engine.css", "")}icons/icon-180.png">
+<meta name="theme-color" content="#12306b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Handboek">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("${css.replace("engine.css", "")}sw.js").catch(function(){})})</script>
 ${fonts}
 <link rel="stylesheet" href="${css}">
 </head>`;
