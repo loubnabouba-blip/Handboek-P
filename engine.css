@@ -269,3 +269,4 @@ nav.tabs{top:calc(53px + env(safe-area-inset-top,0px))}
 .rpi .qrow a:first-of-type{background:transparent;color:var(--ink);border:0;padding:4px 0}
 .rpi .qrow a.qmain{color:var(--ink)!important;background:transparent!important}
 .rpc{margin:0 0 4px}
+.tp{margin:10px 0 0}.tp .rpi{border-left-width:1px}.tp .qh{margin-top:6px}

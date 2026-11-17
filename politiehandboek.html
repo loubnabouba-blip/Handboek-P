@@ -279,6 +279,7 @@ nav.tabs{top:calc(53px + env(safe-area-inset-top,0px))}
 .rpi .qrow a:first-of-type{background:transparent;color:var(--ink);border:0;padding:4px 0}
 .rpi .qrow a.qmain{color:var(--ink)!important;background:transparent!important}
 .rpc{margin:0 0 4px}
+.tp{margin:10px 0 0}.tp .rpi{border-left-width:1px}.tp .qh{margin-top:6px}
 
 </style>
 </head>
@@ -3272,18 +3273,38 @@ window.MENU = [{"id":"m01","nr":1,"reeks":1,"titel":"Basisbevoegdheden en rechts
     var panel = el("div", "rp"); grid.appendChild(panel);
     var TASKS = [["leren", "<svg viewBox=\"0 0 24 24\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z\"/><path d=\"M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5\"/><path d=\"M9 8h7\"/></svg>", "Leren", "Leerdocumenten"], ["spiek", "<svg viewBox=\"0 0 24 24\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"4\" width=\"14\" height=\"17\" rx=\"2\"/><path d=\"M9 4V3h6v1\"/><path d=\"M8.5 10.5l1.5 1.5 2.5-3\"/><path d=\"M8.5 16.5h7\"/></svg>", "Spiekbriefjes", "Kort, op straat"], ["boom", "<svg viewBox=\"0 0 24 24\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"5\" r=\"2\"/><circle cx=\"5.5\" cy=\"19\" r=\"2\"/><circle cx=\"18.5\" cy=\"19\" r=\"2\"/><path d=\"M12 7v4M12 11l-6 6M12 11l6 6\"/></svg>", "Beslisbomen", "Wat doe ik nu?"], ["flits", "<svg viewBox=\"0 0 24 24\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3.5\" y=\"7\" width=\"12\" height=\"14\" rx=\"2\"/><path d=\"M8 7V5a2 2 0 0 1 2-2h8.5a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H16\"/><path d=\"M7 12h5M7 15.5h3\"/></svg>", "Flitskaarten", nCards + " kaarten"]];
     function target(M) { return (mode === "leren" ? "leren/" + M.id + ".html" : "spiek/" + M.id + ".html" + (mode === "boom" ? "#boom" : "")); }
+    function rowEl(M) {
+      var other = mode === "leren" ? ["spiek/" + M.id + ".html", "Spiek"] : ["leren/" + M.id + ".html", "Leren"];
+      return el("div", "qrow", '<a class="qmain" href="' + target(M) + '"><span class="qn">' + M.nr + '</span><span class="qt">' + esc(M.titel) + "</span></a>" + '<a class="qalt" href="' + other[0] + '">' + other[1] + "</a>");
+    }
+    function usable(m) { return mode !== "boom" || (m.spiek && m.spiek.boom); }
+    var CAP = { leren: "Tik op een onderdeel om het leerdocument te openen.", spiek: "Tik op een onderdeel om het spiekbriefje te openen.", boom: "Tik op een onderdeel om de beslisboom te openen." };
+    var tpanel = el("div", "rp tp"); tasks.parentNode.insertBefore(tpanel, tasks.nextSibling);
+    var tOpen = false;
+    function drawTPanel() {
+      tpanel.innerHTML = ""; tpanel.style.display = tOpen ? "" : "none";
+      if (!tOpen) return;
+      var g = el("div", "rpi");
+      g.appendChild(el("p", "small rpc", CAP[mode]));
+      [1, 2, 3, 4].forEach(function (r) {
+        var list = all.filter(function (m) { return m.reeks === r && usable(m); });
+        if (!list.length) return;
+        var sec = el("div", "r" + r);
+        sec.appendChild(el("div", "qh", "Reeks " + r + " · " + REEKS[r][0]));
+        list.forEach(function (M) { sec.appendChild(rowEl(M)); });
+        g.appendChild(sec);
+      });
+      tpanel.appendChild(g);
+    }
     function drawPanel() {
       panel.innerHTML = ""; panel.style.display = openR ? "" : "none";
       if (!openR) return;
-      var list = all.filter(function (m) { return m.reeks === openR && (mode !== "boom" || (m.spiek && m.spiek.boom)); });
+      var list = all.filter(function (m) { return m.reeks === openR && usable(m); });
       var g = el("div", "rpi r" + openR);
       g.appendChild(el("div", "qh", "Reeks " + openR + " · " + REEKS[openR][0]));
-      g.appendChild(el("p", "small rpc", mode === "leren" ? "Tik op een onderdeel om het leerdocument te openen." : mode === "spiek" ? "Tik op een onderdeel om het spiekbriefje te openen." : "Tik op een onderdeel om de beslisboom te openen."));
+      g.appendChild(el("p", "small rpc", CAP[mode]));
       if (!list.length) g.appendChild(el("p", "small", "Geen beslisboom in deze reeks. Kies Leren of Spiekbriefjes."));
-      list.forEach(function (M) {
-        var other = mode === "leren" ? ["spiek/" + M.id + ".html", "Spiek"] : ["leren/" + M.id + ".html", "Leren"];
-        g.appendChild(el("div", "qrow", '<a class="qmain" href="' + target(M) + '"><span class="qn">' + M.nr + '</span><span class="qt">' + esc(M.titel) + "</span></a>" + '<a class="qalt" href="' + other[0] + '">' + other[1] + "</a>"));
-      });
+      list.forEach(function (M) { g.appendChild(rowEl(M)); });
       panel.appendChild(g);
     }
     function drawTasks() {
@@ -3291,7 +3312,7 @@ window.MENU = [{"id":"m01","nr":1,"reeks":1,"titel":"Basisbevoegdheden en rechts
       TASKS.forEach(function (T) {
         var a = el(T[0] === "flits" ? "a" : "button", "tk" + (T[0] === mode ? " on" : ""), '<span class="ti">' + T[1] + '</span><b>' + T[2] + "</b><small>" + T[3] + "</small>");
         if (T[0] === "flits") a.href = "oefenen.html";
-        else { a.setAttribute("aria-pressed", T[0] === mode ? "true" : "false"); a.onclick = function () { mode = T[0]; sset("home:mode", mode); drawTasks(); drawPanel(); if (!openR) tiles.scrollIntoView({ behavior: "smooth", block: "start" }); }; }
+        else { a.setAttribute("aria-pressed", T[0] === mode ? "true" : "false"); a.onclick = function () { var same = (mode === T[0]); mode = T[0]; sset("home:mode", mode); tOpen = same ? !tOpen : true; drawTasks(); drawTPanel(); drawPanel(); if (tOpen) tpanel.scrollIntoView({ behavior: "smooth", block: "nearest" }); }; }
         tasks.appendChild(a);
       });
     }
@@ -3302,7 +3323,7 @@ window.MENU = [{"id":"m01","nr":1,"reeks":1,"titel":"Basisbevoegdheden en rechts
       b.onclick = function () { openR = (openR === r ? null : r); Array.prototype.forEach.call(tiles.children, function (c) { c.classList.remove("on"); }); if (openR) b.classList.add("on"); drawPanel(); if (openR) panel.scrollIntoView({ behavior: "smooth", block: "nearest" }); };
       tiles.appendChild(b);
     });
-    drawTasks(); drawPanel();
+    drawTasks(); drawTPanel(); drawPanel();
     foot(w);
     root.appendChild(w);
     var hq = $("hq"), hx = $("hx");
