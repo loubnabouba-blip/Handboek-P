@@ -305,7 +305,7 @@
     var pa = el("div"); pa.id = "pa"; w.appendChild(pa);
     foot(w);
     qEl = $("q"); qx = $("qx");
-    var saved = location.hash.slice(1) || sget(M.id + ":tab", "kern"); cur = tabsOf().some(function (t) { return t[0] === saved; }) ? saved : "kern";
+    var saved = location.hash.slice(1).split("/")[2] || location.hash.slice(1) || sget(M.id + ":tab", "kern"); cur = tabsOf().some(function (t) { return t[0] === saved; }) ? saved : "kern";
     qEl.addEventListener("input", function () { qx.style.display = qEl.value ? "block" : "none"; draw(); });
     qx.onclick = function () { qEl.value = ""; qx.style.display = "none"; draw(); qEl.focus(); };
     pa.appendChild(el("h2", "", esc(M.titel) + " · spiekbriefje"));
@@ -482,13 +482,48 @@
   }
 
   /* ---------- start ---------- */
+  function curMod() {
+    var all = mods();
+    if (window.CURID) for (var i = 0; i < all.length; i++) if (all[i].id === window.CURID) return all[i];
+    return all[0];
+  }
+  /* alles-in-een-bestand: routering via #-adres */
+  function route() {
+    if (!window.SINGLE) return;
+    var h = location.hash.slice(1).split("/");
+    if ((h[0] === "leren" || h[0] === "spiek") && h[1]) { window.MODE = h[0]; window.CURID = h[1]; }
+    else if (h[0] === "oefen") { window.MODE = "oefen"; window.CURID = null; }
+    else { window.MODE = "hub"; window.CURID = null; }
+    var M = window.CURID ? curMod() : null;
+    document.body.className = M ? "r" + M.reeks : "";
+  }
   function start() {
+    route();
     var root = $("app"), mode = window.MODE;
-    menu(mode, mode === "leren" || mode === "spiek" ? (mods()[0] || {}).id : null);
+    menu(mode, mode === "leren" || mode === "spiek" ? (curMod() || {}).id : null);
     if (mode === "hub") return hub(root);
     if (mode === "oefen") return oefen(root);
-    var M = mods()[0];
+    var M = curMod();
     if (mode === "leren") leren(root, M); else spiek(root, M);
+  }
+  function restart() {
+    $("app").innerHTML = "";
+    var bar = document.querySelector(".mbar"); if (bar) bar.remove();
+    var u = $("up"); if (u) u.remove();
+    document.body.classList.remove("mopen");
+    start(); window.scrollTo(0, 0);
+  }
+  if (window.SINGLE) {
+    window.addEventListener("hashchange", restart);
+    document.addEventListener("click", function (ev) {
+      var a = ev.target.closest ? ev.target.closest("a[href]") : null;
+      if (!a || ev.defaultPrevented || ev.metaKey || ev.ctrlKey || ev.shiftKey || a.target === "_blank") return;
+      var h = a.getAttribute("href"), m;
+      if (/^https?:/.test(h)) return;
+      if ((m = h.match(/(leren|spiek)\/(m\d+)\.html(?:#(\w+))?$/))) { ev.preventDefault(); location.hash = m[1] + "/" + m[2] + (m[3] ? "/" + m[3] : ""); }
+      else if (/oefenen\.html$/.test(h)) { ev.preventDefault(); location.hash = "oefen"; }
+      else if (/index\.html$/.test(h)) { ev.preventDefault(); location.hash = ""; if (!location.hash) restart(); }
+    });
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
 })();
