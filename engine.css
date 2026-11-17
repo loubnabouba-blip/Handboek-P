@@ -270,3 +270,5 @@ nav.tabs{top:calc(53px + env(safe-area-inset-top,0px))}
 .rpi .qrow a.qmain{color:var(--ink)!important;background:transparent!important}
 .rpc{margin:0 0 4px}
 .tp{margin:10px 0 0}.tp .rpi{border-left-width:1px}.tp .qh{margin-top:6px}
+.selrow{margin-bottom:12px}.msel{width:100%;border:2px solid var(--line);background:var(--card);color:var(--ink);padding:11px 12px;border-radius:12px;font:600 .92rem var(--fb);appearance:auto}
+.msel:focus{outline:2px solid var(--acc);outline-offset:1px}

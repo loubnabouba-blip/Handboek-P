@@ -442,7 +442,13 @@
       if (!deck) build();
       box.innerHTML = "";
       var c1 = el("div", "chips"); chip(c1, "Alles", "all"); [1, 2, 3, 4].forEach(function (r) { chip(c1, "Reeks " + r + " · " + REEKS[r][0], "r" + r); }); box.appendChild(c1);
-      var c2 = el("div", "chips"); mods().forEach(function (M) { chip(c2, "Onderdeel " + M.nr, M.id); }); box.appendChild(c2);
+      var c2 = el("div", "selrow");
+      var sl = document.createElement("select"); sl.className = "msel"; sl.setAttribute("aria-label", "Kies een onderdeel");
+      var o0 = document.createElement("option"); o0.value = ""; o0.textContent = "Kies een onderdeel"; sl.appendChild(o0);
+      mods().forEach(function (M) { var o = document.createElement("option"); o.value = M.id; o.textContent = M.nr + " · " + M.titel; if (filt === M.id) o.selected = true; sl.appendChild(o); });
+      if (filt.charAt(0) !== "m") o0.selected = true;
+      sl.onchange = function () { filt = sl.value || "all"; deck = null; draw(); };
+      c2.appendChild(sl); box.appendChild(c2);
       var sel = all.filter(inFilt), done = sel.filter(isKnown).length;
       if (!deck.length) {
         box.appendChild(el("div", "card", "<h2>Alles gehaald</h2><p>Je hebt alle " + sel.length + " kaarten in deze selectie als bekend gemarkeerd.</p>"));
