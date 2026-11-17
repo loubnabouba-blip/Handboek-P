@@ -64,12 +64,12 @@
       ["tab", ["Wat je aantreft", "Wat jij maakt", "Wat daarna gebeurt"], [
         ["Categorie IV dragen (E900)", "Een overtreding. Registreer het OM-feit met een proces-verbaal, meestal een mini-PV, met het voorwerp, de aard en omstandigheden van het aantreffen, het doel (geen ander doel dan letsel aan personen) en of er is gedreigd.", "Het OM beslist over de afdoening. Volwassenen: geen reprimande of waarschuwing als afdoening. Een jeugdige first offender kan een reprimande krijgen: overleg met de officier van justitie of dat hier past."],
         ["Categorie I of categorie II onder 6° (G411a, G411b, G412)", "Een misdrijf. Altijd een PV via de Transactiemodule, mini-PV of PV volgens de afdeling-G-regels.", "Het OM legt daarna de strafbeschikking op, of beslist anders over de vervolging."],
-        ["Vuurwapen categorie II of III, explosieven", "Een volledig PV en dossier. De verdachte wordt in beginsel voorgeleid. Leg bedenkelijke omstandigheden vast, want die verhogen de strafeis.", "Voorlopige hechtenis is toegelaten (Sv 67 lid 1 onder a, maximumstraf 8 jaar volgens WWM 55 lid 3 of 7). De officier van justitie beslist over vervolging."],
+        ["Vuurwapen categorie II of III, explosieven", "Een volledig PV en dossier. De OM-richtlijn zegt: verdachte in beginsel voorgeleiden bij vuurwapen(s). Leg bedenkelijke omstandigheden vast, want die verhogen de strafeis.", "Voorlopige hechtenis is toegelaten (Sv 67 lid 1 onder a, maximumstraf 8 jaar volgens WWM 55 lid 3 of 7). De officier van justitie beslist over vervolging."],
         ["Munitie of onderdelen zonder wapen", "PV of dossier, met aantallen, soort en toestand.", "Het OM beslist over de afdoening."]
       ]],
       ["stap", [
         ["1. Veiligstellen en beslag", "Veiligstellen, vastleggen, beslagtoets, KVI en bewijs van ontvangst. Leg het beslag direct voor aan de hulpofficier of officier van justitie (Sv 94 lid 3, Sv 116 lid 1)."],
-        ["2. Aanhouden of niet", "Heterdaad: Sv 53. Buiten heterdaad op bevel van de officier van justitie: Sv 54, bij een misdrijf waarvoor voorlopige hechtenis is toegelaten (Sv 67 lid 1)."],
+        ["2. Aanhouden of niet", "Aanhouden is een bevoegdheid, geen plicht. Heterdaad: Sv 53. Buiten heterdaad op bevel van de officier van justitie: Sv 54, bij een misdrijf waarvoor voorlopige hechtenis is toegelaten (Sv 67 lid 1)."],
         ["3. Proces-verbaal", "Sv 152 lid 1. Beschrijf wat je zelf zag: waar het lag, in welke staat, wie wat zei, welk voorwerp en welke categorie (voorlopig). Noteer de bedenkelijke omstandigheden en wat strafverminderend is."],
         ["4. Registreren in MEOS", "Zoek het feit (E900, G411a, G411b of G412) en registreer het OM-feit. Zonder PV of registratie blijven sanctie en registratie van recidive achterwege."],
         ["5. Dossier voor justitie", "Bij vuurwapens van categorie II en III: volledig PV en dossier, voorgeleiding, foto’s, het beslag met KVI en een deskundigenmening over classificatie of gebruiksklaar zijn als dat speelt."],
@@ -192,7 +192,7 @@
       ["Kort beslag", "Wat geldt bij “even meenemen”?", "Dezelfde regels als bij regulier beslag, met KVI, ontvangstbewijs en directe toets door de hulpofficier of officier van justitie."],
       ["Afstand", "Wanneer maak je geen KVI?", "Als het goed niet in beslag is genomen maar vrijwillig is afgegeven. Leg de overdracht apart vast."],
       ["Omstandigheden", "Noem bedenkelijke omstandigheden.", "Meerdere wapens, vliegveld of vliegtuig, evenement of voetbal, geladen wapen of geluiddemper, wapen onder handbereik in een voertuig of gedragen in het openbaar."],
-      ["Dossier", "Wat maak je bij een vuurwapen van categorie II of III?", "Een volledig PV en dossier. De verdachte wordt in beginsel voorgeleid. Leg bedenkelijke omstandigheden vast."],
+      ["Dossier", "Wat maak je bij een vuurwapen van categorie II of III?", "Een volledig PV en dossier. De OM-richtlijn zegt: verdachte in beginsel voorgeleiden bij vuurwapen(s). Leg bedenkelijke omstandigheden vast."],
       ["Dossier", "Wat maak je bij een misdrijf uit afdeling G?", "Altijd een PV via de Transactiemodule. Het OM legt daarna de strafbeschikking op."],
       ["Dossier", "Wie legt de strafbeschikking op?", "Het OM. Bij OM-feiten legt de politie zelf geen sanctie op."],
       ["Dossier", "Wat geldt bij recidive?", "Een hogere strafeis. Recidivetermijn volgens de OM-richtlijn: 5 jaar, 2 jaar bij andere categorieën. Let op het taakstrafverbod van Sr 22b."],
