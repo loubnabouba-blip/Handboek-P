@@ -59,6 +59,25 @@
       ["ul", ["meerdere wapens, munitie of onderdelen", "op een vliegveld of aan boord van een vliegtuig", "bij een evenement of een voetbalwedstrijd", "een geladen wapen, een geluiddemper, of munitie die bij het wapen past (en ten laste gelegd)", "een wapen onder handbereik in een voertuig, of gedragen in het openbaar (straat, winkel, openbaar gebouw, openbaar vervoer)", "terroristisch oogmerk (WWM 55 lid 5): maatwerk"]],
       ["p", "Strafverminderend is dat het wapen niet gebruiksklaar is en niet met eenvoudige hulpmiddelen weer bruikbaar te maken is. Noteer dit in het proces-verbaal, bij voorkeur met de mening van een deskundige. De richtlijn geldt voor meerderjarigen."]
     ] },
+    { h: "Van beslag naar dossier", b: [
+      ["p", "Na het beslag volgt de afhandeling. Wat jij maakt, hangt af van het feit en van het wapen. Het OM beslist over de vervolging en legt de strafbeschikking op. Voor OM-feiten legt de politie zelf geen sanctie op."],
+      ["tab", ["Wat je aantreft", "Wat jij maakt", "Wat daarna gebeurt"], [
+        ["Categorie IV dragen (E900)", "Een overtreding. Registreer het OM-feit met een proces-verbaal, meestal een mini-PV, met het voorwerp, de aard en omstandigheden van het aantreffen, het doel (geen ander doel dan letsel aan personen) en of er is gedreigd.", "Het OM beslist over de afdoening. Volwassenen: geen reprimande of waarschuwing als afdoening. Een jeugdige first offender kan een reprimande krijgen: overleg met de officier van justitie of dat hier past."],
+        ["Categorie I of categorie II onder 6° (G411a, G411b, G412)", "Een misdrijf. Altijd een PV via de Transactiemodule, mini-PV of PV volgens de afdeling-G-regels.", "Het OM legt daarna de strafbeschikking op, of beslist anders over de vervolging."],
+        ["Vuurwapen categorie II of III, explosieven", "Een volledig PV en dossier. De verdachte wordt in beginsel voorgeleid. Leg bedenkelijke omstandigheden vast, want die verhogen de strafeis.", "Voorlopige hechtenis is toegelaten (Sv 67 lid 1 onder a, maximumstraf 8 jaar volgens WWM 55 lid 3 of 7). De officier van justitie beslist over vervolging."],
+        ["Munitie of onderdelen zonder wapen", "PV of dossier, met aantallen, soort en toestand.", "Het OM beslist over de afdoening."]
+      ]],
+      ["stap", [
+        ["1. Veiligstellen en beslag", "Veiligstellen, vastleggen, beslagtoets, KVI en bewijs van ontvangst. Leg het beslag direct voor aan de hulpofficier of officier van justitie (Sv 94 lid 3, Sv 116 lid 1)."],
+        ["2. Aanhouden of niet", "Heterdaad: Sv 53. Buiten heterdaad op bevel van de officier van justitie: Sv 54, bij een misdrijf waarvoor voorlopige hechtenis is toegelaten (Sv 67 lid 1)."],
+        ["3. Proces-verbaal", "Sv 152 lid 1. Beschrijf wat je zelf zag: waar het lag, in welke staat, wie wat zei, welk voorwerp en welke categorie (voorlopig). Noteer de bedenkelijke omstandigheden en wat strafverminderend is."],
+        ["4. Registreren in MEOS", "Zoek het feit (E900, G411a, G411b of G412) en registreer het OM-feit. Zonder PV of registratie blijven sanctie en registratie van recidive achterwege."],
+        ["5. Dossier voor justitie", "Bij vuurwapens van categorie II en III: volledig PV en dossier, voorgeleiding, foto’s, het beslag met KVI en een deskundigenmening over classificatie of gebruiksklaar zijn als dat speelt."],
+        ["6. Overdracht", "Leg overdracht, opslaglocatie en de beslissing van de hulpofficier of officier van justitie vast. De officier van justitie beslist later over teruggave of vernietiging."]
+      ]],
+      ["ul", ["<b>Recidive</b>: de strafeis wordt hoger als de verdachte eerder is veroordeeld. De OM-richtlijn kent een recidivetermijn van 5 jaar (2 jaar bij andere categorieën). Bij recidive geldt het taakstrafverbod van Sr 22b.", "<b>Reikwijdte van de richtlijn</b>: de Richtlijn voor strafvordering wapens en munitie (2016R017) geldt voor de meest voorkomende misdrijven en enkele overtredingen. Grootschalige in- en uitvoer en handel vragen maatwerk.", "<b>Minderjarigen</b>: Halt kan alleen voor feiten uit het Besluit aanwijzing Halt-feiten 2024; volgens de Beslagwijzer staan wapens daar niet in. Een reprimande is mogelijk bij een overtreding of een licht misdrijf (Aanwijzing Jeugdstrafrecht 2026A002)."]],
+      ["tip", "Beslag en afdoening zijn twee losse beslissingen. Het beslag kun je altijd leggen als de beslagtoets klopt. De afdoening is aan het OM."]
+    ] },
     { h: "Wapen in een voertuig, kort beslag en vrijwillige afgifte", b: [
       ["p", "<b>Voorwerp en voertuig zijn twee aparte beslagbeslissingen.</b> Een wapen of munitie binnen handbereik kan strafverzwarend zijn. Dat is nog geen reden om het voertuig in beslag te nemen."],
       ["stap", [
@@ -128,7 +147,12 @@
       t: { r: "Pauzeer en overleg met de hulpofficier of officier van justitie. Maak de situatie veilig en leg vast wat je zag.", k: "warn" },
       ok: { r: "Stel veilig, leg vast, maak KVI en bewijs van ontvangst, leg het beslag voor aan de hulpofficier en maak een PV of registreer het OM-feit.", k: "ok" }
     } },
-    tabel: [["Feitcodes WWM", ["Code", "Feit", "Soort"], [
+    tabel: [["Wie doet wat", ["Wie", "Wat"], [
+      ["Jij", "Veiligstellen, beslagtoets, KVI, bewijs van ontvangst, PV of mini-PV, registreren van het OM-feit in MEOS."],
+      ["Hulpofficier", "Beslist over voortduren van het beslag en teruggave (Sv 116 lid 1). Voorgeleiding."],
+      ["OM", "Beslist over vervolging (Sv 167), legt de strafbeschikking op en bepaalt de strafeis."],
+      ["Politie", "Legt bij OM-feiten zelf geen sanctie op."]
+    ]], ["Feitcodes WWM", ["Code", "Feit", "Soort"], [
       ["E900", "Dragen wapen cat. IV onder 7°", "OM-feit"],
       ["G411a", "Dragen wapen cat. I onder 1° en 3°", "OM-feit, misdrijf"],
       ["G411b", "Voorhanden wapen cat. I onder 1° en 3°", "OM-feit, misdrijf"],
@@ -149,7 +173,8 @@
       ["Auto meenemen om het wapen", "Voertuig is een aparte beslissing."],
       ["“Even meenemen”", "Kort beslag volgt dezelfde regels."],
       ["Afgifte als beslag noemen", "Zonder beslag geen KVI."],
-      ["Zoeken uit WWM 52 afleiden", "WWM 52 lid 1 gaat over beslag."]
+      ["Zoeken uit WWM 52 afleiden", "WWM 52 lid 1 gaat over beslag."],
+      ["Beslag zonder registratie", "Zonder PV of OM-feit blijven sanctie en registratie van recidive achterwege."]
     ],
     flits: [
       ["Beslagtoets", "Welke drie vragen vormen de beslagtoets?", "Waarom moet het mee (Sv 94), mag jij het meenemen (WWM 52 lid 1), moet je daarvoor zoeken en heb je daarvoor een bevoegdheid."],
@@ -167,6 +192,10 @@
       ["Kort beslag", "Wat geldt bij “even meenemen”?", "Dezelfde regels als bij regulier beslag, met KVI, ontvangstbewijs en directe toets door de hulpofficier of officier van justitie."],
       ["Afstand", "Wanneer maak je geen KVI?", "Als het goed niet in beslag is genomen maar vrijwillig is afgegeven. Leg de overdracht apart vast."],
       ["Omstandigheden", "Noem bedenkelijke omstandigheden.", "Meerdere wapens, vliegveld of vliegtuig, evenement of voetbal, geladen wapen of geluiddemper, wapen onder handbereik in een voertuig of gedragen in het openbaar."],
+      ["Dossier", "Wat maak je bij een vuurwapen van categorie II of III?", "Een volledig PV en dossier. De verdachte wordt in beginsel voorgeleid. Leg bedenkelijke omstandigheden vast."],
+      ["Dossier", "Wat maak je bij een misdrijf uit afdeling G?", "Altijd een PV via de Transactiemodule. Het OM legt daarna de strafbeschikking op."],
+      ["Dossier", "Wie legt de strafbeschikking op?", "Het OM. Bij OM-feiten legt de politie zelf geen sanctie op."],
+      ["Dossier", "Wat geldt bij recidive?", "Een hogere strafeis. Recidivetermijn volgens de OM-richtlijn: 5 jaar, 2 jaar bij andere categorieën. Let op het taakstrafverbod van Sr 22b."],
       ["Omstandigheden", "Wat is strafverminderend?", "Het wapen is niet gebruiksklaar en niet met eenvoudige hulpmiddelen weer bruikbaar te maken."]
     ]
   }
