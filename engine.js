@@ -338,7 +338,7 @@
   function hub(root) {
     var w = el("div", "wrap wide");
     var hero = el("div", "hero");
-    hero.innerHTML = '<div class="crumb"><span class="rk">Voor de politieagent</span></div><h1>Politiehandboek</h1><p class="sub">Per onderdeel een leerdocument om te begrijpen en een spiekbriefje om op straat te gebruiken. Met beslisbomen, flitskaarten, zelftoetsen en tips en trucs.</p>';
+    hero.innerHTML = '<div class="crumb"><span class="rk">Intern document</span></div><h1>Politiehandboek</h1><p class="sub">Intern naslagwerk voor ons team. Per onderdeel een leerdocument en een spiekbriefje, met beslisbomen, flitskaarten en zelftoetsen.</p>';
     w.appendChild(hero);
     var sb = el("div", "sb", '<input id="hq" type="search" placeholder="Zoek in alle onderdelen, bijv. 9 uur, lijst II, wapenstok, heterdaad" autocomplete="off" aria-label="Zoeken in het hele handboek"><button id="hx" aria-label="Wis zoekopdracht" style="display:none">&times;</button>');
     w.appendChild(sb);

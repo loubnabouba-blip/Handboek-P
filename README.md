@@ -1,6 +1,6 @@
 # Politiehandboek
 
-Een leer- en spiekhandboek voor de politieagent, met per onderdeel een leerdocument en een spiekbriefje (kern, beslisboom, "weet ik niet", tabellen, checklist, valkuilen, flitskaarten en zoeken).
+Intern leer- en spiekhandboek, met per onderdeel een leerdocument en een spiekbriefje (kern, beslisboom, "weet ik niet", tabellen, checklist, valkuilen, flitskaarten en zoeken).
 
 Open `index.html` in een browser, of bekijk de site via GitHub Pages.
 
