@@ -39,6 +39,7 @@ function page(M, mode) {
 <div id="app"></div>
 <script>window.MODE="${mode}"</script>
 <script src="../data/${M.id}.js"></script>
+<script src="../data/menu.js"></script>
 <script src="../engine.js"></script>
 </body>
 </html>
@@ -63,11 +64,14 @@ ${scripts}
 <div id="app"></div>
 <script>window.MODE="hub"</script>
 ${scripts}
+<script src="data/menu.js"></script>
 <script src="engine.js"></script>
 </body>
 </html>
 `;
 }
+
+fs.writeFileSync(path.join(dir, "data", "menu.js"), "window.MENU = " + JSON.stringify(MODS.map((M) => ({ id: M.id, nr: M.nr, reeks: M.reeks, titel: M.titel }))) + ";\n");
 
 const fi = process.argv.indexOf("--fragment");
 if (fi > -1) {
@@ -85,6 +89,7 @@ if (fi > -1) {
 <div id="app"></div>
 <script>window.MODE="oefen"</script>
 ${scripts}
+<script src="data/menu.js"></script>
 <script src="engine.js"></script>
 </body>
 </html>

@@ -427,9 +427,50 @@
     draw();
   }
 
+
+  /* ---------- menu bovenin: alle onderdelen, uitklapbaar ---------- */
+  function menu(mode, cur) {
+    var items = (window.MENU || mods()).slice().sort(function (a, b) { return a.nr - b.nr; });
+    if (!items.length) return;
+    var p = (mode === "hub" || mode === "oefen") ? "" : "../";
+    var bar = el("div", "mbar");
+    var inner = el("div", "mbar-in");
+    var btn = el("button", "mbtn", '<span class="mic" aria-hidden="true"></span><span>Menu</span>');
+    btn.setAttribute("aria-expanded", "false"); btn.setAttribute("aria-controls", "mpanel");
+    var home = el("a", "mhome", "Politiehandboek"); home.href = p + "index.html";
+    inner.appendChild(btn); inner.appendChild(home); bar.appendChild(inner);
+    var panel = el("nav", "mpanel"); panel.id = "mpanel"; panel.hidden = true; panel.setAttribute("aria-label", "Alle onderdelen");
+    var top = el("div", "mtop");
+    top.innerHTML = '<a href="' + p + 'index.html">Overzicht</a><a href="' + p + 'oefenen.html">Alle flitskaarten</a>';
+    panel.appendChild(top);
+    [1, 2, 3, 4].forEach(function (r) {
+      var list = items.filter(function (m) { return m.reeks === r; });
+      if (!list.length) return;
+      var g = el("div", "mg r" + r);
+      g.appendChild(el("div", "mgh", "Reeks " + r + " · " + REEKS[r][0]));
+      list.forEach(function (M) {
+        var d = document.createElement("details"); d.className = "md";
+        if (M.id === cur) { d.open = true; d.className += " cur"; }
+        var s = document.createElement("summary");
+        s.innerHTML = '<span class="qn">' + M.nr + "</span><span>" + esc(M.titel) + "</span>";
+        d.appendChild(s);
+        d.appendChild(el("div", "ml", '<a href="' + p + "leren/" + M.id + '.html">Leerdocument</a><a href="' + p + "spiek/" + M.id + '.html">Spiekbriefje</a>'));
+        g.appendChild(d);
+      });
+      panel.appendChild(g);
+    });
+    bar.appendChild(panel);
+    document.body.insertBefore(bar, document.body.firstChild);
+    function set(open) { panel.hidden = !open; btn.setAttribute("aria-expanded", open ? "true" : "false"); document.body.classList.toggle("mopen", open); }
+    btn.onclick = function () { set(panel.hidden); };
+    document.addEventListener("keydown", function (ev) { if (ev.key === "Escape" && !panel.hidden) { set(false); btn.focus(); } });
+    document.addEventListener("click", function (ev) { if (!panel.hidden && !bar.contains(ev.target)) set(false); });
+  }
+
   /* ---------- start ---------- */
   function start() {
     var root = $("app"), mode = window.MODE;
+    menu(mode, mode === "leren" || mode === "spiek" ? (mods()[0] || {}).id : null);
     if (mode === "hub") return hub(root);
     if (mode === "oefen") return oefen(root);
     var M = mods()[0];
