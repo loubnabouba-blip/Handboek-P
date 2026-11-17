@@ -9,6 +9,7 @@ Open `index.html` in een browser, of bekijk de site via GitHub Pages.
 - `data/m01.js` t/m `m16.js`: de inhoud per onderdeel.
 - `engine.js` en `engine.css`: de gedeelde motor en opmaak.
 - `build.mjs`: genereert de pagina's uit de data (`node build.mjs`).
+- `politiehandboek.html`: het hele handboek in één bestand (`node build.mjs --single politiehandboek.html`).
 
 ## Bronnen
 Wetteksten: wetten.overheid.nl. Lokale regels: APV Amersfoort (lokaleregelgeving.overheid.nl). Beleid: aanwijzingen en richtlijnen van het Openbaar Ministerie (om.nl).
