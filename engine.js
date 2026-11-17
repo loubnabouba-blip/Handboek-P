@@ -305,7 +305,7 @@
     var pa = el("div"); pa.id = "pa"; w.appendChild(pa);
     foot(w);
     qEl = $("q"); qx = $("qx");
-    var saved = sget(M.id + ":tab", "kern"); cur = tabsOf().some(function (t) { return t[0] === saved; }) ? saved : "kern";
+    var saved = location.hash.slice(1) || sget(M.id + ":tab", "kern"); cur = tabsOf().some(function (t) { return t[0] === saved; }) ? saved : "kern";
     qEl.addEventListener("input", function () { qx.style.display = qEl.value ? "block" : "none"; draw(); });
     qx.onclick = function () { qEl.value = ""; qx.style.display = "none"; draw(); qEl.focus(); };
     pa.appendChild(el("h2", "", esc(M.titel) + " · spiekbriefje"));
@@ -343,37 +343,51 @@
     var sb = el("div", "sb", '<input id="hq" type="search" placeholder="Zoek in alle onderdelen, bijv. 9 uur, lijst II, wapenstok, heterdaad" autocomplete="off" aria-label="Zoeken in het hele handboek"><button id="hx" aria-label="Wis zoekopdracht" style="display:none">&times;</button>');
     w.appendChild(sb);
     var nCards = 0; mods().forEach(function (M) { nCards += (M.spiek && M.spiek.flits) ? M.spiek.flits.length : 0; });
-    var oc = el("a", "cta", "Oefen alle " + nCards + " flitskaarten door elkaar &rarr;"); oc.href = "oefenen.html"; w.appendChild(oc);
     var sres = el("div"); sres.id = "sres"; w.appendChild(sres);
     var grid = el("div"); grid.id = "grid"; w.appendChild(grid);
     var all = mods();
-    var quick = el("div", "quick");
-    quick.appendChild(el("h2", "", "Kies een onderdeel"));
-    [1, 2, 3, 4].forEach(function (r) {
-      var list = all.filter(function (m) { return m.reeks === r; });
-      if (!list.length) return;
-      var g = el("div", "qg r" + r);
-      g.appendChild(el("div", "qh", r + " · " + REEKS[r][0]));
+    var mode = sget("home:mode", "leren"); if (["leren", "spiek", "boom"].indexOf(mode) < 0) mode = "leren";
+    var openR = null;
+    var tasks = el("div", "tks");
+    grid.appendChild(el("h2", "hh", "Wat wil je doen?"));
+    grid.appendChild(tasks);
+    var tiles = el("div", "rts");
+    grid.appendChild(el("h2", "hh", "Kies een reeks"));
+    grid.appendChild(tiles);
+    var panel = el("div", "rp"); grid.appendChild(panel);
+    var TASKS = [["leren", "&#128214;", "Leren", "Leerdocumenten"], ["spiek", "&#128203;", "Spiekbriefjes", "Kort, op straat"], ["boom", "&#129517;", "Beslisbomen", "Wat doe ik nu?"], ["flits", "&#127183;", "Flitskaarten", nCards + " kaarten"]];
+    function target(M) { return (mode === "leren" ? "leren/" + M.id + ".html" : "spiek/" + M.id + ".html" + (mode === "boom" ? "#boom" : "")); }
+    function drawPanel() {
+      panel.innerHTML = ""; panel.style.display = openR ? "" : "none";
+      if (!openR) return;
+      var list = all.filter(function (m) { return m.reeks === openR && (mode !== "boom" || (m.spiek && m.spiek.boom)); });
+      var g = el("div", "rpi r" + openR);
+      g.appendChild(el("div", "qh", "Reeks " + openR + " · " + REEKS[openR][0]));
+      g.appendChild(el("p", "small rpc", mode === "leren" ? "Tik op een onderdeel om het leerdocument te openen." : mode === "spiek" ? "Tik op een onderdeel om het spiekbriefje te openen." : "Tik op een onderdeel om de beslisboom te openen."));
+      if (!list.length) g.appendChild(el("p", "small", "Geen beslisboom in deze reeks. Kies Leren of Spiekbriefjes."));
       list.forEach(function (M) {
-        g.appendChild(el("div", "qrow", '<span class="qn">' + M.nr + '</span><span class="qt">' + esc(M.titel) + '</span><a href="leren/' + M.id + '.html">Leren</a><a href="spiek/' + M.id + '.html">Spiek</a>'));
+        var other = mode === "leren" ? ["spiek/" + M.id + ".html", "Spiek"] : ["leren/" + M.id + ".html", "Leren"];
+        g.appendChild(el("div", "qrow", '<a class="qmain" href="' + target(M) + '"><span class="qn">' + M.nr + '</span><span class="qt">' + esc(M.titel) + "</span></a>" + '<a class="qalt" href="' + other[0] + '">' + other[1] + "</a>"));
       });
-      quick.appendChild(g);
-    });
-    grid.appendChild(quick);
-    grid.appendChild(el("p", "small", "De volgorde is bewust zo gekozen: eerst het fundament (wat mag, wanneer, waarom), dan de praktijk op straat, dan de bijzondere wetten, en tot slot het vastleggen en verantwoorden. Per onderdeel vind je hieronder een korte beschrijving."));
+      panel.appendChild(g);
+    }
+    function drawTasks() {
+      tasks.innerHTML = "";
+      TASKS.forEach(function (T) {
+        var a = el(T[0] === "flits" ? "a" : "button", "tk" + (T[0] === mode ? " on" : ""), '<span class="ti">' + T[1] + '</span><b>' + T[2] + "</b><small>" + T[3] + "</small>");
+        if (T[0] === "flits") a.href = "oefenen.html";
+        else { a.setAttribute("aria-pressed", T[0] === mode ? "true" : "false"); a.onclick = function () { mode = T[0]; sset("home:mode", mode); drawTasks(); drawPanel(); if (!openR) tiles.scrollIntoView({ behavior: "smooth", block: "start" }); }; }
+        tasks.appendChild(a);
+      });
+    }
     [1, 2, 3, 4].forEach(function (r) {
-      var list = all.filter(function (m) { return m.reeks === r; });
-      if (!list.length) return;
-      var g = el("div", "r" + r);
-      g.appendChild(el("div", "gr", "<h2>Reeks " + r + " · " + REEKS[r][0] + "</h2><span>" + REEKS[r][1] + "</span>"));
-      var mg = el("div", "mods");
-      list.forEach(function (M) {
-        var c = el("div", "mod");
-        c.innerHTML = '<span class="nr">ONDERDEEL ' + M.nr + "</span><h3>" + esc(M.titel) + "</h3><p>" + esc(M.kort) + '</p><div class="bt"><a class="fill" href="leren/' + M.id + '.html">Leerdocument</a><a href="spiek/' + M.id + '.html">Spiekbriefje</a></div>';
-        mg.appendChild(c);
-      });
-      g.appendChild(mg); grid.appendChild(g);
+      var n = all.filter(function (m) { return m.reeks === r; }).length;
+      if (!n) return;
+      var b = el("button", "rt r" + r, '<span class="rn">REEKS ' + r + '</span><b>' + REEKS[r][0] + "</b><small>" + n + " onderdelen &darr;</small>");
+      b.onclick = function () { openR = (openR === r ? null : r); Array.prototype.forEach.call(tiles.children, function (c) { c.classList.remove("on"); }); if (openR) b.classList.add("on"); drawPanel(); if (openR) panel.scrollIntoView({ behavior: "smooth", block: "nearest" }); };
+      tiles.appendChild(b);
     });
+    drawTasks(); drawPanel();
     foot(w);
     root.appendChild(w);
     var hq = $("hq"), hx = $("hx");
