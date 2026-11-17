@@ -50,6 +50,26 @@
       ["let", "Handboeien (AI 22) gelden ten behoeve van vervoer of verplaatsing. Voor beperking van de bewegingsvrijheid van een ingeslotene in de cel of bij vervoer is AI 35a de grondslag."],
       ["truc", "Boeien: <b>vervoer, vlucht of veiligheid, vastleggen</b>. Zonder die woorden geen boeien."]
     ] },
+    { h: "Fouilleren en strafuitsluiting", b: [
+      ["p", "Onder gezag van wie handel je? Optreden ter handhaving van de openbare orde en hulpverlening staat onder gezag van de burgemeester (Pw 11). Optreden ter strafrechtelijke handhaving staat onder gezag van de officier van justitie (Pw 12). Legitimatie: de ambtenaar legitimeert zich in burgerkleding ongevraagd, tenzij bijzondere omstandigheden dit onmogelijk maken, en in uniform op verzoek (AI 2)."],
+      ["tab", ["Soort fouillering", "Grondslag", "Wanneer"], [
+        ["Veiligheidsfouillering", "Pw 7 lid 3", "Onderzoek aan de kleding van personen en van voorwerpen die zij bij zich dragen, als uit feiten of omstandigheden blijkt dat een onmiddellijk gevaar dreigt voor hun leven of veiligheid of die van de ambtenaar of derden en het onderzoek noodzakelijk is om dit gevaar af te wenden. De persoon hoeft geen verdachte te zijn."],
+        ["Vervoersfouillering", "Pw 7 lid 4", "Een te vervoeren of in te sluiten persoon aan de kleding onderzoeken op voorwerpen die een gevaar voor de veiligheid van betrokkene of anderen kunnen vormen, en de voorwerpen die hij bij zich draagt of meevoert onderzoeken."],
+        ["Insluitingsfouillering", "Pw 7 lid 5 en 6", "Aan het lichaam: het hoofd van het territoriale onderdeel, zijn plaatsvervanger of de ambtenaar belast met de zorg voor ingeslotenen bepaalt het (lid 5). In het lichaam: de officier van justitie, door een arts of een verpleegkundige in opdracht, bij ernstig gevaar voor de orde of veiligheid in het bureau of voor de gezondheid van de ingeslotene (lid 6)."],
+        ["Opsporingsfouillering", "Sv 56", "De aangehouden verdachte, bij ernstige bezwaren en in het belang van het onderzoek. Aan lichaam of kleding: de officier van justitie of hulpofficier bepaalt het. In het lichaam: de officier van justitie, door een arts. Op een besloten plaats en voor zover mogelijk door personen van hetzelfde geslacht."]
+      ]],
+      ["ul", ["Het onderzoek aan de kleding bij veiligheids- en vervoersfouillering gebeurt door het oppervlakkig aftasten van de kleding, zo veel mogelijk door een ambtenaar van hetzelfde geslacht (AI 20 lid 1).", "Voorwerpen die een gevaar kunnen vormen voor de veiligheid van betrokkene of anderen neem je in bewaring (AI 20 lid 2).", "Melden van een veiligheidsfouillering doe je onverwijld schriftelijk aan de hulpofficier, met de redenen (AI 21).", "De uitoefening van deze bevoegdheden moet redelijk en gematigd zijn (Pw 7 lid 7)."]],
+      ["p", "<b>Strafuitsluitingsgronden</b> in het Wetboek van Strafrecht. Bij de afweerbevoegdheid in de Ambtsinstructie heb je ze minder snel nodig:"],
+      ["tab", ["Artikel", "Inhoud"], [
+        ["Sr 39", "Niet strafbaar is wie een feit begaat dat hem wegens de psychische stoornis, psychogeriatrische aandoening of verstandelijke handicap niet kan worden toegerekend."],
+        ["Sr 40", "Overmacht: niet strafbaar is wie een feit begaat waartoe hij door overmacht is gedrongen."],
+        ["Sr 41", "Noodweer (lid 1): noodzakelijke verdediging van eigen of andermans lijf, eerbaarheid of goed tegen ogenblikkelijke, wederrechtelijke aanranding. Noodweerexces (lid 2): overschrijding van de grenzen, als het onmiddellijk gevolg is van een hevige gemoedsbeweging door de aanranding."],
+        ["Sr 42", "Wettelijk voorschrift (lid 1). De ambtenaar die in de rechtmatige uitoefening van zijn taak en in overeenstemming met zijn geweldsinstructie geweld gebruikt (lid 2)."],
+        ["Sr 43", "Ambtelijk bevel: niet strafbaar is wie een feit begaat ter uitvoering van een ambtelijk bevel, gegeven door het daartoe bevoegde gezag. Een onbevoegd gegeven bevel heft de strafbaarheid niet op, tenzij het te goeder trouw als bevoegd gegeven werd beschouwd en de nakoming binnen de kring van zijn ondergeschiktheid lag (lid 2)."]
+      ]],
+      ["p", "<b>Afweerbevoegdheid</b>: bij het vuurwapen (AI 7 lid 1 onder f), pepperspray (AI 12a onder d), stroomstootwapen (AI 12c) en wapenstok (AI 12e onder e) en de hond (AI 15a onder c) staat als grond: om direct gevaar voor het leven van personen of voor het ontstaan van zwaar lichamelijk letsel af te wenden. Het is dus geen losse bevoegdheid maar onderdeel van de geweldsbevoegdheid van elk middel."],
+      ["p", "<b>De hond</b>: een surveillancehond mag alleen als geweldmiddel worden ingezet onder direct en voortdurend toezicht van een geleider bij de surveillancedienst, bij het optreden van een mobiele eenheid na toestemming van het bevoegd gezag, of bij het bewaken en beveiligen van personen, objecten en diensten (AI 15 lid 1). Een AOT-hond alleen onder direct en voortdurend toezicht van een geleider bij het optreden van een aanhoudings- en ondersteuningsteam of een bijstandseenheid, na toestemming van het bevoegd gezag (AI 15 lid 2)."]
+    ] },
     { h: "Melden", b: [
       ["tab", ["Wat", "Melding"], [
         ["Aanwenden van geweld, geweldmiddel, vuurwapen ter hand nemen", "Schriftelijk (aard, middel, gevolgen) en mondeling (feiten, omstandigheden, redenen) aan de hulpofficier van justitie die de registratie doet, zo spoedig mogelijk (AI 17)"],
@@ -121,6 +141,14 @@
       ["Handboeien niet melden", "Ook zonder kracht onverwijld schriftelijk melden."]
     ],
     flits: [
+      ["Fouilleren", "Wanneer mag je een veiligheidsfouillering doen (Pw 7 lid 3)?", "Als uit feiten of omstandigheden blijkt dat een onmiddellijk gevaar dreigt voor leven of veiligheid van de persoon, jou of derden, en het onderzoek noodzakelijk is om dat af te wenden. De persoon hoeft geen verdachte te zijn."],
+      ["Fouilleren", "Hoe voer je een veiligheidsfouillering uit (AI 20)?", "Door oppervlakkig aftasten van de kleding, zo veel mogelijk door een ambtenaar van hetzelfde geslacht."],
+      ["Fouilleren", "Wat is een vervoersfouillering (Pw 7 lid 4)?", "Een te vervoeren of in te sluiten persoon aan de kleding onderzoeken op gevaarlijke voorwerpen, en de voorwerpen die hij bij zich draagt."],
+      ["Fouilleren", "Wie mag een onderzoek in het lichaam van een aangehouden verdachte bevelen (Sv 56)?", "De officier van justitie, uitgevoerd door een arts. Aan lichaam of kleding bepaalt de officier van justitie of hulpofficier."],
+      ["Strafuitsluiting", "Welke strafuitsluitingsgronden noemt Sr 39 t/m 43?", "Ontoerekenbaarheid, overmacht, noodweer en noodweerexces, wettelijk voorschrift en ambtelijk bevel."],
+      ["Strafuitsluiting", "Wat zegt Sr 42 lid 2?", "Niet strafbaar is de ambtenaar die in de rechtmatige uitoefening van zijn taak en in overeenstemming met zijn geweldsinstructie geweld gebruikt."],
+      ["Gezag", "Onder wiens gezag staat de politie bij openbare orde en bij strafrechtelijke handhaving?", "Openbare orde en hulpverlening: de burgemeester (Pw 11). Strafrechtelijke handhaving: de officier van justitie (Pw 12)."],
+      ["Gezag", "Wanneer legitimeer je je (AI 2)?", "In burgerkleding ongevraagd, tenzij bijzondere omstandigheden dit onmogelijk maken. In uniform op verzoek."],
       ["Kader", "Wat zegt Pw 7 lid 1?", "Geweld of vrijheidsbeperkende middelen mogen als het doel dit rechtvaardigt, mede gelet op de gevaren, en het niet anders kan. Zo mogelijk eerst waarschuwen."],
       ["Kader", "Wat is het verschil tussen redelijk en gematigd (Pw 7 lid 7)?", "Pw 7 lid 7: de uitoefening moet in verhouding tot het doel redelijk en gematigd zijn. Doorgaans uitgelegd als subsidiariteit (redelijk) en proportionaliteit (gematigd)."],
       ["Kader", "Wat is geweld volgens AI 1?", "Elke dwangmatige kracht van meer dan geringe betekenis op personen of zaken."],
