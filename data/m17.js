@@ -44,9 +44,15 @@
       ["p", "<b>Feitcodes WWM</b> volgens de Beslagwijzer (OM Feitenboekje 2025). Alle vier zijn OM-feiten: de politie legt zelf geen sanctie op. Je registreert het feit met een proces-verbaal, meestal een mini-PV. Bij misdrijven uit afdeling G is altijd een PV via de Transactiemodule nodig."],
       ["tab", ["Code", "Feit", "Grondslag"], [
         ["E900", "Een wapen in de zin van categorie IV onder 7° dragen. Leg vast welk voorwerp het is, de aard en omstandigheden van het aantreffen, het doel en of er is gedreigd.", "WWM 2, 27 lid 1, 54"],
-        ["G411a", "Een wapen uit categorie I, onder 1° en 3°, dragen. Misdrijf.", "WWM 13, 55 lid 1"],
-        ["G411b", "Een wapen uit categorie I, onder 1° en 3°, voorhanden hebben. Misdrijf.", "WWM 13, 55 lid 1"],
-        ["G412", "Een wapen uit categorie II, onder 6°, voorhanden hebben. Misdrijf.", "WWM 26, 55 lid 1"]
+        ["G411a", "Een wapen uit categorie I, onder 1° (stiletto’s, valmessen en vlindermessen) en 3° (boksbeugels, ploertendoders, wurgstokken, werpsterren, vilmessen, ballistische messen en geluiddempers), dragen. Misdrijf.", "WWM 13, 55 lid 1"],
+        ["G411b", "Dezelfde wapens (categorie I, onder 1° en 3°) voorhanden hebben. Misdrijf.", "WWM 13, 55 lid 1"],
+        ["G412", "Een wapen uit categorie II, onder 6° (bijvoorbeeld pepperspray en traangas), voorhanden hebben. Misdrijf.", "WWM 26, 55 lid 1"]
+      ]],
+      ["p", "<b>Zo zoek je ze in MEOS</b>: zoek bij “Zoek feit” op “wapen”. Je vindt dan vier feiten: E900, G411a, G411b en G412. De feitcategorie van deze feiten is 8: een ieder."],
+      ["dl", [
+        ["E900", "Een voorwerp, zijnde een wapen in de zin van artikel 2 lid 1 categorie IV onder 7 van de WWM, dragen. Leg vast: welk voorwerp, de aard en omstandigheden van het aantreffen, geen ander doel dan letsel aan personen, dreigen."],
+        ["G411a en G411b", "Een voorwerp, zijnde een wapen in de zin van artikel 2 lid 1 categorie I onder 1 en 3 van de WWM: a dragen, b voorhanden hebben."],
+        ["G412", "Een voorwerp, zijnde een wapen in de zin van artikel 2 lid 1 categorie II onder 6 van de WWM (bijvoorbeeld pepperspray en traangas), voorhanden hebben."]
       ]],
       ["tip", "Een feit met de letter m (Mulder) geeft op zichzelf geen grond voor beslag. Bij een OM-feit (*) legt de politie zelf geen sanctie op."],
       ["p", "<b>Noteer in het proces-verbaal</b> de omstandigheden die volgens de OM-richtlijn de strafeis verhogen (bedenkelijke omstandigheden):"],
@@ -153,8 +159,9 @@
       ["Afdoening", "Wat verplicht tot een proces-verbaal?", "Sv 152 lid 1. Achterwege laten kan alleen onder verantwoordelijkheid van het OM (lid 2)."],
       ["Afdoening", "Mag de politie een volwassene zelf waarschuwen bij een wapenmisdrijf?", "Nee. De politie kan niet zelf waarschuwen of seponeren."],
       ["Codes", "Wat is E900?", "Een wapen in de zin van categorie IV onder 7° dragen. OM-feit."],
-      ["Codes", "Wat is G411a en G411b?", "Een wapen uit categorie I, onder 1° en 3°, dragen (a) of voorhanden hebben (b). Misdrijf: altijd PV via de Transactiemodule."],
-      ["Codes", "Wat is G412?", "Een wapen uit categorie II, onder 6°, voorhanden hebben. Misdrijf: altijd PV via de Transactiemodule."],
+      ["Codes", "Wat is G411a en G411b?", "Een wapen uit categorie I, onder 1° en 3° (o.a. stiletto, valmes, vlindermes, boksbeugel, ploertendoder, wurgstok, werpster, vilmes, ballistisch mes, geluiddemper), dragen (a) of voorhanden hebben (b). Misdrijf: altijd PV via de Transactiemodule."],
+      ["Codes", "Wat is G412?", "Een wapen uit categorie II, onder 6° (bijvoorbeeld pepperspray en traangas), voorhanden hebben. Misdrijf: altijd PV via de Transactiemodule."],
+      ["Codes", "Welke feitcategorie hebben E900, G411a, G411b en G412 in MEOS?", "Feitcategorie 8: een ieder."],
       ["Voertuig", "Is een wapen in de auto een reden om de auto in beslag te nemen?", "Niet automatisch. Voorwerp en voertuig zijn twee beslissingen. Voor het voertuig heb je een eigen reden, bevoegdheid, noodzaak en verhouding nodig."],
       ["Voertuig", "Bewijst de kentekenregistratie voorhanden hebben?", "Nee. Leg vast wie sleutel of toegang had en waar de inzittenden zaten."],
       ["Kort beslag", "Wat geldt bij “even meenemen”?", "Dezelfde regels als bij regulier beslag, met KVI, ontvangstbewijs en directe toets door de hulpofficier of officier van justitie."],

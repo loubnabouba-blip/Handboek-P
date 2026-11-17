@@ -1,7 +1,7 @@
 {
   "name": "Politiehandboek",
   "short_name": "Handboek",
-  "description": "Leerdocumenten en spiekbriefjes voor de politieagent",
+  "description": "Intern document: leerdocumenten en spiekbriefjes",
   "lang": "nl",
   "start_url": "./",
   "scope": "./",
