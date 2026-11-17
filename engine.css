@@ -219,3 +219,28 @@ footer.f{margin-top:22px;font-size:.8rem;color:var(--muted)}
 :root[data-theme="dark"] .qrow a:first-of-type{color:#0b111f}
 
 .bo button.weet{border-style:dashed;color:var(--muted);background:transparent}
+
+/* menu bovenin */
+.mbar{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);margin:0 calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:env(safe-area-inset-top,0px) max(16px,env(safe-area-inset-left,0px)) 0}
+.mbar-in{max-width:1040px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:8px 0}
+.mbtn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 14px;border-radius:999px;font:700 .9rem var(--fb);cursor:pointer}
+.mic{width:16px;height:2px;background:currentColor;box-shadow:0 5px 0 currentColor,0 -5px 0 currentColor;border-radius:2px}
+.mhome{font:700 1rem var(--fh);color:var(--ink);text-decoration:none}
+.mpanel{max-width:1040px;margin:0 auto;max-height:calc(100vh - 64px);max-height:calc(100dvh - 64px);overflow-y:auto;padding:4px 0 16px;-webkit-overflow-scrolling:touch}
+.mpanel[hidden]{display:none}
+.mtop{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 10px}
+.mtop a{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 12px;border-radius:999px;font:600 .85rem var(--fb);text-decoration:none}
+.mg{margin:0 0 10px}
+.mgh{font:700 .75rem var(--fb);letter-spacing:.06em;text-transform:uppercase;color:var(--rk);padding:6px 2px}
+.md{border:1px solid var(--line);background:var(--card);border-radius:12px;margin:0 0 6px;border-left:4px solid var(--rk)}
+.md summary{display:flex;gap:10px;align-items:center;padding:11px 12px;cursor:pointer;font:600 .95rem var(--fb);list-style:none}
+.md summary::-webkit-details-marker{display:none}
+.md summary::after{content:"+";margin-left:auto;color:var(--muted);font-weight:700}
+.md[open] summary::after{content:"\2212"}
+.md.cur{box-shadow:0 0 0 2px var(--rk) inset}
+.md .qn{flex:none;width:24px;height:24px;border-radius:50%;background:var(--rk);color:#fff;display:inline-flex;align-items:center;justify-content:center;font:700 .75rem var(--fb)}
+.ml{display:flex;gap:8px;padding:0 12px 12px 46px}
+.ml a{border:1px solid var(--line);color:var(--acc);padding:7px 12px;border-radius:999px;font:600 .85rem var(--fb);text-decoration:none;background:var(--bg)}
+body.mopen{overflow:hidden}
+@media print{.mbar{display:none!important}}
+nav.tabs{top:calc(53px + env(safe-area-inset-top,0px))}
