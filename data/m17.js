@@ -41,7 +41,7 @@
     { h: "Beslag is geen afdoening", b: [
       ["p", "Een wapen in beslag nemen en geen proces-verbaal maken, komt voor, maar mag niet. De wapenmisdrijven uit WWM 55 zijn misdrijven (WWM 56). Sv 152 lid 1 verplicht tot een proces-verbaal. Alleen onder verantwoordelijkheid van het OM mag dat achterwege blijven (Sv 152 lid 2). Afzien van vervolging kan alleen het OM (Sv 167 lid 2)."],
       ["ul", ["<b>Volwassene</b>: de politie kan niet zelf waarschuwen of seponeren. Een politiewaarschuwing is geen afdoening bij een wapenmisdrijf.", "<b>Jeugdige first offender</b>: de bevoegde opsporingsambtenaar kan bij een overtreding of een licht misdrijf een reprimande geven. Bij andere misdrijven alleen met toestemming van de officier van justitie. Welke feiten voor Halt in aanmerking komen, staat in het Besluit aanwijzing Halt-feiten 2024 (Aanwijzing Jeugdstrafrecht 2026A002).", "<b>Beslag en afdoening</b> zijn twee losse beslissingen. Ook bij een jeugdafdoening of een sepot blijft het voorwerp in de beslagketen. De officier van justitie beslist later over teruggave of vernietiging.", "<b>Legaal bezit zonder verdenking</b>: wie zonder gerechtigd te zijn een wapen of munitie voorhanden heeft, moet die terstond bij de korpschef in bewaring geven (WWM 8). Dat is bestuurlijk en geen strafrechtelijke afdoening."]],
-      ["p", "<b>Feitcodes WWM</b> volgens de Beslagwijzer (OM Feitenboekje 2025). Alle vier zijn OM-feiten: de politie legt zelf geen sanctie op. Je registreert het feit met een proces-verbaal, meestal een mini-PV. Bij misdrijven uit afdeling G is altijd een PV via de Transactiemodule nodig."],
+      ["p", "<b>Feitcodes WWM</b> volgens het OM Feitenboekje 2026. Alle vier zijn OM-feiten (de asterisk): voor deze feiten kan de politie geen sanctie opleggen, ze worden grotendeels met een mini proces-verbaal afgedaan. Je registreert het feit met een proces-verbaal, meestal een mini-PV. Bij misdrijven uit afdeling G is altijd een PV via de Transactiemodule nodig."],
       ["tab", ["Code", "Feit", "Grondslag"], [
         ["E900", "Een wapen in de zin van categorie IV onder 7° dragen. Leg vast welk voorwerp het is, de aard en omstandigheden van het aantreffen, het doel en of er is gedreigd.", "WWM 2, 27 lid 1, 54"],
         ["G411a", "Een wapen uit categorie I, onder 1° (stiletto’s, valmessen en vlindermessen) en 3° (boksbeugels, ploertendoders, wurgstokken, werpsterren, vilmessen, ballistische messen en geluiddempers), dragen. Misdrijf.", "WWM 13, 55 lid 1"],
@@ -64,12 +64,12 @@
       ["tab", ["Wat je aantreft", "Wat jij maakt", "Wat daarna gebeurt"], [
         ["Categorie IV dragen (E900)", "Een overtreding. Registreer het OM-feit met een proces-verbaal, meestal een mini-PV, met het voorwerp, de aard en omstandigheden van het aantreffen, het doel (geen ander doel dan letsel aan personen) en of er is gedreigd.", "Het OM beslist over de afdoening. Volwassenen: geen reprimande of waarschuwing als afdoening. Een jeugdige first offender kan een reprimande krijgen: overleg met de officier van justitie of dat hier past."],
         ["Categorie I of categorie II onder 6° (G411a, G411b, G412)", "Een misdrijf. Altijd een PV via de Transactiemodule, mini-PV of PV volgens de afdeling-G-regels.", "Het OM legt daarna de strafbeschikking op, of beslist anders over de vervolging."],
-        ["Vuurwapen categorie II of III, explosieven", "Een volledig PV en dossier. De verdachte wordt in beginsel voorgeleid. Leg bedenkelijke omstandigheden vast, want die verhogen de strafeis.", "Voorlopige hechtenis is toegelaten (Sv 67 lid 1 onder a, maximumstraf 8 jaar volgens WWM 55 lid 3 of 7). De officier van justitie beslist over vervolging."],
+        ["Vuurwapen categorie II of III, explosieven", "Een volledig PV en dossier. De OM-richtlijn zegt: verdachte in beginsel voorgeleiden bij vuurwapen(s). Leg bedenkelijke omstandigheden vast, want die verhogen de strafeis.", "Voorlopige hechtenis is toegelaten (Sv 67 lid 1 onder a, maximumstraf 8 jaar volgens WWM 55 lid 3 of 7). Een strafbeschikking is niet mogelijk, want die kan alleen bij een maximumstraf van niet meer dan zes jaar (Sv 257a lid 1). De officier van justitie beslist over vervolging."],
         ["Munitie of onderdelen zonder wapen", "PV of dossier, met aantallen, soort en toestand.", "Het OM beslist over de afdoening."]
       ]],
       ["stap", [
         ["1. Veiligstellen en beslag", "Veiligstellen, vastleggen, beslagtoets, KVI en bewijs van ontvangst. Leg het beslag direct voor aan de hulpofficier of officier van justitie (Sv 94 lid 3, Sv 116 lid 1)."],
-        ["2. Aanhouden of niet", "Heterdaad: Sv 53. Buiten heterdaad op bevel van de officier van justitie: Sv 54, bij een misdrijf waarvoor voorlopige hechtenis is toegelaten (Sv 67 lid 1)."],
+        ["2. Aanhouden of niet", "Aanhouden is een bevoegdheid, geen plicht. Heterdaad: Sv 53. Buiten heterdaad op bevel van de officier van justitie: Sv 54, bij een misdrijf waarvoor voorlopige hechtenis is toegelaten (Sv 67 lid 1)."],
         ["3. Proces-verbaal", "Sv 152 lid 1. Beschrijf wat je zelf zag: waar het lag, in welke staat, wie wat zei, welk voorwerp en welke categorie (voorlopig). Noteer de bedenkelijke omstandigheden en wat strafverminderend is."],
         ["4. Registreren in MEOS", "Zoek het feit (E900, G411a, G411b of G412) en registreer het OM-feit. Zonder PV of registratie blijven sanctie en registratie van recidive achterwege."],
         ["5. Dossier voor justitie", "Bij vuurwapens van categorie II en III: volledig PV en dossier, voorgeleiding, foto’s, het beslag met KVI en een deskundigenmening over classificatie of gebruiksklaar zijn als dat speelt."],
@@ -153,10 +153,10 @@
       ["OM", "Beslist over vervolging (Sv 167), legt de strafbeschikking op en bepaalt de strafeis."],
       ["Politie", "Legt bij OM-feiten zelf geen sanctie op."]
     ]], ["Feitcodes WWM", ["Code", "Feit", "Soort"], [
-      ["E900", "Dragen wapen cat. IV onder 7°", "OM-feit"],
-      ["G411a", "Dragen wapen cat. I onder 1° en 3°", "OM-feit, misdrijf"],
-      ["G411b", "Voorhanden wapen cat. I onder 1° en 3°", "OM-feit, misdrijf"],
-      ["G412", "Voorhanden wapen cat. II onder 6°", "OM-feit, misdrijf"]
+      ["E900", "Dragen wapen cat. IV onder 7°", "OM-feit (overtreding, afdeling E). Boetebase: € 225"],
+      ["G411a", "Dragen wapen cat. I onder 1° en 3°", "OM-feit, misdrijf. Boetebase: € 325"],
+      ["G411b", "Voorhanden wapen cat. I onder 1° en 3°", "OM-feit, misdrijf. Boetebase: € 225"],
+      ["G412", "Voorhanden wapen cat. II onder 6°", "OM-feit, misdrijf. Boetebase: € 350"]
     ]]],
     check: [
       ["Veilig", "Eerst veilig. Specialist bij explosief of twijfel."],
@@ -192,7 +192,7 @@
       ["Kort beslag", "Wat geldt bij “even meenemen”?", "Dezelfde regels als bij regulier beslag, met KVI, ontvangstbewijs en directe toets door de hulpofficier of officier van justitie."],
       ["Afstand", "Wanneer maak je geen KVI?", "Als het goed niet in beslag is genomen maar vrijwillig is afgegeven. Leg de overdracht apart vast."],
       ["Omstandigheden", "Noem bedenkelijke omstandigheden.", "Meerdere wapens, vliegveld of vliegtuig, evenement of voetbal, geladen wapen of geluiddemper, wapen onder handbereik in een voertuig of gedragen in het openbaar."],
-      ["Dossier", "Wat maak je bij een vuurwapen van categorie II of III?", "Een volledig PV en dossier. De verdachte wordt in beginsel voorgeleid. Leg bedenkelijke omstandigheden vast."],
+      ["Dossier", "Wat maak je bij een vuurwapen van categorie II of III?", "Een volledig PV en dossier. De OM-richtlijn zegt: verdachte in beginsel voorgeleiden bij vuurwapen(s). Leg bedenkelijke omstandigheden vast."],
       ["Dossier", "Wat maak je bij een misdrijf uit afdeling G?", "Altijd een PV via de Transactiemodule. Het OM legt daarna de strafbeschikking op."],
       ["Dossier", "Wie legt de strafbeschikking op?", "Het OM. Bij OM-feiten legt de politie zelf geen sanctie op."],
       ["Dossier", "Wat geldt bij recidive?", "Een hogere strafeis. Recidivetermijn volgens de OM-richtlijn: 5 jaar, 2 jaar bij andere categorieën. Let op het taakstrafverbod van Sr 22b."],

@@ -21,6 +21,7 @@
   function el(t, c, h) { var e = document.createElement(t); if (c) e.className = c; if (h != null) e.innerHTML = h; return e; }
   function esc(t) { return String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
   function strip(h) { var d = document.createElement("div"); d.innerHTML = h; return d.textContent || ""; }
+  var BOOK = window.BOOK || null, FLAT = !!(BOOK && BOOK.flat), BNAME = BOOK ? BOOK.titel : "Politiehandboek";
   function sget(k, d) { try { var v = localStorage.getItem("pol:" + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }
   function sset(k, v) { try { localStorage.setItem("pol:" + k, JSON.stringify(v)); } catch (e) {} }
   function $(id) { return document.getElementById(id); }
@@ -30,7 +31,7 @@
   function header(root, M, mode) {
     var w = el("div", "wrap");
     var t = el("div", "top");
-    t.appendChild(el("div", "crumb", '<a href="../index.html">Politiehandboek</a><span>/</span><span class="rk">Reeks ' + M.reeks + " · " + REEKS[M.reeks][0] + "</span>"));
+    t.appendChild(el("div", "crumb", '<a href="../index.html">' + BNAME + "</a>" + (FLAT ? "" : '<span>/</span><span class="rk">Reeks ' + M.reeks + " · " + REEKS[M.reeks][0] + "</span>")));
     t.appendChild(el("h1", "", esc(M.titel)));
     t.appendChild(el("p", "sub", esc(M.kort)));
     var sw = el("div", "sw");
@@ -338,7 +339,7 @@
   function hub(root) {
     var w = el("div", "wrap wide");
     var hero = el("div", "hero");
-    hero.innerHTML = '<div class="crumb"><span class="rk">Intern document</span></div><h1>Politiehandboek</h1><p class="sub">Intern naslagwerk voor ons team. Per onderdeel een leerdocument en een spiekbriefje, met beslisbomen, flitskaarten en zelftoetsen.</p>';
+    hero.innerHTML = '<div class="crumb"><span class="rk">' + (BOOK ? BOOK.tag : "Intern document") + "</span></div><h1>" + BNAME + '</h1><p class="sub">' + (BOOK ? BOOK.sub : "Intern naslagwerk voor ons team. Per onderdeel een leerdocument en een spiekbriefje, met beslisbomen, flitskaarten en zelftoetsen.") + "</p>";
     w.appendChild(hero);
     var sb = el("div", "sb", '<input id="hq" type="search" placeholder="Zoek in alle onderdelen, bijv. 9 uur, lijst II, wapenstok, heterdaad" autocomplete="off" aria-label="Zoeken in het hele handboek"><button id="hx" aria-label="Wis zoekopdracht" style="display:none">&times;</button>');
     w.appendChild(sb);
@@ -364,7 +365,7 @@
     function usable(m) { return mode !== "boom" || (m.spiek && m.spiek.boom); }
     var CAP = { leren: "Tik op een onderdeel om het leerdocument te openen.", spiek: "Tik op een onderdeel om het spiekbriefje te openen.", boom: "Tik op een onderdeel om de beslisboom te openen." };
     var tpanel = el("div", "rp tp"); tasks.parentNode.insertBefore(tpanel, tasks.nextSibling);
-    var tOpen = false;
+    var tOpen = FLAT;
     function drawTPanel() {
       tpanel.innerHTML = ""; tpanel.style.display = tOpen ? "" : "none";
       if (!tOpen) return;
@@ -374,7 +375,7 @@
         var list = all.filter(function (m) { return m.reeks === r && usable(m); });
         if (!list.length) return;
         var sec = el("div", "r" + r);
-        sec.appendChild(el("div", "qh", "Reeks " + r + " · " + REEKS[r][0]));
+        if (!FLAT) sec.appendChild(el("div", "qh", "Reeks " + r + " · " + REEKS[r][0]));
         list.forEach(function (M) { sec.appendChild(rowEl(M)); });
         g.appendChild(sec);
       });
@@ -396,7 +397,7 @@
       TASKS.forEach(function (T) {
         var a = el(T[0] === "flits" ? "a" : "button", "tk" + (T[0] === mode ? " on" : ""), '<span class="ti">' + T[1] + '</span><b>' + T[2] + "</b><small>" + T[3] + "</small>");
         if (T[0] === "flits") a.href = "oefenen.html";
-        else { a.setAttribute("aria-pressed", T[0] === mode ? "true" : "false"); a.onclick = function () { var same = (mode === T[0]); mode = T[0]; sset("home:mode", mode); tOpen = same ? !tOpen : true; drawTasks(); drawTPanel(); drawPanel(); if (tOpen) tpanel.scrollIntoView({ behavior: "smooth", block: "nearest" }); }; }
+        else { a.setAttribute("aria-pressed", T[0] === mode ? "true" : "false"); a.onclick = function () { var same = (mode === T[0]); mode = T[0]; sset("home:mode", mode); tOpen = FLAT ? true : (same ? !tOpen : true); drawTasks(); drawTPanel(); drawPanel(); if (tOpen) tpanel.scrollIntoView({ behavior: "smooth", block: "nearest" }); }; }
         tasks.appendChild(a);
       });
     }
@@ -407,6 +408,7 @@
       b.onclick = function () { openR = (openR === r ? null : r); Array.prototype.forEach.call(tiles.children, function (c) { c.classList.remove("on"); }); if (openR) b.classList.add("on"); drawPanel(); if (openR) panel.scrollIntoView({ behavior: "smooth", block: "nearest" }); };
       tiles.appendChild(b);
     });
+    if (FLAT) { var hd = tiles.previousSibling; if (hd && hd.parentNode) hd.parentNode.removeChild(hd); tiles.parentNode.removeChild(tiles); panel.parentNode.removeChild(panel); }
     drawTasks(); drawTPanel(); drawPanel();
     foot(w);
     root.appendChild(w);
@@ -419,7 +421,7 @@
   /* ---------- oefenen: alle flitskaarten door elkaar ---------- */
   function oefen(root) {
     var w = el("div", "wrap"), top = el("div", "top");
-    top.appendChild(el("div", "crumb", '<a href="index.html">Politiehandboek</a><span>/</span><span class="rk">Oefenen</span>'));
+    top.appendChild(el("div", "crumb", '<a href="index.html">' + BNAME + '</a><span>/</span><span class="rk">Oefenen</span>'));
     top.appendChild(el("h1", "", "Alle flitskaarten"));
     top.appendChild(el("p", "sub", "Alle onderdelen door elkaar. Je voortgang is dezelfde als bij de flitskaarten per onderdeel."));
     w.appendChild(top);
@@ -441,7 +443,7 @@
     function draw() {
       if (!deck) build();
       box.innerHTML = "";
-      var c1 = el("div", "chips"); chip(c1, "Alles", "all"); [1, 2, 3, 4].forEach(function (r) { chip(c1, "Reeks " + r + " · " + REEKS[r][0], "r" + r); }); box.appendChild(c1);
+      var c1 = el("div", "chips"); chip(c1, "Alles", "all"); if (!FLAT) [1, 2, 3, 4].forEach(function (r) { chip(c1, "Reeks " + r + " · " + REEKS[r][0], "r" + r); }); box.appendChild(c1);
       var c2 = el("div", "selrow");
       var sl = document.createElement("select"); sl.className = "msel"; sl.setAttribute("aria-label", "Kies een onderdeel");
       var o0 = document.createElement("option"); o0.value = ""; o0.textContent = "Kies een onderdeel"; sl.appendChild(o0);
@@ -477,7 +479,7 @@
     var inner = el("div", "mbar-in");
     var btn = el("button", "mbtn", '<span class="mic" aria-hidden="true"></span><span>Menu</span>');
     btn.setAttribute("aria-expanded", "false"); btn.setAttribute("aria-controls", "mpanel");
-    var home = el("a", "mhome", "Politiehandboek"); home.href = p + "index.html";
+    var home = el("a", "mhome", BNAME); home.href = p + "index.html";
     inner.appendChild(btn); inner.appendChild(home); bar.appendChild(inner);
     var panel = el("nav", "mpanel"); panel.id = "mpanel"; panel.hidden = true; panel.setAttribute("aria-label", "Alle onderdelen");
     var top = el("div", "mtop");
@@ -487,7 +489,7 @@
       var list = items.filter(function (m) { return m.reeks === r; });
       if (!list.length) return;
       var g = el("div", "mg r" + r);
-      g.appendChild(el("div", "mgh", "Reeks " + r + " · " + REEKS[r][0]));
+      if (!FLAT) g.appendChild(el("div", "mgh", "Reeks " + r + " · " + REEKS[r][0]));
       list.forEach(function (M) {
         var d = document.createElement("details"); d.className = "md";
         if (M.id === cur) { d.open = true; d.className += " cur"; }

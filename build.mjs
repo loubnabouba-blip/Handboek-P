@@ -74,17 +74,26 @@ ${scripts}
 
 fs.writeFileSync(path.join(dir, "data", "menu.js"), "window.MENU = " + JSON.stringify(MODS.map((M) => ({ id: M.id, nr: M.nr, reeks: M.reeks, titel: M.titel }))) + ";\n");
 
-const si = process.argv.indexOf("--single");
-if (si > -1) {
+function bundle(out, book) {
   const rd = (f) => fs.readFileSync(path.join(dir, f), "utf8");
-  const menuData = "window.MENU = " + JSON.stringify(MODS.map((M) => ({ id: M.id, nr: M.nr, reeks: M.reeks, titel: M.titel }))) + ";";
-  const dataJs = files.map((f) => rd("data/" + f)).join("\n");
+  const ids = book ? book.mods : MODS.map((M) => M.id);
+  let sel = ids.map((id) => MODS.find((M) => M.id === id));
+  const nrOf = {};
+  sel.forEach((M, i) => { nrOf[M.id] = book ? i + 1 : M.nr; });
+  const menuData = "window.MENU = " + JSON.stringify(sel.map((M) => ({ id: M.id, nr: nrOf[M.id], reeks: M.reeks, titel: M.titel }))) + ";";
+  let dataJs = ids.map((id) => rd("data/" + id + ".js")).join("\n");
+  if (book) {
+    for (const [a, b] of book.replace || []) dataJs = dataJs.split(a).join(b);
+    dataJs += "\n(function(){var n=" + JSON.stringify(nrOf) + ",o=" + JSON.stringify(ids) + ";window.MODS=window.MODS.filter(function(m){return n[m.id]}).sort(function(a,b){return o.indexOf(a.id)-o.indexOf(b.id)});window.MODS.forEach(function(m){m.nr=n[m.id]});})();";
+  }
+  const titel = book ? book.titel : "Politiehandboek";
+  const bookJs = book ? "window.BOOK=" + JSON.stringify({ titel: book.titel, tag: book.tag, sub: book.sub, flat: true }) + ";" : "";
   const html = `<!doctype html>
 <html lang="nl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Politiehandboek</title>
+<title>${titel}</title>
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#12306b">
 ${fonts}
@@ -94,7 +103,7 @@ ${rd("engine.css")}
 </head>
 <body>
 <div id="app"></div>
-<script>window.SINGLE=true;window.MODE="hub";</script>
+<script>window.SINGLE=true;window.MODE="hub";${bookJs}</script>
 <script>
 ${menuData}
 ${dataJs}
@@ -105,8 +114,15 @@ ${rd("engine.js")}
 </body>
 </html>
 `;
-  fs.writeFileSync(process.argv[si + 1], html);
-  console.log("alles-in-een geschreven:", process.argv[si + 1], Math.round(html.length / 1024) + " kB");
+  fs.writeFileSync(out, html);
+  console.log("alles-in-een geschreven:", out, Math.round(html.length / 1024) + " kB");
+}
+const si = process.argv.indexOf("--single");
+if (si > -1) { bundle(process.argv[si + 1], null); process.exit(0); }
+const bi = process.argv.indexOf("--book");
+if (bi > -1) {
+  const book = JSON.parse(fs.readFileSync(process.argv[bi + 1], "utf8"));
+  bundle(path.join(dir, book.out), book);
   process.exit(0);
 }
 
