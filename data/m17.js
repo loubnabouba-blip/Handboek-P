@@ -153,10 +153,10 @@
       ["OM", "Beslist over vervolging (Sv 167), legt de strafbeschikking op en bepaalt de strafeis."],
       ["Politie", "Legt bij OM-feiten zelf geen sanctie op."]
     ]], ["Feitcodes WWM", ["Code", "Feit", "Soort"], [
-      ["E900", "Dragen wapen cat. IV onder 7°", "OM-feit (overtreding, afdeling E)"],
+      ["E900", "Dragen wapen cat. IV onder 7°", "OM-feit (overtreding, afdeling E). Boetebase: € 225"],
       ["G411a", "Dragen wapen cat. I onder 1° en 3°", "OM-feit, misdrijf. Boetebase: € 325"],
       ["G411b", "Voorhanden wapen cat. I onder 1° en 3°", "OM-feit, misdrijf. Boetebase: € 225"],
-      ["G412", "Voorhanden wapen cat. II onder 6°", "OM-feit, misdrijf"]
+      ["G412", "Voorhanden wapen cat. II onder 6°", "OM-feit, misdrijf. Boetebase: € 350"]
     ]]],
     check: [
       ["Veilig", "Eerst veilig. Specialist bij explosief of twijfel."],

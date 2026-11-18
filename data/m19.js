@@ -101,9 +101,10 @@
       ["tab", ["Feitcode", "Boetebedrag in de OM-Boetebase"], [
         ["G411a, dragen categorie I onder 1 en 3", "€ 325"],
         ["G411b, voorhanden hebben categorie I onder 1 en 3", "€ 225"],
-        ["G412 en E900", "Zie de Boetebase van het OM, zoek op feitcode."]
+        ["G412, voorhanden hebben categorie II onder 6", "€ 350"],
+        ["E900, dragen categorie IV onder 7", "€ 225"]
       ]],
-      ["let", "De Boetebase zegt zelf: de bedragen worden door de politie of het OM in eerste instantie opgelegd, het CJIB brengt daarnaast administratiekosten in rekening, en in bijzondere gevallen gelden andere boetebedragen en straffen. Zoek op de volledige feitcode (G411a of G411b); ‘G411’ levert geen resultaat."],
+      ["let", "De Boetebase zegt zelf: de bedragen worden door de politie of het OM in eerste instantie opgelegd, het CJIB brengt daarnaast administratiekosten in rekening, en in bijzondere gevallen gelden andere boetebedragen en straffen. Zoek op de volledige feitcode (bijvoorbeeld G411a); ‘G411’ levert geen resultaat. Deze bedragen komen overeen met de OM-richtlijn wapens en munitie (2016R017): € 225 voor een categorie IV-wapen, € 350 voor pepperspray en traangas (categorie II onder 6)."],
       ["let", "Een strafbeschikking is niet mogelijk bij een misdrijf met een maximumstraf van meer dan zes jaar (Sv 257a lid 1). Het voorhanden hebben van een vuurwapen van categorie II of III heeft een maximumstraf van acht jaar (WWM 55 lid 3). Daar is dus geen strafbeschikking mogelijk, en daarom hoort daar een volledig PV en dossier bij (onderdeel 17)."]
     ] }
   ],
@@ -170,6 +171,8 @@
     flits: [
       ["Boete", "Wat is het boetebedrag in de OM-Boetebase bij G411a?", "€ 325 (dragen van een wapen uit categorie I onder 1 en 3)."],
       ["Boete", "Wat is het boetebedrag in de OM-Boetebase bij G411b?", "€ 225 (voorhanden hebben van een wapen uit categorie I onder 1 en 3)."],
+      ["Boete", "Wat is het boetebedrag in de OM-Boetebase bij G412?", "€ 350 (voorhanden hebben van een wapen uit categorie II onder 6)."],
+      ["Boete", "Wat is het boetebedrag in de OM-Boetebase bij E900?", "€ 225 (dragen van een wapen uit categorie IV onder 7)."],
       ["Boete", "Wie bepaalt het tarief bij een OM-feit?", "De officier van justitie. Hij bepaalt ook of het een strafbeschikking wordt of een dagvaarding (Feitenboekje 2026)."],
       ["Boete", "Wat betekent de asterisk bij een feitcode in het Feitenboekje?", "OM-feit: de politie kan geen sanctie opleggen. Meestal een mini proces-verbaal; bij misdrijven uit afdeling G altijd ook een PV via de Transactiemodule."],
       ["Categorie I", "Wie maakt bij categorie I wapens het proces-verbaal op?", "Een taakaccenthouder, c.q. de vraagbaak van het BT."],
