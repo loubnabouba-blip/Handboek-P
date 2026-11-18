@@ -95,7 +95,15 @@
         ["Aangewezen opsporingsambtenaren (politiestrafbeschikking)", "Voor aangewezen overtredingen: een geldboete. Voor aangewezen misdrijven van eenvoudige aard met een maximumstraf van niet meer dan zes jaar, begaan door iemand van 18 jaar of ouder: een geldboete van ten hoogste € 350. Volgens richtlijnen van het College van procureurs-generaal.", "Sv 257b; Justitiële Informatiedienst"]
       ]],
       ["ul", ["Meestal verstuurt het Centraal Justitieel Incasso Bureau (CJIB) de strafbeschikking.", "Een strafbeschikking kan leiden tot een aantekening in de justitiële documentatie (het strafblad).", "Een bestuurlijke boete valt buiten het strafrecht en komt niet op het strafblad (Justitiële Informatiedienst)."]],
-      ["p", "<b>Welke bon volgt bij welk feit?</b> Volgens de Beslagwijzer (OM Feitenboekje 2025) staat achter elke feitcode een letter: <b>p</b> politiestrafbeschikking, <b>m</b> Mulder, <b>*</b> OM-feit. Bij een OM-feit legt de politie zelf geen sanctie op. De wapenfeiten E900, G411a, G411b en G412 zijn OM-feiten. De digibon legt het feit vast; het OM beslist daarna en legt zo nodig de strafbeschikking op."],
+      ["p", "<b>Welke bon volgt bij welk feit?</b> Het OM Feitenboekje 2026 kent drie soorten feiten, herkenbaar aan de letter bij de feitcode: <b>m</b> Mulderfeiten (Wet Mulder), <b>p</b> politiestrafbeschikkingsfeiten (Besluit OM-afdoening, vaste tarieven waarvan niet mag worden afgeweken) en <b>*</b> OM-feiten. De wapenfeiten E900, G411a, G411b en G412 zijn OM-feiten. Voor OM-feiten kan de politie geen sanctie opleggen. Ze kunnen grotendeels met een mini proces-verbaal worden afgedaan."],
+      ["p", "Bij de *-feiten uit afdeling G (misdrijven, dus G411a, G411b en G412) geldt: naast het mini proces-verbaal altijd een via de Transactiemodule (TM) opgemaakt proces-verbaal, waarin de redenen van wetenschap en de feiten en omstandigheden duidelijk worden omschreven (Feitenboekje 2026). E900 staat in afdeling E, een overtreding."],
+      ["p", "Het tarief wordt door de officier van justitie bepaald. Hij bepaalt ook of de zaak in aanmerking komt voor een strafbeschikking of dat hij overgaat tot dagvaarden (Feitenboekje 2026). De OM-richtlijn voor feitgecodeerde misdrijven en overtredingen zegt dat onder de misdrijven een aantal feitcodes voor de WWM staat, met vaste boetebedragen (2025R008)."],
+      ["tab", ["Feitcode", "Boetebedrag in de OM-Boetebase"], [
+        ["G411a, dragen categorie I onder 1 en 3", "€ 325"],
+        ["G411b, voorhanden hebben categorie I onder 1 en 3", "€ 225"],
+        ["G412 en E900", "Zie de Boetebase van het OM, zoek op feitcode."]
+      ]],
+      ["let", "De Boetebase zegt zelf: de bedragen worden door de politie of het OM in eerste instantie opgelegd, het CJIB brengt daarnaast administratiekosten in rekening, en in bijzondere gevallen gelden andere boetebedragen en straffen. Zoek op de volledige feitcode (G411a of G411b); ‘G411’ levert geen resultaat."],
       ["let", "Een strafbeschikking is niet mogelijk bij een misdrijf met een maximumstraf van meer dan zes jaar (Sv 257a lid 1). Het voorhanden hebben van een vuurwapen van categorie II of III heeft een maximumstraf van acht jaar (WWM 55 lid 3). Daar is dus geen strafbeschikking mogelijk, en daarom hoort daar een volledig PV en dossier bij (onderdeel 17)."]
     ] }
   ],
@@ -160,6 +168,10 @@
       ["Bon niet op nabewerken", "Stap 4: bon op nabewerken."]
     ],
     flits: [
+      ["Boete", "Wat is het boetebedrag in de OM-Boetebase bij G411a?", "€ 325 (dragen van een wapen uit categorie I onder 1 en 3)."],
+      ["Boete", "Wat is het boetebedrag in de OM-Boetebase bij G411b?", "€ 225 (voorhanden hebben van een wapen uit categorie I onder 1 en 3)."],
+      ["Boete", "Wie bepaalt het tarief bij een OM-feit?", "De officier van justitie. Hij bepaalt ook of het een strafbeschikking wordt of een dagvaarding (Feitenboekje 2026)."],
+      ["Boete", "Wat betekent de asterisk bij een feitcode in het Feitenboekje?", "OM-feit: de politie kan geen sanctie opleggen. Meestal een mini proces-verbaal; bij misdrijven uit afdeling G altijd ook een PV via de Transactiemodule."],
       ["Categorie I", "Wie maakt bij categorie I wapens het proces-verbaal op?", "Een taakaccenthouder, c.q. de vraagbaak van het BT."],
       ["Categorie I", "Welke verbodsbepaling en strafbaarstelling gelden voor categorie I?", "Verbod: WWM 13 lid 1. Strafbaarstelling: WWM 55 lid 1. Geen VH-feit."],
       ["Categorie I", "Noem de zeven onderdelen van categorie I (WWM 2).", "1 stiletto’s, valmessen, vlindermessen. 2 andere opvouwbare messen met meer dan één snijkant of langer dan 28 cm opengevouwen. 3 boksbeugels, ploertendoders, wurgstokken, werpsterren, vilmessen, ballistische messen, geluiddempers. 4 blanke wapens die op een ander voorwerp lijken. 5 pijlen en pijlpunten voor een boog met snijdende delen. 6 katapulten. 7 door de minister aangewezen voorwerpen."],

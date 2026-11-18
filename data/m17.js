@@ -41,7 +41,7 @@
     { h: "Beslag is geen afdoening", b: [
       ["p", "Een wapen in beslag nemen en geen proces-verbaal maken, komt voor, maar mag niet. De wapenmisdrijven uit WWM 55 zijn misdrijven (WWM 56). Sv 152 lid 1 verplicht tot een proces-verbaal. Alleen onder verantwoordelijkheid van het OM mag dat achterwege blijven (Sv 152 lid 2). Afzien van vervolging kan alleen het OM (Sv 167 lid 2)."],
       ["ul", ["<b>Volwassene</b>: de politie kan niet zelf waarschuwen of seponeren. Een politiewaarschuwing is geen afdoening bij een wapenmisdrijf.", "<b>Jeugdige first offender</b>: de bevoegde opsporingsambtenaar kan bij een overtreding of een licht misdrijf een reprimande geven. Bij andere misdrijven alleen met toestemming van de officier van justitie. Welke feiten voor Halt in aanmerking komen, staat in het Besluit aanwijzing Halt-feiten 2024 (Aanwijzing Jeugdstrafrecht 2026A002).", "<b>Beslag en afdoening</b> zijn twee losse beslissingen. Ook bij een jeugdafdoening of een sepot blijft het voorwerp in de beslagketen. De officier van justitie beslist later over teruggave of vernietiging.", "<b>Legaal bezit zonder verdenking</b>: wie zonder gerechtigd te zijn een wapen of munitie voorhanden heeft, moet die terstond bij de korpschef in bewaring geven (WWM 8). Dat is bestuurlijk en geen strafrechtelijke afdoening."]],
-      ["p", "<b>Feitcodes WWM</b> volgens de Beslagwijzer (OM Feitenboekje 2025). Alle vier zijn OM-feiten: de politie legt zelf geen sanctie op. Je registreert het feit met een proces-verbaal, meestal een mini-PV. Bij misdrijven uit afdeling G is altijd een PV via de Transactiemodule nodig."],
+      ["p", "<b>Feitcodes WWM</b> volgens het OM Feitenboekje 2026. Alle vier zijn OM-feiten (de asterisk): voor deze feiten kan de politie geen sanctie opleggen, ze worden grotendeels met een mini proces-verbaal afgedaan. Je registreert het feit met een proces-verbaal, meestal een mini-PV. Bij misdrijven uit afdeling G is altijd een PV via de Transactiemodule nodig."],
       ["tab", ["Code", "Feit", "Grondslag"], [
         ["E900", "Een wapen in de zin van categorie IV onder 7° dragen. Leg vast welk voorwerp het is, de aard en omstandigheden van het aantreffen, het doel en of er is gedreigd.", "WWM 2, 27 lid 1, 54"],
         ["G411a", "Een wapen uit categorie I, onder 1° (stiletto’s, valmessen en vlindermessen) en 3° (boksbeugels, ploertendoders, wurgstokken, werpsterren, vilmessen, ballistische messen en geluiddempers), dragen. Misdrijf.", "WWM 13, 55 lid 1"],
@@ -153,9 +153,9 @@
       ["OM", "Beslist over vervolging (Sv 167), legt de strafbeschikking op en bepaalt de strafeis."],
       ["Politie", "Legt bij OM-feiten zelf geen sanctie op."]
     ]], ["Feitcodes WWM", ["Code", "Feit", "Soort"], [
-      ["E900", "Dragen wapen cat. IV onder 7°", "OM-feit"],
-      ["G411a", "Dragen wapen cat. I onder 1° en 3°", "OM-feit, misdrijf"],
-      ["G411b", "Voorhanden wapen cat. I onder 1° en 3°", "OM-feit, misdrijf"],
+      ["E900", "Dragen wapen cat. IV onder 7°", "OM-feit (overtreding, afdeling E)"],
+      ["G411a", "Dragen wapen cat. I onder 1° en 3°", "OM-feit, misdrijf. Boetebase: € 325"],
+      ["G411b", "Voorhanden wapen cat. I onder 1° en 3°", "OM-feit, misdrijf. Boetebase: € 225"],
       ["G412", "Voorhanden wapen cat. II onder 6°", "OM-feit, misdrijf"]
     ]]],
     check: [
