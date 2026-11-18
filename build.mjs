@@ -11,7 +11,8 @@ const ctx = { window: {} };
 vm.createContext(ctx);
 const files = fs.readdirSync(path.join(dir, "data")).filter((f) => /^m\d+\.js$/.test(f)).sort();
 for (const f of files) vm.runInContext(fs.readFileSync(path.join(dir, "data", f), "utf8"), ctx);
-const MODS = ctx.window.MODS.sort((a, b) => a.nr - b.nr);
+const ALL = ctx.window.MODS.sort((a, b) => a.nr - b.nr);
+const MODS = ALL.filter((M) => !M.boek); // onderdelen met boek:"..." horen alleen in dat losse boekje
 
 const fonts = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">';
 const head = (title, css) => `<!doctype html>
@@ -77,7 +78,7 @@ fs.writeFileSync(path.join(dir, "data", "menu.js"), "window.MENU = " + JSON.stri
 function bundle(out, book) {
   const rd = (f) => fs.readFileSync(path.join(dir, f), "utf8");
   const ids = book ? book.mods : MODS.map((M) => M.id);
-  let sel = ids.map((id) => MODS.find((M) => M.id === id));
+  let sel = ids.map((id) => ALL.find((M) => M.id === id));
   const nrOf = {};
   sel.forEach((M, i) => { nrOf[M.id] = book ? i + 1 : M.nr; });
   const menuData = "window.MENU = " + JSON.stringify(sel.map((M) => ({ id: M.id, nr: nrOf[M.id], reeks: M.reeks, titel: M.titel }))) + ";";
