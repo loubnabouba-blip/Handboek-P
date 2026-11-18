@@ -41,7 +41,7 @@
     { h: "Beslag is geen afdoening", b: [
       ["p", "Een wapen in beslag nemen en geen proces-verbaal maken, komt voor, maar mag niet. De wapenmisdrijven uit WWM 55 zijn misdrijven (WWM 56). Sv 152 lid 1 verplicht tot een proces-verbaal. Alleen onder verantwoordelijkheid van het OM mag dat achterwege blijven (Sv 152 lid 2). Afzien van vervolging kan alleen het OM (Sv 167 lid 2)."],
       ["ul", ["<b>Volwassene</b>: de politie kan niet zelf waarschuwen of seponeren. Een politiewaarschuwing is geen afdoening bij een wapenmisdrijf.", "<b>Jeugdige first offender</b>: de bevoegde opsporingsambtenaar kan bij een overtreding of een licht misdrijf een reprimande geven. Bij andere misdrijven alleen met toestemming van de officier van justitie. Welke feiten voor Halt in aanmerking komen, staat in het Besluit aanwijzing Halt-feiten 2024 (Aanwijzing Jeugdstrafrecht 2026A002).", "<b>Beslag en afdoening</b> zijn twee losse beslissingen. Ook bij een jeugdafdoening of een sepot blijft het voorwerp in de beslagketen. De officier van justitie beslist later over teruggave of vernietiging.", "<b>Legaal bezit zonder verdenking</b>: wie zonder gerechtigd te zijn een wapen of munitie voorhanden heeft, moet die terstond bij de korpschef in bewaring geven (WWM 8). Dat is bestuurlijk en geen strafrechtelijke afdoening."]],
-      ["p", "<b>Feitcodes WWM</b> volgens het OM Feitenboekje 2026. Alle vier zijn OM-feiten (de asterisk): voor deze feiten kan de politie geen sanctie opleggen, ze worden grotendeels met een mini proces-verbaal afgedaan. Je registreert het feit met een proces-verbaal, meestal een mini-PV. Bij misdrijven uit afdeling G is altijd een PV via de Transactiemodule nodig."],
+      ["p", "<b>Feitcodes WWM</b> volgens het OM Feitenboekje 2026. Alle vier zijn OM-feiten (de asterisk): voor deze feiten kan de politie geen sanctie opleggen, ze worden grotendeels met een mini proces-verbaal afgedaan. Je registreert het feit met een proces-verbaal, meestal een mini-PV. Bij de misdrijven uit afdeling G maak je naast het mini-PV altijd een proces-verbaal op via de Transactiemodule (TM), met de redenen van wetenschap en de feiten en omstandigheden."],
       ["tab", ["Code", "Feit", "Grondslag"], [
         ["E900", "Een wapen in de zin van categorie IV onder 7° dragen. Leg vast welk voorwerp het is, de aard en omstandigheden van het aantreffen, het doel en of er is gedreigd.", "WWM 2, 27 lid 1, 54"],
         ["G411a", "Een wapen uit categorie I, onder 1° (stiletto’s, valmessen en vlindermessen) en 3° (boksbeugels, ploertendoders, wurgstokken, werpsterren, vilmessen, ballistische messen en geluiddempers), dragen. Misdrijf.", "WWM 13, 55 lid 1"],
@@ -63,7 +63,7 @@
       ["p", "Na het beslag volgt de afhandeling. Wat jij maakt, hangt af van het feit en van het wapen. Het OM beslist over de vervolging en legt de strafbeschikking op. Voor OM-feiten legt de politie zelf geen sanctie op."],
       ["tab", ["Wat je aantreft", "Wat jij maakt", "Wat daarna gebeurt"], [
         ["Categorie IV dragen (E900)", "Een overtreding. Registreer het OM-feit met een proces-verbaal, meestal een mini-PV, met het voorwerp, de aard en omstandigheden van het aantreffen, het doel (geen ander doel dan letsel aan personen) en of er is gedreigd.", "Het OM beslist over de afdoening. Volwassenen: geen reprimande of waarschuwing als afdoening. Een jeugdige first offender kan een reprimande krijgen: overleg met de officier van justitie of dat hier past."],
-        ["Categorie I of categorie II onder 6° (G411a, G411b, G412)", "Een misdrijf. Altijd een PV via de Transactiemodule, mini-PV of PV volgens de afdeling-G-regels.", "Het OM legt daarna de strafbeschikking op, of beslist anders over de vervolging."],
+        ["Categorie I of categorie II onder 6° (G411a, G411b, G412)", "Een misdrijf. Naast het mini-PV altijd een proces-verbaal dat via de Transactiemodule (TM) wordt opgemaakt, met de redenen van wetenschap en de feiten en omstandigheden.", "De officier van justitie bepaalt het tarief en of het een strafbeschikking wordt of een dagvaarding (Feitenboekje 2026)."],
         ["Vuurwapen categorie II of III, explosieven", "Een volledig PV en dossier. De OM-richtlijn zegt: verdachte in beginsel voorgeleiden bij vuurwapen(s). Leg bedenkelijke omstandigheden vast, want die verhogen de strafeis.", "Voorlopige hechtenis is toegelaten (Sv 67 lid 1 onder a, maximumstraf 8 jaar volgens WWM 55 lid 3 of 7). Een strafbeschikking is niet mogelijk, want die kan alleen bij een maximumstraf van niet meer dan zes jaar (Sv 257a lid 1). De officier van justitie beslist over vervolging."],
         ["Munitie of onderdelen zonder wapen", "PV of dossier, met aantallen, soort en toestand.", "Het OM beslist over de afdoening."]
       ]],
@@ -129,7 +129,7 @@
         ["PV-plicht", "Sv 152 lid 1. Achterwege laten alleen onder verantwoordelijkheid van het OM."],
         ["Afzien", "Alleen het OM (Sv 167 lid 2)."],
         ["Codes", "E900 dragen cat. IV onder 7°. G411a dragen cat. I. G411b voorhanden cat. I. G412 voorhanden cat. II onder 6°."],
-        ["Afdeling G", "Altijd PV via de Transactiemodule."]
+        ["Afdeling G", "Naast het mini-PV altijd een PV opmaken via de Transactiemodule (TM)."]
       ]],
       ["Voertuig en kort beslag", [
         ["Voertuig", "Aparte beslissing: eigen reden, noodzaak, verhouding. Alleen het wapen nodig: voertuig achterlaten."],
@@ -184,8 +184,8 @@
       ["Afdoening", "Wat verplicht tot een proces-verbaal?", "Sv 152 lid 1. Achterwege laten kan alleen onder verantwoordelijkheid van het OM (lid 2)."],
       ["Afdoening", "Mag de politie een volwassene zelf waarschuwen bij een wapenmisdrijf?", "Nee. De politie kan niet zelf waarschuwen of seponeren."],
       ["Codes", "Wat is E900?", "Een wapen in de zin van categorie IV onder 7° dragen. OM-feit."],
-      ["Codes", "Wat is G411a en G411b?", "Een wapen uit categorie I, onder 1° en 3° (o.a. stiletto, valmes, vlindermes, boksbeugel, ploertendoder, wurgstok, werpster, vilmes, ballistisch mes, geluiddemper), dragen (a) of voorhanden hebben (b). Misdrijf: altijd PV via de Transactiemodule."],
-      ["Codes", "Wat is G412?", "Een wapen uit categorie II, onder 6° (bijvoorbeeld pepperspray en traangas), voorhanden hebben. Misdrijf: altijd PV via de Transactiemodule."],
+      ["Codes", "Wat is G411a en G411b?", "Een wapen uit categorie I, onder 1° en 3° (o.a. stiletto, valmes, vlindermes, boksbeugel, ploertendoder, wurgstok, werpster, vilmes, ballistisch mes, geluiddemper), dragen (a) of voorhanden hebben (b). Misdrijf: naast het mini-PV altijd een PV opmaken via de Transactiemodule."],
+      ["Codes", "Wat is G412?", "Een wapen uit categorie II, onder 6° (bijvoorbeeld pepperspray en traangas), voorhanden hebben. Misdrijf: naast het mini-PV altijd een PV opmaken via de Transactiemodule."],
       ["Codes", "Welke feitcategorie hebben E900, G411a, G411b en G412 in MEOS?", "Feitcategorie 8: een ieder."],
       ["Voertuig", "Is een wapen in de auto een reden om de auto in beslag te nemen?", "Niet automatisch. Voorwerp en voertuig zijn twee beslissingen. Voor het voertuig heb je een eigen reden, bevoegdheid, noodzaak en verhouding nodig."],
       ["Voertuig", "Bewijst de kentekenregistratie voorhanden hebben?", "Nee. Leg vast wie sleutel of toegang had en waar de inzittenden zaten."],
@@ -193,7 +193,7 @@
       ["Afstand", "Wanneer maak je geen KVI?", "Als het goed niet in beslag is genomen maar vrijwillig is afgegeven. Leg de overdracht apart vast."],
       ["Omstandigheden", "Noem bedenkelijke omstandigheden.", "Meerdere wapens, vliegveld of vliegtuig, evenement of voetbal, geladen wapen of geluiddemper, wapen onder handbereik in een voertuig of gedragen in het openbaar."],
       ["Dossier", "Wat maak je bij een vuurwapen van categorie II of III?", "Een volledig PV en dossier. De OM-richtlijn zegt: verdachte in beginsel voorgeleiden bij vuurwapen(s). Leg bedenkelijke omstandigheden vast."],
-      ["Dossier", "Wat maak je bij een misdrijf uit afdeling G?", "Altijd een PV via de Transactiemodule. Het OM legt daarna de strafbeschikking op."],
+      ["Dossier", "Wat maak je bij een misdrijf uit afdeling G?", "Naast het mini-PV altijd een proces-verbaal opmaken via de Transactiemodule (TM), met de redenen van wetenschap en de feiten en omstandigheden. De officier van justitie bepaalt daarna het tarief en of het een strafbeschikking of een dagvaarding wordt."],
       ["Dossier", "Wie legt de strafbeschikking op?", "Het OM. Bij OM-feiten legt de politie zelf geen sanctie op."],
       ["Dossier", "Wat geldt bij recidive?", "Een hogere strafeis. Recidivetermijn volgens de OM-richtlijn: 5 jaar, 2 jaar bij andere categorieën. Let op het taakstrafverbod van Sr 22b."],
       ["Omstandigheden", "Wat is strafverminderend?", "Het wapen is niet gebruiksklaar en niet met eenvoudige hulpmiddelen weer bruikbaar te maken."]

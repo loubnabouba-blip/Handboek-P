@@ -174,7 +174,7 @@
       ["Boete", "Wat is het boetebedrag in de OM-Boetebase bij G412?", "€ 350 (voorhanden hebben van een wapen uit categorie II onder 6)."],
       ["Boete", "Wat is het boetebedrag in de OM-Boetebase bij E900?", "€ 225 (dragen van een wapen uit categorie IV onder 7)."],
       ["Boete", "Wie bepaalt het tarief bij een OM-feit?", "De officier van justitie. Hij bepaalt ook of het een strafbeschikking wordt of een dagvaarding (Feitenboekje 2026)."],
-      ["Boete", "Wat betekent de asterisk bij een feitcode in het Feitenboekje?", "OM-feit: de politie kan geen sanctie opleggen. Meestal een mini proces-verbaal; bij misdrijven uit afdeling G altijd ook een PV via de Transactiemodule."],
+      ["Boete", "Wat betekent de asterisk bij een feitcode in het Feitenboekje?", "OM-feit: de politie kan geen sanctie opleggen. Meestal een mini proces-verbaal; bij misdrijven uit afdeling G naast het mini-PV altijd ook een PV dat via de Transactiemodule wordt opgemaakt."],
       ["Categorie I", "Wie maakt bij categorie I wapens het proces-verbaal op?", "Een taakaccenthouder, c.q. de vraagbaak van het BT."],
       ["Categorie I", "Welke verbodsbepaling en strafbaarstelling gelden voor categorie I?", "Verbod: WWM 13 lid 1. Strafbaarstelling: WWM 55 lid 1. Geen VH-feit."],
       ["Categorie I", "Noem de zeven onderdelen van categorie I (WWM 2).", "1 stiletto’s, valmessen, vlindermessen. 2 andere opvouwbare messen met meer dan één snijkant of langer dan 28 cm opengevouwen. 3 boksbeugels, ploertendoders, wurgstokken, werpsterren, vilmessen, ballistische messen, geluiddempers. 4 blanke wapens die op een ander voorwerp lijken. 5 pijlen en pijlpunten voor een boog met snijdende delen. 6 katapulten. 7 door de minister aangewezen voorwerpen."],
