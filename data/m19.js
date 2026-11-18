@@ -44,6 +44,9 @@
       ["p", "<b>Categorie I (G411a en G411b)</b> volgens de presentatie:"],
       ["ul", ["Stiletto, valmes, vlindermes (WWM 2, categorie I onder 1°).", "Boksbeugel, ploertendoder, wurgstok, werpster, vilmes, ballistisch mes (categorie I onder 3°).", "Messen met meer dan één snijkant en of opengevouwen langer dan 28 cm (categorie I onder 2°).", "Wapens vermomd als andere voorwerpen, de ‘blanke’ wapens (categorie I onder 4°).", "Nep(vuur)wapens, geschikt voor be- en afdreiging (categorie I onder 7°)."]],
       ["p", "In MEOS staat bij G411a en G411b de omschrijving ‘categorie I onder 1 en 3’ (stiletto, valmes, vlindermes, boksbeugel, ploertendoder, wurgstok, werpster, vilmes, ballistisch mes en geluiddemper). De presentatie noemt in de lijst hierboven daarnaast ook de messen met meer dan één snijkant, de vermomde wapens en de nepwapens."],
+      ["p", "<b>Categorie I volgens de instructie</b> (de volledige tekst van WWM 2):"],
+      ["ol", ["stiletto’s, valmessen en vlindermessen;", "andere opvouwbare messen, indien het lemmet meer dan een snijkant heeft, of de lengte in opengevouwen toestand langer dan 28 cm is;", "boksbeugels, ploertendoders, wurgstokken, werpsterren, vilmessen, ballistische messen en geluiddempers voor vuurwapens;", "blanke wapens die uiterlijk gelijken op een ander voorwerp dan een wapen;", "pijlen en pijlpunten bestemd om door middel van een boog te worden afgeschoten, die zijn voorzien van snijdende delen met de kennelijke bedoeling daarmee ernstig letsel te kunnen veroorzaken;", "katapulten;", "andere door de minister aangewezen voorwerpen die een ernstige bedreiging van personen kunnen vormen of die zodanig op een wapen gelijken, dat zij voor bedreiging of afdreiging geschikt zijn."]],
+      ["ul", ["Verbodsbepaling: WWM 13 lid 1.", "Strafbaarstelling: WWM 55 lid 1. Dat is geen VH-feit: voorlopige hechtenis is niet toegelaten.", "Bij categorie I wapens wordt het proces-verbaal opgemaakt door een taakaccenthouder, c.q. de vraagbaak van het BT."]],
       ["tip", "E900 gaat over een voorwerp dat normaal geen wapen is maar hier wel: een gelegenheidswapen. Het gaat alleen over dragen. Noteer waarom het hier een wapen kan zijn: de omstandigheden, het doel en een eventuele dreiging (WWM 2, categorie IV onder 7°)."]
     ] },
     { h: "Dragen of voorhanden?", b: [
@@ -157,6 +160,9 @@
       ["Bon niet op nabewerken", "Stap 4: bon op nabewerken."]
     ],
     flits: [
+      ["Categorie I", "Wie maakt bij categorie I wapens het proces-verbaal op?", "Een taakaccenthouder, c.q. de vraagbaak van het BT."],
+      ["Categorie I", "Welke verbodsbepaling en strafbaarstelling gelden voor categorie I?", "Verbod: WWM 13 lid 1. Strafbaarstelling: WWM 55 lid 1. Geen VH-feit."],
+      ["Categorie I", "Noem de zeven onderdelen van categorie I (WWM 2).", "1 stiletto’s, valmessen, vlindermessen. 2 andere opvouwbare messen met meer dan één snijkant of langer dan 28 cm opengevouwen. 3 boksbeugels, ploertendoders, wurgstokken, werpsterren, vilmessen, ballistische messen, geluiddempers. 4 blanke wapens die op een ander voorwerp lijken. 5 pijlen en pijlpunten voor een boog met snijdende delen. 6 katapulten. 7 door de minister aangewezen voorwerpen."],
       ["Stappenplan", "Hoeveel stappen heeft het stappenplan op straat?", "Dertien: digibon, afstandsverklaring, foto’s, redenen van wetenschap, beslagindicator, PDB op nabewerken, mutatie in BVH, KVI opmaken, KVI scannen, goed deponeren, BVH-nummer mailen, verbaal en foto’s toevoegen, bon naar CVOM."],
       ["Stappenplan", "Wat vink je aan in de digibon?", "De beslagindicator."],
       ["Stappenplan", "Hoeveel KVI’s print je en waar gaan ze heen?", "Twee: één bij het goed (aan de zak of koker), één in het dossier."],
