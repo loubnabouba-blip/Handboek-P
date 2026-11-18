@@ -2,12 +2,9 @@
   "out": "wwm-op-straat.html",
   "titel": "Handboek WWM op straat",
   "tag": "Intern document",
-  "sub": "Intern naslagwerk voor ons team: de Wet wapens en munitie op straat. Wat je aantreft, dragen of voorhanden, digibon of aanhouden, beslag en afhandeling.",
-  "mods": ["m19", "m08", "m17"],
-  "replace": [
-    [", zie onderdeel 3", ""],
-    [" Zie het spiekbriefje Geweldsbeheersing.", ""],
-    ["onderdeel 17", "onderdeel 3"],
-    ["onderdeel 8", "onderdeel 2"]
-  ]
+  "sub": "Intern naslagwerk voor ons team: de Wet wapens en munitie op straat, in de volgorde van de afhandeling. Veiligstellen, categorie, dragen of voorhanden, digibon of aanhouden, beslag, stappenplan en feitcodes in MEOS.",
+  "mods": [
+    "m20"
+  ],
+  "replace": []
 }
