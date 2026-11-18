@@ -2952,9 +2952,11 @@ window.MENU = [{"id":"m01","nr":1,"reeks":1,"titel":"Basisbevoegdheden en rechts
       ["tab", ["Code", "Feit", "Welke wapens"], [
         ["G411a", "Dragen van een wapen uit categorie I (WWM 13)", "Zie de lijst hieronder."],
         ["G411b", "Voorhanden hebben van een wapen uit categorie I (WWM 13)", "Dezelfde lijst."],
-        ["G412", "Voorhanden hebben van een wapen uit categorie II onder 6° (WWM 26)", "Traangaswapen, pepperspray, CS-gas."],
-        ["E900", "Dragen van een gelegenheidswapen, categorie IV onder 7° (WWM 2, 27)", "Honkbalknuppel, hockeystick, koekenpan, baksteen, haarlak, schilmesje, schroevendraaier, keukenmes en dergelijke."]
+        ["G412", "Voorhanden hebben van een wapen uit categorie II onder 6° (WWM 26)", "Traangaswapen (in de vorm van een spuitbusje of ander voorwerp of wapen), pepperspray, CS-gas en elke andere stof die weerloos of machteloos maakt."],
+        ["E900", "Dragen van een gelegenheidswapen, categorie IV onder 7° (WWM 2, 27)", "‘Wapen bij gelegenheid’. Denk aan honkbalknuppel, hockeystick, trapleuning, hooivork, koekenpan, baksteen, haarlak, schilmesje, schroevendraaier, keukenmes en dergelijke."]
       ]],
+      ["p", "Alle vier de feitcodes hebben in MEOS feitcategorie 8. Let op:"],
+      ["ul", ["Bij <b>G411a, G411b en G412</b> dient altijd een rapport aangaande het wapen te worden bijgevoegd.", "Bij <b>E900</b> is een wapenrapport niet noodzakelijk. Een beschrijving in een proces-verbaal (van bevindingen) en een foto is voldoende.", "Is de verdachte minderjarig, dan kunnen deze feiten niet worden afgedaan middels een digibon.", "Uit het proces-verbaal moet blijken waarom het voorwerp op dat moment goed als wapen kon worden gezien."]],
       ["p", "<b>Categorie I (G411a en G411b)</b> volgens de presentatie:"],
       ["ul", ["Stiletto, valmes, vlindermes (WWM 2, categorie I onder 1°).", "Boksbeugel, ploertendoder, wurgstok, werpster, vilmes, ballistisch mes (categorie I onder 3°).", "Messen met meer dan één snijkant en of opengevouwen langer dan 28 cm (categorie I onder 2°).", "Wapens vermomd als andere voorwerpen, de ‘blanke’ wapens (categorie I onder 4°).", "Nep(vuur)wapens, geschikt voor be- en afdreiging (categorie I onder 7°)."]],
       ["p", "In MEOS staat bij G411a en G411b de omschrijving ‘categorie I onder 1 en 3’ (stiletto, valmes, vlindermes, boksbeugel, ploertendoder, wurgstok, werpster, vilmes, ballistisch mes en geluiddemper). De presentatie noemt in de lijst hierboven daarnaast ook de messen met meer dan één snijkant, de vermomde wapens en de nepwapens."],
@@ -2966,19 +2968,33 @@ window.MENU = [{"id":"m01","nr":1,"reeks":1,"titel":"Basisbevoegdheden en rechts
         ["<b>Dragen</b>", "Op het lichaam, in de handen of direct binnen handbereik en klaar voor gebruik.", "In de handen, in de broeksband, onder een autostoel, in het deurportier, in de middenconsole of het handschoenkastje."],
         ["<b>Voorhanden hebben</b>", "Weten dat iets in de nabijheid is en er makkelijk over kunnen beschikken, maar daar moeite voor moeten doen om het te pakken.", "In een kofferbak, verpakt in een tas of in een kluis."]
       ]],
+      ["p", "De MEOS-instructie noemt dit het ‘subtiele verschil’, van belang voor de keuze van de juiste feitcode. <b>Dragen</b>: het direct op het lichaam dragen en/of het direct onder handbereik en voor gebruik gereed hebben van een wapen, bijvoorbeeld in het portiervakje, de middenconsole, onder de (bestuurders)stoel of in de beenruimte van de bijrijdersstoel. <b>Voorhanden hebben</b>: het wapen of voorwerp in de nabijheid hebben, maar niet voor direct gebruik gereed, bijvoorbeeld in de kofferbak of in een tas op de achterbank."],
       ["p", "Het onderscheid bepaalt de feitcode: dragen is G411a (categorie I) of E900 (gelegenheidswapen), voorhanden hebben is G411b of G412. WWM 13 verbiedt voor categorie I zowel het dragen als het voorhanden hebben. Voor de categorieën II, III en IV staan het voorhanden hebben (WWM 26) en het dragen (WWM 27) in aparte artikelen."],
       ["quiz", "Een stiletto zit in de broeksband van een meerderjarige. Welke feitcode?", ["G411b", "G411a", "G412", "E900"], 1, "Een stiletto is categorie I. In de broeksband is dragen: op het lichaam en klaar voor gebruik. Dat is G411a."],
       ["quiz", "Dezelfde stiletto ligt in de kofferbak, in een tas. Welke feitcode?", ["G411a", "G411b", "E900", "G412"], 1, "In een kofferbak, verpakt in een tas, kost het moeite om het te pakken. Dat is voorhanden hebben: G411b."],
       ["quiz", "Een honkbalknuppel ligt in de kofferbak. Is dat E900?", ["Ja, altijd", "Nee, E900 gaat over dragen", "Ja, als het een gelegenheidswapen is", "Alleen bij een minderjarige"], 1, "E900 is het dragen van een gelegenheidswapen. In de kofferbak is het voorhanden hebben, niet dragen."]
     ] },
-    { h: "Op straat: vier stappen", b: [
+    { h: "Op straat: het stappenplan", b: [
+      ["p", "Het stappenplan uit de MEOS-instructie, in volgorde:"],
       ["stap", [
-        ["1. Digibon met WWM-feitcode", "Maak een MEOS-digibon met de feitcode die bij het wapen en bij dragen of voorhanden hebben past (E900, G411a, G411b of G412)."],
-        ["2. Afstandsverklaring (RAPP)", "Laat de afstandsverklaring tekenen, digitaal of ‘nat’. Maak zo nodig een foto en voeg die toe aan de digibon via MEOS."],
-        ["3. Reden van wetenschap (zeven w’s)", "Leg vast hoe en waar het wapen is aangetroffen. Beschrijf het dragen of voorhanden hebben. Noteer of het door de hondenman is veiliggesteld."],
-        ["4. Bon op ‘nabewerken’", "Zet de bon op ‘nabewerken’."]
+        ["1. Digibon", "Maak op straat een digibon met WWM-feitcode op."],
+        ["2. Afstandsverklaring", "Maak de afstandsverklaring op straat op en laat die tekenen, digitaal of ‘nat’."],
+        ["3. Foto’s", "Maak een foto van het wapen en van de afstandsverklaring in de digibon-app (dat voeg je het makkelijkst toe)."],
+        ["4. Redenen van wetenschap", "Omschrijf hoe en waar je het wapen hebt aangetroffen. Dat is nodig voor het onderscheid dragen of voorhanden."],
+        ["5. Beslagindicator", "Vink in de digibon de beslagindicator aan."],
+        ["6. PDB op nabewerken", "Zet de digibon op NABEWERKEN bij het versturen vanuit de digibon-app."],
+        ["7. Mutatie in BVH", "Maak een mutatie op in BVH. Je kunt de tekst van de verklaring in PDB kopiëren en plakken."],
+        ["8. KVI opmaken", "Maak de KVI op en print er twee."],
+        ["9. KVI scannen", "Scan de KVI, of maak een foto in de digibon-app, voor in PDB. Eén KVI gaat bij het goed (aan de zak of koker), één KVI in het dossier."],
+        ["10. Goed deponeren", "Plaats het goed of wapen in een open zak of koker en deponeer het."],
+        ["11. BVH-nummer mailen", "Mail het BVH-nummer naar de WWM-taakaccenthouder."],
+        ["12. Verbaal en foto’s", "Voeg het WWM-verbaal en de fotobijlage toe aan de digibon of PDB."],
+        ["13. Bon verzenden", "Verzend de bon naar het CVOM."]
       ]],
-      ["p", "Daarna komt de verdachte in BVI voor met MEOS-bonnen voor het wapenfeit."],
+      ["p", "<b>Totaal bijvoegen in PDB:</b>"],
+      ["ol", ["De KVI.", "De afstandsverklaring.", "Het WWM-beschrijvingsverbaal van het wapen en de fotobijlage. Bij feitcode E900 volstaat een beschrijving in een proces-verbaal (van bevindingen) en een foto."]],
+      ["tip", "Wordt een persoon later in BVI-IB gecontroleerd, dan zie je bij BLUESPOT onder Politie Digibonnen Overzicht of die persoon eerder een digibon voor een wapenfeit heeft gekregen."],
+      ["p", "Volgens de presentatie komt de verdachte daarna in BVI voor met MEOS-bonnen voor het wapenfeit."],
       ["casus", "Casus: het mes in de middenconsole", "Bij een controle ligt in de middenconsole van een auto een vlindermes. De bestuurder is 34 jaar en zegt dat het van zijn werk is. Er is geen ander feit.", "Digibon of aanhouden?", "Een vlindermes is categorie I. In de middenconsole is het direct binnen handbereik en klaar voor gebruik: dragen, dus G411a. De verdachte is meerderjarig, het is een genoemd wapen, er is geen ander feit en je neemt geen arrestant mee: een MEOS-digibon met G411a is mogelijk. Laat de afstandsverklaring tekenen, leg in de reden van wetenschap vast hoe en waar het lag, en zet de bon op nabewerken. Was de bestuurder 17 geweest, dan is volgens de werkafspraak aanhouden de route."]
     ] },
     { h: "MEOS, digibon en strafbeschikking", b: [
@@ -3010,11 +3026,17 @@ window.MENU = [{"id":"m01","nr":1,"reeks":1,"titel":"Basisbevoegdheden en rechts
         ["G412", "Voorhanden hebben: traangas, pepperspray, CS-gas (cat. II onder 6°)."],
         ["E900", "Dragen gelegenheidswapen (cat. IV onder 7°)."]
       ]],
-      ["Op straat", [
-        ["1", "Digibon met WWM-feitcode."],
-        ["2", "Afstandsverklaring tekenen (digitaal of nat). Foto toevoegen via MEOS."],
-        ["3", "Reden van wetenschap, zeven w’s: hoe en waar, dragen of voorhanden, veiliggesteld door hondenman."],
-        ["4", "Bon op nabewerken."]
+      ["Op straat (stappenplan)", [
+        ["1 tot 3", "Digibon met WWM-feitcode, afstandsverklaring tekenen, foto’s van wapen en verklaring."],
+        ["4", "Redenen van wetenschap: hoe en waar aangetroffen (dragen of voorhanden)."],
+        ["5 en 6", "Beslagindicator aanvinken. PDB op NABEWERKEN."],
+        ["7 tot 9", "Mutatie in BVH. KVI opmaken en 2 keer printen. KVI scannen voor PDB."],
+        ["10 tot 13", "Goed in open zak of koker deponeren. BVH-nummer mailen aan de WWM-taakaccenthouder. WWM-verbaal en foto’s toevoegen. Bon naar CVOM."]
+      ]],
+      ["Bijvoegen in PDB", [
+        ["a", "KVI."],
+        ["b", "Afstandsverklaring."],
+        ["c", "WWM-beschrijvingsverbaal en fotobijlage. Bij E900 volstaat een PV van bevindingen en een foto."]
       ]]
     ],
     boom: { titel: "Digibon of aanhouden?", start: "a", n: {
@@ -3037,6 +3059,9 @@ window.MENU = [{"id":"m01","nr":1,"reeks":1,"titel":"Basisbevoegdheden en rechts
       ["Alleen wapenfeit", "Geen ander feit."],
       ["Dragen of voorhanden", "Bepaalt de code."],
       ["Afstandsverklaring", "Getekend, foto toegevoegd."],
+      ["Beslagindicator", "Aangevinkt. PDB op NABEWERKEN."],
+      ["KVI", "Twee geprint: één bij het goed, één in het dossier."],
+      ["Wapenrapport", "Bij G411a, G411b en G412 altijd bijvoegen. Bij E900 volstaat een PV van bevindingen en een foto."],
       ["Reden van wetenschap", "Hoe en waar, dragen of voorhanden, veiliggesteld."]
     ],
     checkTitel: "Digibon-check: loop dit af bij elk wapen op straat.",
@@ -3048,6 +3073,15 @@ window.MENU = [{"id":"m01","nr":1,"reeks":1,"titel":"Basisbevoegdheden en rechts
       ["Bon niet op nabewerken", "Stap 4: bon op nabewerken."]
     ],
     flits: [
+      ["Stappenplan", "Hoeveel stappen heeft het stappenplan op straat?", "Dertien: digibon, afstandsverklaring, foto’s, redenen van wetenschap, beslagindicator, PDB op nabewerken, mutatie in BVH, KVI opmaken, KVI scannen, goed deponeren, BVH-nummer mailen, verbaal en foto’s toevoegen, bon naar CVOM."],
+      ["Stappenplan", "Wat vink je aan in de digibon?", "De beslagindicator."],
+      ["Stappenplan", "Hoeveel KVI’s print je en waar gaan ze heen?", "Twee: één bij het goed (aan de zak of koker), één in het dossier."],
+      ["Stappenplan", "Hoe plaats je het wapen?", "In een open zak of koker, en deponeren."],
+      ["Stappenplan", "Wie krijgt het BVH-nummer per mail?", "De WWM-taakaccenthouder."],
+      ["Stappenplan", "Wat voeg je in totaal bij in PDB?", "De KVI, de afstandsverklaring en het WWM-beschrijvingsverbaal van het wapen met fotobijlage. Bij E900 volstaat een proces-verbaal van bevindingen en een foto."],
+      ["Stappenplan", "Waar zie je of iemand eerder een digibon voor een wapenfeit kreeg?", "In BVI-IB bij BLUESPOT onder Politie Digibonnen Overzicht."],
+      ["Codes", "Wat is de feitcategorie van E900, G411a, G411b en G412?", "Feitcategorie 8."],
+      ["Codes", "Is voor E900 een wapenrapport nodig?", "Niet noodzakelijk. Een beschrijving in een proces-verbaal (van bevindingen) en een foto is voldoende. Bij G411a, G411b en G412 altijd een rapport over het wapen bijvoegen."],
       ["Strafbeschikking", "Wat is MEOS?", "Mobiel Effectiever Op Straat: de smartphone-app van de politie."],
       ["Strafbeschikking", "Wat is een digibon?", "Een bon die je in MEOS aanmaakt om een feit op straat vast te leggen of af te doen."],
       ["Strafbeschikking", "Voor welke feiten kan het OM een strafbeschikking uitvaardigen?", "Voor overtredingen en misdrijven met een maximumstraf van niet meer dan zes jaar (Sv 257a lid 1)."],
